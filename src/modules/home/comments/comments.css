@@ -1,0 +1,38 @@
+.img-section {
+  background-color: #170f58;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 24px 15px 31px 4px;
+}
+.comment-container {
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 1rem;
+  margin-bottom: 4rem;
+}
+.comment-img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.date {
+  background-color: #ff007a;
+  max-width: 20%;
+  border-radius: 10px;
+}
+.heart-bef::before {
+  content: url("../../../assets//images/heart.svg");
+  margin-right: 0.5rem;
+  position: relative;
+  top: 0.1rem;
+}
+.share-bef::before {
+  content: url("../../../assets//images/share.svg");
+  margin-right: 0.5rem;
+  position: relative;
+  top: 0.1rem;
+}
+.margin-container {
+  margin-left: 2rem;
+  padding-bottom: 1rem;
+}

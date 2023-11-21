@@ -1,0 +1,29 @@
+.navBarData {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  /* font-family: "Rubik", sans-serif; */
+  font-size: 1rem;
+  /* font-size: 16px; */
+  color: white;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.ralewayFont {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.nav-contain {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.colorForNavFont {
+  color: white;
+}

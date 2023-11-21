@@ -1,0 +1,31 @@
+.testimonial-cont {
+  background-image: url("../../../assets/images/BG.svg");
+  max-width: 100%;
+  text-align: center;
+  /* background-color: rosybrown; */
+  /* padding-bottom: 3rem; */
+  padding: 0px 20px 66px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-img {
+  max-width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -2.5rem;
+}
+.quotaion-down {
+  max-width: 10%;
+  position: relative;
+  top: -0.5rem;
+  left: -0.5rem;
+}
+.quotation-up {
+  max-width: 10%;
+  position: relative;
+  left: 35rem;
+  top: -3.5rem;
+}
+.testimonial-cont h2 {
+  color: white;
+}

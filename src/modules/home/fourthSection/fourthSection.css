@@ -1,0 +1,102 @@
+.section12 {
+  background-color: #ececec;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+.section13 {
+  padding-top: 5rem;
+}
+.form-container {
+  background-color: #ececec;
+  max-width: 80%;
+  padding: 40px 40px 20px 40px;
+  border-radius: 10px;
+}
+.form-control {
+  resize: none;
+}
+.lining {
+  border: 1px solid #848484;
+  margin-top: 2rem;
+}
+.footer-section {
+  padding-top: 5rem;
+  background-color: #030416;
+  padding-bottom: 5rem;
+}
+.footer-section .ralewayFont {
+  margin-left: 1rem;
+}
+.footer-section li {
+  color: #ffffff;
+  margin-top: 2rem;
+}
+.unordered-list li::marker {
+  content: none;
+}
+.number::before {
+  content: url("../../../assets/images/mobileLogo.svg");
+  position: relative;
+  top: 0.2rem;
+  right: 1rem;
+}
+.mail-add::before {
+  content: url("../../../assets/images/mailminiLogo.svg");
+  position: relative;
+  top: 0.2rem;
+  right: 1rem;
+}
+.per-loc::before {
+  content: url("../../../assets/images/locationMini.svg");
+  position: relative;
+  top: 0.2rem;
+  right: 1rem;
+}
+.footer-section h3 {
+  color: white;
+  margin-left: -1rem;
+}
+.listing {
+  margin-left: 4rem;
+}
+.section-end {
+  background-color: #000446;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.section-end p {
+  color: #909090;
+}
+
+@media (max-width: 768px) {
+  .listing {
+    margin-left: 0;
+  }
+  .footer-section h3 {
+    margin-top: 4rem;
+  }
+  .section13 h1 {
+    margin-top: 4rem;
+  }
+  .form-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-container .btn-bg {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section13 h1,
+  .section13 p {
+    text-align: center;
+  }
+  .section13 button {
+    margin-left: 35%;
+  }
+  .section13 .col-lg-6 .mt-2 {
+    display: flex;
+  }
+  .section13 .col-lg-6 .mt-2 p {
+    text-align: left;
+  }
+}

@@ -1,0 +1,11 @@
+.before-head {
+  margin-left: -5rem;
+}
+.features-container {
+  margin-bottom: 5rem;
+}
+@media (max-width: 768px) {
+  .before-head {
+    margin-left: 0;
+  }
+}

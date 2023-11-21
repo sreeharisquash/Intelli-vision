@@ -1,0 +1,40 @@
+.section9 {
+  padding-top: 10rem;
+}
+.feature-before::before {
+  content: url("../../../assets/images/smilie.svg");
+  position: relative;
+  top: 1rem;
+  left: -1rem;
+}
+.feature-before {
+  margin-left: -3rem;
+}
+.section10 {
+  background-color: #fafbfd;
+  padding-top: 6.25rem;
+  padding-bottom: 6rem;
+}
+.productivity {
+  margin-left: 12rem;
+}
+.productivity-Bg {
+  background-image: url("../../../assets/images/productivityBg.svg");
+  max-width: 75%;
+}
+
+.section11 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .productivity-Bg {
+    min-width: 81%;
+  }
+  .section10 .col-lg-7 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+}

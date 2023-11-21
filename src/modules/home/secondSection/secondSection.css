@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+.blue-bg {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 31px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.section6 {
+  background-color: #170f58;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #ffffff;
+  margin-top: 15rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+}
+.before-images {
+  max-width: 20%;
+  margin-top: -0.5rem;
+}
+.section7 {
+  margin-top: 15rem;
+}
+.section-testimonials {
+  background-color: #170f58;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.section-testimonials h1,
+.section-testimonials p {
+  color: white;
+}
+.head-container {
+  background-color: #170f58;
+  padding: 20px 24px 13px 24px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.section8 h4 {
+  color: white;
+}
+.section8 {
+  background-color: #f1f1f1;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+.testimonial-bg {
+  background-image: url("../../../assets/images/testimonial-bg.svg");
+}
+.carousel .control-dots {
+  margin-top: 2rem;
+}
+.carousel .slide {
+  display: flex;
+  align-items: center;
+}
+.section6 .carousel-slider {
+  height: 6rem;
+}
