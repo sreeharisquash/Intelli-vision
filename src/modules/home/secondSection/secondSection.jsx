@@ -7,7 +7,7 @@ import Screen1 from "../../../assets/images/screen1.svg";
 import Screen2 from "../../../assets/images/screen2.svg";
 import Screen3 from "../../../assets/images/screen3.svg";
 import Screen4 from "../../../assets/images/screen4.svg";
-import MainScreen from "../../../assets/images/mainScreen.svg";
+// import MainScreen from "../../../assets/images/mainScreen.svg";
 import Darell from "../../../assets/images/darell.svg";
 import Dianne from "../../../assets/images/dianna.svg";
 import Albert from "../../../assets/images/albert.svg";
