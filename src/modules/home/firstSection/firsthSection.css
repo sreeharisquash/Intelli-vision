@@ -2,6 +2,17 @@
   background-color: #170f58;
 }
 
+.carousel-control-prev-icon {
+  position: relative;
+  top: 3rem;
+  left: -4rem;
+}
+.carousel-control-next-icon {
+  position: relative;
+  top: 3rem;
+  right: -4rem;
+}
+
 .mobile-Logo {
   margin-left: 3rem;
 }
@@ -80,10 +91,10 @@
   .section1 p {
     text-align: center;
   }
-  .section1 button {
+  /* .section1 button {
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
   .section1 img {
     display: flex;
     margin-left: auto;

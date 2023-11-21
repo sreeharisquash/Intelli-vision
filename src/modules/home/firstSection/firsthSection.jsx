@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Header from '../../header/header'
+import Header from "../../header/header";
 import "./firsthSection.css";
 import MobileLogo from "../../../assets/images/mobileImg.svg";
 import AppleStoreIcon from "../../../assets/images/Apple icon.svg";
@@ -14,9 +14,9 @@ import Shield from "../../../assets/images/shield.svg";
 import PlayButton from "../../../assets/images/playButton.svg";
 import CommonButton from "../../commonButton/commonButton";
 import VideoPopup from "../videoPopup/videoPopup";
-import AppleStore from '../../../assets/images/AppleStore.svg'
-import PlayStore from '../../../assets/images/playStore.svg'
-import Windows from '../../../assets/images/windows.svg'
+import AppleStore from "../../../assets/images/AppleStore.svg";
+import PlayStore from "../../../assets/images/playStore.svg";
+import Windows from "../../../assets/images/windows.svg";
 import StoreComponent from "../storeComponent/storeComponent";
 
 export default function Section1() {
@@ -33,56 +33,176 @@ export default function Section1() {
   const store = [
     {
       id: "1",
-      image: AppleStore ,
+      image: AppleStore,
       head: "App Store",
       para: "Lorem ipsum dolor sit amet, consectetur adipiscing labore Ut enim minim veniam,quis nostrud exercitation",
     },
     {
       id: "2",
-      image: PlayStore ,
+      image: PlayStore,
       head: "Play Store",
       para: "Lorem ipsum dolor sit amet, consectetur adipiscing labore Ut enim minim veniam,quis nostrud exercitation",
     },
     {
       id: "3",
-      image: Windows ,
+      image: Windows,
       head: "Windows",
       para: "Lorem ipsum dolor sit amet, consectetur adipiscing labore Ut enim minim veniam,quis nostrud exercitation",
     },
   ];
 
   const serviceData = [
-    {id : '1' , head: "Tempor incididunt ", para : "Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod tempor incididunt inim veniam, nostrud exercitation ullamco ", image:Desktop },
-    {id : '2' , head: "Tempor incididunt ", para : "Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod tempor incididunt inim veniam, nostrud exercitation ullamco ", image:Profile },
-    {id : '3' , head: "Tempor incididunt ", para : "Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod tempor incididunt inim veniam, nostrud exercitation ullamco ", image:Shield },
-
-  ]
+    {
+      id: "1",
+      head: "Tempor incididunt ",
+      para: "Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod tempor incididunt inim veniam, nostrud exercitation ullamco ",
+      image: Desktop,
+    },
+    {
+      id: "2",
+      head: "Tempor incididunt ",
+      para: "Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod tempor incididunt inim veniam, nostrud exercitation ullamco ",
+      image: Profile,
+    },
+    {
+      id: "3",
+      head: "Tempor incididunt ",
+      para: "Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod tempor incididunt inim veniam, nostrud exercitation ullamco ",
+      image: Shield,
+    },
+  ];
   return (
     <>
       {/* section one  */}
       <div className="section1">
-       <Header/>
+        <Header />
         <div className="container py-5">
-          <div className="row mt-5 mb-5">
-            <div className="col-lg-6 col-md-12 my-auto mb-5">
-              <h1>Lorem ipsum dolor consectetur adipiscing elit</h1>
+          <div
+            id="carouselExampleInterval"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div className="row mt-5 mb-5">
+                  <div className="col-lg-6 col-md-12 my-auto mb-5">
+                    <h1>Lorem ipsum dolor consectetur adipiscing elit</h1>
+                    <p className="mt-4">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo tempor
+                    </p>{" "}
+                    <div className="d-flex gap-3">
+                      <StoreButton
+                        imgSrc={AppleStoreIcon}
+                        storeName="Apple Store"
+                      />
+                      <StoreButton
+                        imgSrc={PlayStoreIcon}
+                        storeName="Play Store"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-12">
+                    <img src={MobileLogo} alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div className="row mt-5 mb-5">
+                  <div className="col-lg-6 col-md-12 my-auto mb-5">
+                    <h1>Lorem ipsum dolor consectetur adipiscing elit</h1>
+                    <p className="mt-4">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo tempor
+                    </p>{" "}
+                    <div className="d-flex gap-3">
+                      <StoreButton
+                        imgSrc={AppleStoreIcon}
+                        storeName="Apple Store"
+                      />
+                      <StoreButton
+                        imgSrc={PlayStoreIcon}
+                        storeName="Play Store"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-12">
+                    <img src={MobileLogo} alt="" />
+                  </div>
+                  {/* </div> */}
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div className="row mt-5 mb-5">
+                  <div className="col-lg-6 col-md-12 my-auto mb-5">
+                    <h1>Lorem ipsum dolor consectetur adipiscing elit</h1>
+                    <p className="mt-4">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo tempor
+                    </p>{" "}
+                    <div className="d-flex gap-3">
+                      <StoreButton
+                        imgSrc={AppleStoreIcon}
+                        storeName="Apple Store"
+                      />
+                      <StoreButton
+                        imgSrc={PlayStoreIcon}
+                        storeName="Play Store"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-12">
+                    <img src={MobileLogo} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      {/* <h1>Lorem ipsum dolor consectetur adipiscing elit</h1>
               <p className="mt-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo tempor
-              </p>
-              <div className="d-flex gap-3">
+              </p> *
+             <div className="d-flex gap-3">
                 <StoreButton imgSrc={AppleStoreIcon} storeName="Apple Store" />
                 <StoreButton imgSrc={PlayStoreIcon} storeName="Play Store" />
-              </div>
-            </div>
+              </div> 
+             </div> 
             <div className="col-lg-6 col-md-12">
               <img src={MobileLogo} alt="" />
-            </div>
-          </div>
+            </div>   */}
+      {/* </div>
         </div>
-      </div>
+      </div> */}
 
       {/* section two  */}
 
@@ -101,9 +221,13 @@ export default function Section1() {
           </div>
         </div>
         <div className="row ">
-          {serviceData.map((items)=> (
+          {serviceData.map((items) => (
             <div className="col-lg-4">
-              <Services para={items.para} head={items.head} imgSrc={items.image}/>
+              <Services
+                para={items.para}
+                head={items.head}
+                imgSrc={items.image}
+              />
             </div>
           ))}
 

@@ -21,6 +21,20 @@ import DropdownItemTags from "../dropdowns/dropdown";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import SimpleSlider from "../slickCarousel/carousel";
+
+// Install Swiper modules
+// SwiperCore.use([Pagination]);
 
 export default function Section2() {
   const datas = [
@@ -76,12 +90,12 @@ export default function Section2() {
   ];
 
   const mobScreens = [
-    {id: '1' , image: Screen1 },
-    {id: '2' , image: Screen2 },
-    {id: '3' , image: MainScreen },
-    {id: '4' , image: Screen3 },
-    {id: '5' , image: Screen4 },
-  ]
+    { id: "1", image: Screen1 },
+    { id: "2", image: Screen2 },
+    { id: "3", image: MainScreen },
+    { id: "4", image: Screen3 },
+    { id: "5", image: Screen4 },
+  ];
 
   const dropDowns = [
     {
@@ -107,12 +121,27 @@ export default function Section2() {
     },
   ];
 
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1
+  };
+
+  const breakpoints = [
+    {width: 1, itemsToShow: 1},
+    {width: 550, itemsToShow: 2},
+    {width: 768, itemsToShow: 3},
+    {width: 1200, itemsToShow: 4}
+  ]
+
   return (
     <>
       <div className="section5">
         <div className="container">
           <div className="row d-flex justify-content-center">
-            <div className="col-lg-8">
+            <div className="col-lg-6">
               <h1 className="text-center">Dolor Lorem ipsum</h1>
               <p className="mt-4 text-center mb-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -120,60 +149,91 @@ export default function Section2() {
                 quis nostrud exercitation ullamco laboris
               </p>
             </div>
-          </div>
-          <div className="row d-flex justify-content-center">
 
-          <Carousel autoPlay={true} interval={2000} infiniteLoop={true} showThumbs={false}>
-              {mobScreens.map((items) => (
-                <div className="col-lg-3 d-flex gap-2" key={items.id}>
-                  <img src={items.image} alt="" />
-                  {/* <h2>{items.head}</h2> */}
-                </div>
-              ))}
-            </Carousel>
-
-            {/* <div
-              className="col-lg-2"
-              style={{ marginTop: "auto", marginBottom: "auto" }}
-            >
-              <img src={Screen1} alt="" />
+            {/* <div className="row d-flex justify-content-center"> */}
+            <div className="col-lg-6">
+              <Swiper
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={true}
+                loop={true}
+                slidesPerView={"5"}
+                coverflowEffect={{
+                  rotate: 0,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 2.5,
+                }}
+                className="slider-control"
+              >
+                <SwiperSlide>
+                  <img src={Screen1} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={Screen2} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={Screen3} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={Screen4} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={Screen2} alt="" />
+                </SwiperSlide>
+              </Swiper>
             </div>
-            <div
-              className="col-lg-2"
-              style={{ marginTop: "auto", marginBottom: "auto" }}
-            >
-              <img src={Screen2} alt="" />
-            </div>
-            <div className="col-lg-3">
-              <img src={MainScreen} alt="" />
-            </div>
-            <div
-              className="col-lg-2"
-              style={{ marginTop: "auto", marginBottom: "auto" }}
-            >
-              <img src={Screen3} alt="" />
-            </div>
-            <div
-              className="col-lg-2"
-              style={{ marginTop: "auto", marginBottom: "auto" }}
-            >
-              <img src={Screen4} alt="" />
-            </div> */}
           </div>
         </div>
       </div>
+      {/* </div> */}
 
       <div className="section6 ">
         <div className="container d-flex">
           <div className="row justify-content-center">
-            <Carousel autoPlay={true} interval={2000} infiniteLoop={true} showThumbs={false}>
+          {/* <SimpleSlider datas={datas} /> */}
+            {/* <Slider {...settings}>
+              {datas.map((items) => (
+                <div  key={items.id}>
+                  <img src={items.image} alt="" className="before-images" />
+                  <h2>{items.head}</h2>
+                </div>
+              ))}
+            </Slider> */}
+           <Carousel breakpoints={breakpoints}>
+            <div>
+            <img src={Screen1} alt="" className="before-images" />
+                  
+            </div>
+            <div>
+            <img src={Screen1} alt="" className="before-images" />
+                 
+            </div>
+            <div>
+            <img src={Screen1} alt="" className="before-images" />
+                 
+            </div>
+           <div>
+            <img src={Screen1} alt="" className="before-images" />
+                  
+            </div>
+           </Carousel>
+            {/* <Carousel 
+              autoPlay={true}
+              interval={2000}
+              infiniteLoop={true}
+              showThumbs={false}
+              showArrows={false}
+              showIndicators={false}
+              showStatus={false}
+            >
               {datas.map((items) => (
                 <div className="col-lg-3 d-flex gap-2" key={items.name}>
                   <img src={items.image} alt="" className="before-images" />
                   <h2>{items.head}</h2>
                 </div>
               ))}
-            </Carousel>
+            </Carousel> */}
           </div>
         </div>
       </div>
@@ -209,9 +269,18 @@ export default function Section2() {
       <div className="section-testimonials">
         <div className="container">
           <div className="row d-flex justify-content-center">
-            <Carousel autoPlay={true} interval={2000} infiniteLoop={true}>
+            <Carousel
+              autoPlay={true}
+              interval={2000}
+              infiniteLoop={true}
+              showArrows={false}
+              showStatus={false}
+            >
               {reviews.map((items) => (
-                <div className="col-lg-6 text-center">
+                <div
+                  className="col-lg-6 text-center carousal-item"
+                  key={items.id}
+                >
                   <Testimonials
                     key={items.name}
                     imgSrc={items.image}
@@ -238,27 +307,27 @@ export default function Section2() {
               </p>
             </div>
           </div>
-          <div className="row pt-5" style={{gap:'6rem'}}>
+          <div className="row pt-5" style={{ gap: "6rem" }}>
             <div className="col-lg-4 col-md-12">
               <img src={DoubtsLogo} alt="doubts" />
             </div>
             <div className="col-lg-7 col-md-12">
-            {dropDowns.map((items) => (
+              {dropDowns.map((items) => (
                 <DropdownItemTags
                   dropdownTitle={items.dropdownTitle}
                   para={items.para}
                 />
               ))}
             </div>
-            
-              {/* <div className="main-container">
+
+            {/* <div className="main-container">
                     <div className="head-container">
                         <h4>Reprehenderit voluptate</h4>
                     </div>
                 </div> */}
-            </div>
-            </div>
           </div>
+        </div>
+      </div>
     </>
   );
 }

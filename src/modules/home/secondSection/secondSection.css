@@ -61,3 +61,14 @@
 .section6 .carousel-slider {
   height: 6rem;
 }
+.carousal-item.blur {
+  filter: blur(5px);
+}
+.swiper-wrapper {
+  gap: 1rem;
+}
+.swiper-slide-active {
+  background-image: url("../../../assets/images/mainScreen.svg");
+  background-size: cover;
+  background-position: center;
+}
