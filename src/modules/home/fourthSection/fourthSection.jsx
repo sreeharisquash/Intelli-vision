@@ -12,7 +12,7 @@ import FB from "../../../assets/images/fb.svg";
 import Twit from "../../../assets/images/twitr.svg";
 import Linkdin from "../../../assets/images/linkdin.svg";
 import Utub from "../../../assets/images/utub.svg";
-import Footer from "../footerComponents/footerComponent";
+// import Footer from "../footerComponents/footerComponent";
 
 export default function Section4() {
   const reviews = [
@@ -36,12 +36,12 @@ export default function Section4() {
     },
   ];
 
-  const footerCompany = [
-    { id: "1", head: "Company", para: "Home" },
-    { id: "1", head: "Company", para: "Home" },
-    { id: "1", head: "Company", para: "Home" },
-    { id: "1", head: "Company", para: "Home" },
-  ];
+  // const footerCompany = [
+  //   { id: "1", head: "Company", para: "Home" },
+  //   { id: "1", head: "Company", para: "Home" },
+  //   { id: "1", head: "Company", para: "Home" },
+  //   { id: "1", head: "Company", para: "Home" },
+  // ];
   return (
     <>
       <div className="section12">

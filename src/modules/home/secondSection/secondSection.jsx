@@ -31,7 +31,7 @@ import "swiper/css/navigation";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SimpleSlider from "../slickCarousel/carousel";
+// import SimpleSlider from "../slickCarousel/carousel";
 
 // Install Swiper modules
 // SwiperCore.use([Pagination]);
@@ -89,13 +89,13 @@ export default function Section2() {
     },
   ];
 
-  const mobScreens = [
-    { id: "1", image: Screen1 },
-    { id: "2", image: Screen2 },
-    { id: "3", image: MainScreen },
-    { id: "4", image: Screen3 },
-    { id: "5", image: Screen4 },
-  ];
+  // const mobScreens = [
+  //   { id: "1", image: Screen1 },
+  //   { id: "2", image: Screen2 },
+  //   { id: "3", image: MainScreen },
+  //   { id: "4", image: Screen3 },
+  //   { id: "5", image: Screen4 },
+  // ];
 
   const dropDowns = [
     {
@@ -129,12 +129,12 @@ export default function Section2() {
     slidesToScroll: 1
   };
 
-  const breakpoints = [
-    {width: 1, itemsToShow: 1},
-    {width: 550, itemsToShow: 2},
-    {width: 768, itemsToShow: 3},
-    {width: 1200, itemsToShow: 4}
-  ]
+  // const breakpoints = [
+  //   {width: 1, itemsToShow: 1},
+  //   {width: 550, itemsToShow: 2},
+  //   {width: 768, itemsToShow: 3},
+  //   {width: 1200, itemsToShow: 4}
+  // ]
 
   return (
     <>
@@ -192,32 +192,15 @@ export default function Section2() {
         <div className="container d-flex">
           <div className="row justify-content-center">
           {/* <SimpleSlider datas={datas} /> */}
-            {/* <Slider {...settings}>
+            <Slider {...settings}>
               {datas.map((items) => (
                 <div  key={items.id}>
                   <img src={items.image} alt="" className="before-images" />
                   <h2>{items.head}</h2>
                 </div>
               ))}
-            </Slider> */}
-           <Carousel breakpoints={breakpoints}>
-            <div>
-            <img src={Screen1} alt="" className="before-images" />
-                  
-            </div>
-            <div>
-            <img src={Screen1} alt="" className="before-images" />
-                 
-            </div>
-            <div>
-            <img src={Screen1} alt="" className="before-images" />
-                 
-            </div>
-           <div>
-            <img src={Screen1} alt="" className="before-images" />
-                  
-            </div>
-           </Carousel>
+            </Slider>
+           
             {/* <Carousel 
               autoPlay={true}
               interval={2000}

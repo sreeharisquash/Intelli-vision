@@ -11,7 +11,7 @@ import Paint from "../../../assets/images/paint.svg";
 // import Productivities from "../productivityConcepts/productivity";
 import ProductivityImg from "../../../assets/images/productvity.svg";
 import Purchase from "../purchaseComponents/purchase";
-import CommonButton from "../../commonButton/commonButton";
+// import CommonButton from "../../commonButton/commonButton";
 // import Checks from "../checkPointComponent/checks";
 
 export default function Section3() {
@@ -57,23 +57,23 @@ export default function Section3() {
     },
   ];
 
-  const Productivity = [
-    {
-      id: "1",
-      head: "Elementum nibhd",
-      para: "In dictum non consectetur a. Adipiscing at in tellus integer feugiat scelerisque eleifend mi in nulla",
-    },
-    {
-      id: "2",
-      head: "Ornare aeneansd",
-      para: "Volutpat blandit aliquam etiam erat velit scelerisque elementum nisi quis eleifend quam adipiscing vitae ",
-    },
-    {
-      id: "3",
-      head: "Massa placeratds",
-      para: "Lorem ipsum dolor sit amet, consectetur adipiscing mod tempor incididunt inim veniam, nost exercitation ullamco",
-    },
-  ];
+  // const Productivity = [
+  //   {
+  //     id: "1",
+  //     head: "Elementum nibhd",
+  //     para: "In dictum non consectetur a. Adipiscing at in tellus integer feugiat scelerisque eleifend mi in nulla",
+  //   },
+  //   {
+  //     id: "2",
+  //     head: "Ornare aeneansd",
+  //     para: "Volutpat blandit aliquam etiam erat velit scelerisque elementum nisi quis eleifend quam adipiscing vitae ",
+  //   },
+  //   {
+  //     id: "3",
+  //     head: "Massa placeratds",
+  //     para: "Lorem ipsum dolor sit amet, consectetur adipiscing mod tempor incididunt inim veniam, nost exercitation ullamco",
+  //   },
+  // ];
 
   const PurchaseData = [
     { id: "1", price: "49" },

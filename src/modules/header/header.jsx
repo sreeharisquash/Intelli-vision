@@ -30,12 +30,12 @@ export default function header() {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav navBarData ms-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link colorForNavFont" href="#">
+              <a class="nav-link colorForNavFont" href="#Home">
                 Home
               </a>
             </li>
             <li class="nav-item dropdown">
-            <a class="nav-link colorForNavFont" href="#">
+            <a class="nav-link colorForNavFont" href="#About">
                 About
               </a>
               {/* <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -46,12 +46,12 @@ export default function header() {
                 </div> */}
             </li>
             <li class="nav-item">
-              <a class="nav-link colorForNavFont" href="#">
+              <a class="nav-link colorForNavFont" href="# Features">
                Features
               </a>
             </li>
             <li class="nav-item dropdown">
-            <a class="nav-link colorForNavFont" href="#">
+            <a class="nav-link colorForNavFont" href="#Pages">
                Pages
               </a>
               {/* <div class="dropdown-menu" aria-labelledby="navbarDropdownBlog">
