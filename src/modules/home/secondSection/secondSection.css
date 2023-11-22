@@ -67,8 +67,8 @@
 .swiper-wrapper {
   gap: 1rem;
 }
-.swiper-slide-active {
+/* .swiper-slide-active {
   background-image: url("../../../assets/images/mainScreen.svg");
   background-size: cover;
-  background-position: center;
-}
+  background-position: center; */
+/* } */

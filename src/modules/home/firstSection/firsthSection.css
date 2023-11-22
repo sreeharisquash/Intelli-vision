@@ -85,6 +85,9 @@
 .stores p {
   color: #170f58;
 }
+.swiper-slide-active {
+  transform: scale(1.1);
+}
 
 @media (max-width: 768px) {
   .section1 h1,

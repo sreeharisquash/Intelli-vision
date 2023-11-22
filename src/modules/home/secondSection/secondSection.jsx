@@ -28,9 +28,10 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import SwiperSlideComponent from "../swiperSlider/swiper";
 // import SimpleSlider from "../slickCarousel/carousel";
 
 // Install Swiper modules
@@ -121,13 +122,13 @@ export default function Section2() {
     },
   ];
 
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1
-  };
+  // var settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1
+  // };
 
   // const breakpoints = [
   //   {width: 1, itemsToShow: 1},
@@ -140,7 +141,7 @@ export default function Section2() {
     <>
       <div className="section5">
         <div className="container">
-          <div className="row d-flex justify-content-center">
+          <div className="row justify-content-center">
             <div className="col-lg-6">
               <h1 className="text-center">Dolor Lorem ipsum</h1>
               <p className="mt-4 text-center mb-5">
@@ -150,8 +151,9 @@ export default function Section2() {
               </p>
             </div>
 
-            {/* <div className="row d-flex justify-content-center"> */}
-            <div className="col-lg-6">
+            <div className="row d-flex justify-content-center">
+            <div className="col-lg-12">
+
               <Swiper
                 effect={"coverflow"}
                 grabCursor={true}
@@ -186,22 +188,40 @@ export default function Section2() {
           </div>
         </div>
       </div>
-      {/* </div> */}
+      </div>
 
       <div className="section6 ">
         <div className="container d-flex">
           <div className="row justify-content-center">
-          {/* <SimpleSlider datas={datas} /> */}
-            <Slider {...settings}>
+
+          {/* <SwiperSlideComponent /> */}
+            {/* <SimpleSlider datas={datas} /> */}
+            {/* <Slider {...settings}>
               {datas.map((items) => (
                 <div  key={items.id}>
                   <img src={items.image} alt="" className="before-images" />
                   <h2>{items.head}</h2>
                 </div>
               ))}
-            </Slider>
+            </Slider> */}
            
-            {/* <Carousel 
+            {/* </div> */}
+
+            {/* <SwiperSlide>
+                  <img src={Screen2} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={Screen3} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={Screen4} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={Screen2} alt="" />
+                </SwiperSlide> */}
+
+
+            <Carousel 
               autoPlay={true}
               interval={2000}
               infiniteLoop={true}
@@ -216,7 +236,7 @@ export default function Section2() {
                   <h2>{items.head}</h2>
                 </div>
               ))}
-            </Carousel> */}
+            </Carousel>
           </div>
         </div>
       </div>
