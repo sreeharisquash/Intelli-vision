@@ -13,7 +13,7 @@ function DropdownItemTags({dropdownTitle , para}) {
   return (
     
 
-     <DropdownButton id="dropdown-item-button" title={dropdownTitle} className={`custom-dropdown-arrow ${isOpen ? 'dropdown-open' : ''}`} onToggle={handleDropdownToggle}>
+     <DropdownButton id="dropdown-item-button" title={dropdownTitle} className={`custom-dropdown-arrow ${isOpen ? 'dropdown-open' : ''}`} onToggle={handleDropdownToggle} >
       <Dropdown.ItemText><p>{para}</p></Dropdown.ItemText>
      </DropdownButton>  
   );

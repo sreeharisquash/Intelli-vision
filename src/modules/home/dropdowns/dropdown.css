@@ -28,9 +28,9 @@
   margin-left: 5rem;
 } */
 .section8 .btn-primary {
-  /* max-width: 100%; */
-  max-width: 45.5rem;
-  display: flex;
+  max-width: 100%;
+  min-width: 100%;
+  text-align: left;
   gap: 10rem;
   padding: 1rem 17rem 1rem 1rem;
   font-size: 22px;
@@ -46,14 +46,20 @@
 .dropdown-item-text {
   padding: 1rem;
 }
-/* .dropdown-toggle::after {
-  content: "\25BC";
-  font-size: 14px;
-  margin-left: 5px;
-  color: #170f58;
-  border-radius: 50%;
-  padding: 5px
-} */
+.custom-dropdown-arrow {
+  position: relative;
+}
+
+.custom-dropdown-arrow::after {
+  content: ""; /* or add your custom caret icon */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-dropdown-arrow .btn {
+  z-index: 1; /* Ensure the button is above the ::after pseudo-element */
+}
 
 @media (max-width: 768px) {
   .section8 .col-lg-4 {

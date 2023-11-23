@@ -85,10 +85,30 @@
 .stores p {
   color: #170f58;
 }
-.swiper-slide-active {
-  transform: scale(1.1);
-}
 
+.swiper-slide,
+.swiper-slide-next,
+.swiper-slide-prev {
+  transform: scale(0.6);
+}
+.section5 .swiper-slide-active {
+  background-image: url("../../../assets/images/mob-outlay.svg");
+  background-size: cover; /* Adjust this property as needed */
+  height: 32rem !important;
+  background-position: center center; /* Center the background */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  transform: scale(1);
+  overflow: hidden; /* Ensure the background is fully visible within the container */
+}
+.section5 .swiper-slide-active img {
+  margin-top: 0.7rem;
+  margin-left: 0.2rem;
+  /* max-width: 100%; */
+  height: 96%;
+}
+.section6 .swiper-slide {
+  transform: scale(1);
+}
 @media (max-width: 768px) {
   .section1 h1,
   .section1 p {

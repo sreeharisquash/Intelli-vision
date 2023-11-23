@@ -20,7 +20,6 @@ import DoubtsLogo from "../../../assets/images/doubtsLogo.svg";
 import DropdownItemTags from "../dropdowns/dropdown";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -31,19 +30,16 @@ import "swiper/css/navigation";
 // import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import SwiperSlideComponent from "../swiperSlider/swiper";
-// import SimpleSlider from "../slickCarousel/carousel";
+import SlickCarousel from "../slick-slider/slickCarousel";
 
-// Install Swiper modules
-// SwiperCore.use([Pagination]);
 
 export default function Section2() {
-  const datas = [
-    { id: "1", image: PaperBird, head: "PAPER BIRD" },
-    { id: "2", image: ModernCity, head: "MODERN" },
-    { id: "3", image: Alpha, head: "ALPHA & CO" },
-    { id: "4", image: Alpha, head: "WOOD FLOOR" },
-  ];
+  // const datas = [
+  //   { id: "1", image: PaperBird, head: "PAPER BIRD" },
+  //   { id: "2", image: ModernCity, head: "MODERN" },
+  //   { id: "3", image: Alpha, head: "ALPHA & CO" },
+  //   { id: "4", image: Alpha, head: "WOOD FLOOR" },
+  // ];
 
   const reviews = [
     {
@@ -122,20 +118,18 @@ export default function Section2() {
     },
   ];
 
-  // var settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1
-  // };
-
-  // const breakpoints = [
-  //   {width: 1, itemsToShow: 1},
-  //   {width: 550, itemsToShow: 2},
-  //   {width: 768, itemsToShow: 3},
-  //   {width: 1200, itemsToShow: 4}
-  // ]
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    //   centerMode: true,
+    //   centerPadding: "15px"
+  };
 
   return (
     <>
@@ -152,91 +146,49 @@ export default function Section2() {
             </div>
 
             <div className="row d-flex justify-content-center">
-            <div className="col-lg-12">
-
-              <Swiper
-                effect={"coverflow"}
-                grabCursor={true}
-                centeredSlides={true}
-                loop={true}
-                slidesPerView={"5"}
-                coverflowEffect={{
-                  rotate: 0,
-                  stretch: 0,
-                  depth: 100,
-                  modifier: 2.5,
-                }}
-                className="slider-control"
-              >
-                <SwiperSlide>
-                  <img src={Screen1} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={Screen2} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={Screen3} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={Screen4} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={Screen2} alt="" />
-                </SwiperSlide>
-              </Swiper>
+              <div className="col-lg-12">
+                <Swiper
+                  effect={"coverflow"}
+                  grabCursor={true}
+                  centeredSlides={true}
+                  loop={true}
+                  slidesPerView={"5"}
+                  coverflowEffect={{
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2.5,
+                  }}
+                  className="slider-control"
+                >
+                  <SwiperSlide>
+                    <img src={Screen1} alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={Screen2} alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={Screen3} alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={Screen4} alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={Screen2} alt="" />
+                  </SwiperSlide>
+                </Swiper>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
 
       <div className="section6 ">
-        <div className="container d-flex">
+        <div className="container">
           <div className="row justify-content-center">
-
-          {/* <SwiperSlideComponent /> */}
-            {/* <SimpleSlider datas={datas} /> */}
-            {/* <Slider {...settings}>
-              {datas.map((items) => (
-                <div  key={items.id}>
-                  <img src={items.image} alt="" className="before-images" />
-                  <h2>{items.head}</h2>
-                </div>
-              ))}
-            </Slider> */}
-           
-            {/* </div> */}
-
-            {/* <SwiperSlide>
-                  <img src={Screen2} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={Screen3} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={Screen4} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={Screen2} alt="" />
-                </SwiperSlide> */}
-
-
-            <Carousel 
-              autoPlay={true}
-              interval={2000}
-              infiniteLoop={true}
-              showThumbs={false}
-              showArrows={false}
-              showIndicators={false}
-              showStatus={false}
-            >
-              {datas.map((items) => (
-                <div className="col-lg-3 d-flex gap-2" key={items.name}>
-                  <img src={items.image} alt="" className="before-images" />
-                  <h2>{items.head}</h2>
-                </div>
-              ))}
-            </Carousel>
+            <div className="col-lg-12">
+            <SlickCarousel />
+            </div>
           </div>
         </div>
       </div>
@@ -271,14 +223,56 @@ export default function Section2() {
 
       <div className="section-testimonials">
         <div className="container">
-          <div className="row d-flex justify-content-center">
-            <Carousel
-              autoPlay={true}
-              interval={2000}
-              infiniteLoop={true}
-              showArrows={false}
-              showStatus={false}
-            >
+          <div className="row justify-content-center">
+            <div className="col-lg-6 ">
+              <h1 className="text-center">Testimonials</h1>
+              <p className="mt-4 text-center mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                doeiusmod ut labore Ut enim ad minim veniam, quis nostrud
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="testimonial-sec">
+          <div className="row d-flex justify-content-center" style={{maxWidth:'100%'}}>
+            <Swiper
+                  effect={"coverflow"}
+                  grabCursor={true}
+                  centeredSlides={true}
+                  loop={true}
+                  slidesPerView={3}
+                  // dots={true}
+                  autoplay={true}
+                  autoplaySpeed={2000}
+                  coverflowEffect={{
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2.5,
+                  }}
+                  pagination={{ clickable: true }} 
+                  // className="slider-control"
+                >
+                    {reviews.map((items) => (
+                  <SwiperSlide>
+                
+                <div
+                  className="col-lg-12 text-center carousal-item"
+                  key={items.id}
+                >
+                  <Testimonials
+                    key={items.name}
+                    imgSrc={items.image}
+                    name={items.name}
+                    para={items.para}
+                  />
+                </div>
+            
+                  </SwiperSlide>
+                    ))}
+                </Swiper>
+
+            {/* <Slider {...settings}>
               {reviews.map((items) => (
                 <div
                   className="col-lg-6 text-center carousal-item"
@@ -292,12 +286,13 @@ export default function Section2() {
                   />
                 </div>
               ))}
-            </Carousel>
+            </Slider> */}
           </div>
         </div>
-        {/* </div>
-        </div> */}
       </div>
+      {/* </div>
+        </div> */}
+      {/* </div> */}
       <div className="section8">
         <div className="container">
           <div className="row d-flex justify-content-center">

@@ -17,14 +17,14 @@
 .quotaion-down {
   max-width: 10%;
   position: relative;
-  top: -0.5rem;
-  left: -0.5rem;
+  bottom: 1rem;
+  right: 0.5rem;
 }
 .quotation-up {
   max-width: 10%;
   position: relative;
-  left: 35rem;
-  top: -3.5rem;
+  left: 31.5rem;
+  bottom: 3rem;
 }
 .testimonial-cont h2 {
   color: white;

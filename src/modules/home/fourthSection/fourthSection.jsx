@@ -211,7 +211,7 @@ export default function Section4() {
       <div className="section-end">
         <div className="container">
           <div className="row d-flex justify-content-center">
-            <div className="col-lg-4">
+            <div className="col-lg-12 col-md-12">
               <p className="text-center">
                 © Copyright TRAVELING All Rights Reserved 2023
               </p>
