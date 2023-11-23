@@ -1,8 +1,8 @@
 import React from "react";
 import "./secondSection.css";
-import PaperBird from "../../../assets/images/pb-before.svg";
-import ModernCity from "../../../assets/images/mc-before.svg";
-import Alpha from "../../../assets/images/alpha&co-before.svg";
+// import PaperBird from "../../../assets/images/pb-before.svg";
+// import ModernCity from "../../../assets/images/mc-before.svg";
+// import Alpha from "../../../assets/images/alpha&co-before.svg";
 import Screen1 from "../../../assets/images/screen1.svg";
 import Screen2 from "../../../assets/images/screen2.svg";
 import Screen3 from "../../../assets/images/screen3.svg";
