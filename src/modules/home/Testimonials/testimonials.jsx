@@ -9,8 +9,8 @@ export default function Testimonials({ imgSrc, name, para }) {
             <img src={imgSrc} alt="" className="testimonial-img"/>
             <img src={QuotationUp} alt="" className="quotation-up"/>
            
-            <h2>{name}</h2>
-            <p className="text-center">{para}</p>
+            <h2 className="mt-5">{name}</h2>
+            <p className="text-center mt-4">{para}</p>
             <img src={QuotationDown} alt="" className="quotaion-down"/>
           </div>
   );

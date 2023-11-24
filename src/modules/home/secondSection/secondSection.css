@@ -48,6 +48,13 @@
   padding-bottom: 5rem;
   padding-top: 5rem;
 }
+.btn-primary {
+  display: flex;
+  flex-direction: column;
+  /* word-wrap: break-word; */
+  overflow: hidden;
+}
+
 .testimonial-bg {
   background-image: url("../../../assets/images/testimonial-bg.svg");
 }
@@ -100,3 +107,7 @@
 /* .swiper {
   margin-right: 3rem !important;
 } */
+.icon-align {
+  position: absolute;
+  right: 3%;
+}

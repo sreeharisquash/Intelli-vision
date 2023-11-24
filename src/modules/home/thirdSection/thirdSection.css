@@ -21,6 +21,7 @@
 .productivity-Bg {
   background-image: url("../../../assets/images/productivityBg.svg");
   max-width: 75%;
+  background-repeat: no-repeat;
 }
 
 .section11 {
@@ -28,9 +29,9 @@
   padding-bottom: 5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-device-width: 768px) {
   .productivity-Bg {
-    min-width: 81%;
+    /* min-width: 81%; */
   }
   .section10 .col-lg-7 {
     display: flex;

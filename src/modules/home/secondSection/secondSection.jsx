@@ -18,6 +18,8 @@ import Reviews from "../reviews/review";
 import Testimonials from "../Testimonials/testimonials";
 import DoubtsLogo from "../../../assets/images/doubtsLogo.svg";
 import DropdownItemTags from "../dropdowns/dropdown";
+import ActiveIcon from '../../../assets/images/active-dropdown.svg'
+import InactiveIcon from '../../../assets/images/inactive-dropdown.svg'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -134,9 +136,9 @@ export default function Section2() {
   return (
     <>
       <div className="section5">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-6">
+        <div className="container pt-5">
+          <div className="row justify-content-center pt-5 mt-5">
+            <div className="col-lg-6 pt-5">
               <h1 className="text-center">Dolor Lorem ipsum</h1>
               <p className="mt-4 text-center mb-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -153,12 +155,28 @@ export default function Section2() {
                   centeredSlides={true}
                   loop={true}
                   slidesPerView={"5"}
+                  // breakpoints={}
                   coverflowEffect={{
                     rotate: 0,
                     stretch: 0,
                     depth: 100,
                     modifier: 2.5,
                   }}
+                  breakpoints={{
+                    // when window width is >= 768px
+                    // 768: {
+                    //   slidesPerView: 1,
+                    // },
+                    // when window width is >= 992px
+                    // 992: {
+                    //   slidesPerView: 2,
+                    // },
+                    // when window width is >= 1200px
+                    // 1200: {
+                    //   slidesPerView: 3,
+                    // },
+                  }}
+                
                   className="slider-control"
                 >
                   <SwiperSlide>
@@ -250,6 +268,19 @@ export default function Section2() {
                     depth: 100,
                     modifier: 2.5,
                   }}
+                  breakpoints={{
+                    768: {
+                      slidesPerView: 1,
+                    },
+                    
+                    992: {
+                      slidesPerView: 2,
+                    },
+                   
+                    1200: {
+                      slidesPerView: 3,
+                    },
+                  }}
                   pagination={{ clickable: true }} 
                   // className="slider-control"
                 >
@@ -271,28 +302,9 @@ export default function Section2() {
                   </SwiperSlide>
                     ))}
                 </Swiper>
-
-            {/* <Slider {...settings}>
-              {reviews.map((items) => (
-                <div
-                  className="col-lg-6 text-center carousal-item"
-                  key={items.id}
-                >
-                  <Testimonials
-                    key={items.name}
-                    imgSrc={items.image}
-                    name={items.name}
-                    para={items.para}
-                  />
-                </div>
-              ))}
-            </Slider> */}
           </div>
         </div>
       </div>
-      {/* </div>
-        </div> */}
-      {/* </div> */}
       <div className="section8">
         <div className="container">
           <div className="row d-flex justify-content-center">
@@ -311,18 +323,19 @@ export default function Section2() {
             </div>
             <div className="col-lg-7 col-md-12">
               {dropDowns.map((items) => (
-                <DropdownItemTags
+                <div className="row">
+                  <div className="col">
+                  <DropdownItemTags
                   dropdownTitle={items.dropdownTitle}
+                  activeIcon={ActiveIcon}
+                  inactiveIcon={InactiveIcon}
                   para={items.para}
                 />
+                 </div>
+                </div>
               ))}
-            </div>
 
-            {/* <div className="main-container">
-                    <div className="head-container">
-                        <h4>Reprehenderit voluptate</h4>
-                    </div>
-                </div> */}
+            </div>
           </div>
         </div>
       </div>

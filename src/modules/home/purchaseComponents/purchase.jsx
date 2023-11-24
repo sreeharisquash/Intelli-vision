@@ -15,7 +15,9 @@ export default function Purchase({ price }) {
   return (
      <div className="purchase-Container">
           <h1 className="text-center ">${price}</h1>
+          <div className="price-bg">
           {checkData.map((items) => (
+            
             <Checks data={items.para}/>
             ))}
              <CommonButton
@@ -23,7 +25,8 @@ export default function Purchase({ price }) {
            color="#170F58"
            label="Download Now"
          />
-          
+         </div>
+        
     </div>
   );
 }

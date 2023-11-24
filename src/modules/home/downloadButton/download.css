@@ -10,3 +10,5 @@
 .carousel img {
   width: auto !important;
 }
+@media (max-device-width: 768px) {
+}

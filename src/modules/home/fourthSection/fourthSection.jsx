@@ -1,8 +1,8 @@
 import React from "react";
 import "./fourthSection.css";
-import Review1 from "../../../assets/images/ReviewImg1.svg";
-import Review2 from "../../../assets/images/reviewImg2.svg";
-import Review3 from "../../../assets/images/reviewImg3.svg";
+import Review1 from "../../../assets/images/review1.svg";
+import Review2 from "../../../assets/images/review2.svg";
+import Review3 from "../../../assets/images/review3.svg";
 import Comments from "../comments/comments";
 import CommonButton from "../../commonButton/commonButton";
 import EmailLogo from "../../../assets/images/emailLogo.svg";
@@ -77,7 +77,6 @@ export default function Section4() {
                 <h3>Ready to get started?</h3>
                 <form>
                   <div class="form-group">
-                    {/* <label for="exampleInputEmail1">Email address</label> */}
                     <input
                       type="email"
                       class="form-control mt-4"
@@ -85,10 +84,8 @@ export default function Section4() {
                       aria-describedby="emailHelp"
                       placeholder="First Name"
                     />
-                    {/* <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> */}
                   </div>
                   <div class="form-group">
-                    {/* <label for="exampleInputPassword1">Password</label> */}
                     <input
                       type="password"
                       class="form-control mt-4"
@@ -96,10 +93,7 @@ export default function Section4() {
                       placeholder="E-mail"
                     />
                   </div>
-                  <div class="form-check">
-                    {/* <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label> */}
-                  </div>
+                  <div class="form-check"></div>
                   <div class="form-group">
                     <textarea
                       className="form-control"
@@ -132,20 +126,29 @@ export default function Section4() {
               />
               <div className="lining"></div>
               <div className="mt-2">
-                <div className="d-flex aliign-center gap-4">
-                  <img src={EmailLogo} alt="" />
-                  <div>
-                    <h3 className="mt-4">Company Location</h3>
-                    <p>4140 Parker Rd. Allentown, New Mexico 31134</p>
+                <div className="row ">
+                  <div className="col">
+                  <div className="d-flex aliign-center gap-4">
+                    <img src={EmailLogo} alt="" />
+                    <div>
+                      <h3 className="mt-4">Company Location</h3>
+                      <p>4140 Parker Rd. Allentown, New Mexico 31134</p>
+                    </div>
                   </div>
                 </div>
-                <div className="d-flex aliign-center gap-4">
-                  <img src={LocationLogo} alt="" />
-                  <div>
-                    <h3 className="mt-4">Email</h3>
-                    <p>alma.lawson@example.com</p>
-                  </div>
                 </div>
+                {/* <div className="row">
+                  <div className="col-lg-6 col-md-12">
+                    <div className="d-flex aliign-center gap-4">
+                      <img src={LocationLogo} alt="" />
+                      <div>
+                        <h3 className="mt-4">Email</h3>
+                        <p>alma.lawson@example.com</p>
+                      </div>
+                    </div>
+                  </div> */}
+                  {/* </div> */}
+                {/* </div> */}
               </div>
             </div>
           </div>
@@ -176,9 +179,6 @@ export default function Section4() {
               </div>
             </div>
             <div className="col-lg-2 col-md-12 d-flex  listing">
-              {/* {footerCompany.map((items) => (
-                <Footer head={items.head} para={items.para}/>
-              ))} */}
               <ul>
                 <h3>Company</h3>
                 <li>Home</li>

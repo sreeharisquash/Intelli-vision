@@ -16,6 +16,15 @@ export default function SlickCarousel() {
       autoplay: true,
       autoplaySpeed: 2000,
       arrows:false,
+      responsive: [
+        {
+          breakpoint:768, // Adjust this breakpoint as needed
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+    ]
     //   centerMode: true,
     //   centerPadding: "15px"
     };

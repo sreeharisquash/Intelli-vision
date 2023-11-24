@@ -7,6 +7,7 @@
   padding: 0px 20px 66px 20px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .testimonial-img {
   max-width: 20%;
@@ -16,16 +17,36 @@
 }
 .quotaion-down {
   max-width: 10%;
-  position: relative;
-  bottom: 1rem;
-  right: 0.5rem;
+  position: absolute;
+  bottom: 4rem;
+  right: 39.5rem;
 }
 .quotation-up {
   max-width: 10%;
-  position: relative;
-  left: 31.5rem;
-  bottom: 3rem;
+  position: absolute;
+  left: 39.5rem;
+  bottom: 20rem;
 }
 .testimonial-cont h2 {
   color: white;
+}
+@media (max-device-width: 1440px) {
+  .quotaion-down {
+    bottom: 4rem;
+    right: 29rem;
+  }
+  .quotation-up {
+    left: 29rem;
+    bottom: 21rem;
+  }
+}
+@media (max-device-width: 1360px) {
+  .quotaion-down {
+    bottom: 5.5rem;
+    right: 27.5rem;
+  }
+  .quotation-up {
+    left: 27.5rem;
+    bottom: 22.5rem;
+  }
 }

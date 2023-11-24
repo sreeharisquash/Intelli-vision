@@ -93,6 +93,7 @@ export default function Section1() {
                       minim veniam, quis nostrud exercitation ullamco laboris
                       nisi ut aliquip ex ea commodo tempor
                     </p>{" "}
+                    *
                     <div className="d-flex gap-3">
                       <StoreButton
                         imgSrc={AppleStoreIcon}
@@ -119,6 +120,7 @@ export default function Section1() {
                       minim veniam, quis nostrud exercitation ullamco laboris
                       nisi ut aliquip ex ea commodo tempor
                     </p>{" "}
+                    *
                     <div className="d-flex gap-3">
                       <StoreButton
                         imgSrc={AppleStoreIcon}
@@ -146,6 +148,7 @@ export default function Section1() {
                       minim veniam, quis nostrud exercitation ullamco laboris
                       nisi ut aliquip ex ea commodo tempor
                     </p>{" "}
+                    *
                     <div className="d-flex gap-3">
                       <StoreButton
                         imgSrc={AppleStoreIcon}

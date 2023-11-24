@@ -39,7 +39,6 @@
 .custom-dropdown-arrow {
   &.dropdown-open {
     margin-bottom: 12rem;
-    max-width: 98%;
   }
 }
 
@@ -48,19 +47,26 @@
 }
 .custom-dropdown-arrow {
   position: relative;
+  /* z-index: 0; */
 }
 
-.custom-dropdown-arrow::after {
-  content: ""; /* or add your custom caret icon */
+.dropdown-toggle::after {
+  content: none;
+  background-image: url("../../../assets/images/inactive-dropdown.svg");
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 2rem;
+  right: 2%;
 }
-
-.custom-dropdown-arrow .btn {
-  z-index: 1; /* Ensure the button is above the ::after pseudo-element */
+.active-caret {
+  background-image: url("../../../assets/images/active-dropdown.svg");
+  position: relative;
+  z-index: 2;
 }
-
+.inactive-caret {
+  background-image: url("../../../assets/images/inactive-dropdown.svg");
+  position: relative;
+  z-index: 1;
+}
 @media (max-width: 768px) {
   .section8 .col-lg-4 {
     display: flex;

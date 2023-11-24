@@ -8,9 +8,7 @@ export default function Comments({ imgSrc , head , para}){
         <div className="comment-container">
                  <div className="img-section">
             <img src={imgSrc} alt="" className="comment-img" />
-            {/* <div className="date">
-                <p>hy</p>
-            </div> */}
+          
             </div>
             <div className="margin-container">
             <div className="d-flex mt-4 gap-5">
