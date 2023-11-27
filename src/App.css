@@ -40,3 +40,27 @@ body {
 .navbar-toggler {
   background-color: white !important;
 }
+
+@media (max-device-width: 320px) {
+  body h1 {
+    font-size: 20px;
+  }
+  body p {
+    font-size: 12px;
+  }
+  .section1 .d-flex {
+    flex-direction: column;
+  }
+  body h6 {
+    font-size: 13px;
+  }
+  body h4 {
+    font-size: 16px;
+  }
+  .ralewayFont {
+    font-size: 13px;
+  }
+  .section3 .d-flex {
+    flex-direction: column;
+  }
+}

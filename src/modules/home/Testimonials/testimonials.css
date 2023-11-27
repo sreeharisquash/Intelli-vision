@@ -53,6 +53,17 @@
     bottom: 22.5rem;
   }
 }
+@media (max-device-width: 1600px) {
+  .testimonial-cont {
+    padding: 2rem 4rem 4rem 4rem;
+  }
+  .testimonial-cont h4 {
+    font-size: 19px;
+  }
+  .testimonial-cont p {
+    font-size: 11px;
+  }
+}
 @media (max-device-width: 1024px) {
   .testimonial-cont {
     padding: 0rem 20rem 5rem 17rem;
