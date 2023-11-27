@@ -56,9 +56,9 @@
   color: white;
   margin-left: -1rem;
 }
-.listing {
+/* .listing {
   margin-left: 4rem;
-}
+} */
 .section-end {
   background-color: #000446;
   padding-top: 1rem;
@@ -68,7 +68,7 @@
   color: #909090;
 }
 
-@media (max-width: 768px) {
+@media (max-device-width: 768px) {
   .listing {
     margin-left: 0;
   }
@@ -91,11 +91,13 @@
     text-align: center;
   }
   .section13 button {
-    margin-left: 35%;
-  }
-  .section13 .col-lg-6 .mt-2 {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
+  /* .section13 .col-lg-6 .mt-2 {
+    display: flex;
+  } */
   .section13 .col-lg-6 .mt-2 p {
     text-align: left;
   }

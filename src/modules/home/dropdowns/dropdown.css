@@ -67,13 +67,20 @@
   position: relative;
   z-index: 1;
 }
-@media (max-width: 768px) {
+@media (max-device-width: 1024px) {
+  .section8 .btn-primary {
+    font-size: 15px;
+    padding: 1rem 17rem 1.5rem 1rem;
+  }
+}
+@media (max-device-width: 768px) {
   .section8 .col-lg-4 {
     display: flex;
     justify-content: center;
   }
   .section8 .btn-primary {
     gap: 0;
-    padding: 4px 1px 0px 10px;
+    /* padding: 4px 1px 0px 10px; */
+    font-size: 19px;
   }
 }

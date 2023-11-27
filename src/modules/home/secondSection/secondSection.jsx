@@ -163,18 +163,23 @@ export default function Section2() {
                     modifier: 2.5,
                   }}
                   breakpoints={{
-                    // when window width is >= 768px
-                    // 768: {
-                    //   slidesPerView: 1,
-                    // },
-                    // when window width is >= 992px
-                    // 992: {
-                    //   slidesPerView: 2,
-                    // },
-                    // when window width is >= 1200px
-                    // 1200: {
-                    //   slidesPerView: 3,
-                    // },
+                    0:{
+                      slidesPerView:1
+                    },
+                   499:{
+                    slidesPerView:1,
+                   },
+                    768: {
+                      slidesPerView: 3,
+                    },
+                  
+                    992: {
+                      slidesPerView: 4,
+                    },
+                 
+                    1024: {
+                      slidesPerView: 5,
+                    },
                   }}
                 
                   className="slider-control"
@@ -194,6 +199,7 @@ export default function Section2() {
                   <SwiperSlide>
                     <img src={Screen2} alt="" />
                   </SwiperSlide>
+                 
                 </Swiper>
               </div>
             </div>
@@ -269,17 +275,27 @@ export default function Section2() {
                     modifier: 2.5,
                   }}
                   breakpoints={{
+                    0:{
+                      slidesPerView:1
+                    },
+                   499:{
+                    slidesPerView:1,
+                   },
                     768: {
                       slidesPerView: 1,
                     },
-                    
+                  
                     992: {
-                      slidesPerView: 2,
-                    },
-                   
-                    1200: {
                       slidesPerView: 3,
                     },
+                 
+                    1024: {
+                      slidesPerView: 1,
+                    },
+                    1340:{
+                      slidesPerView:3
+                    }
+                    
                   }}
                   pagination={{ clickable: true }} 
                   // className="slider-control"
@@ -317,8 +333,8 @@ export default function Section2() {
               </p>
             </div>
           </div>
-          <div className="row pt-5" style={{ gap: "6rem" }}>
-            <div className="col-lg-4 col-md-12">
+          <div className="row pt-5" >
+            <div className="col-lg-5 col-md-12 mb-5">
               <img src={DoubtsLogo} alt="doubts" />
             </div>
             <div className="col-lg-7 col-md-12">

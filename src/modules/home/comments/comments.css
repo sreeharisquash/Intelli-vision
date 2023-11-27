@@ -27,7 +27,7 @@
   top: 0.1rem;
 }
 .share-bef::before {
-  content: url("../../../assets//images/share.svg");
+  content: url("../../../assets//images/minishare.svg");
   margin-right: 0.5rem;
   position: relative;
   top: 0.1rem;

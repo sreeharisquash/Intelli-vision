@@ -1,0 +1,19 @@
+.productivity-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-left: -5rem;
+}
+.productivity-container.custom-class-2 {
+  margin-left: -11rem;
+  margin-right: 9rem;
+  gap: 4rem;
+  flex-direction: row-reverse;
+  margin-top: 5rem;
+}
+.productivity-container.custom-class-3 {
+  margin-top: 4rem;
+}
+.productivity-container.custom-class-1 {
+  margin-top: 2rem;
+}

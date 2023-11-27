@@ -4,6 +4,11 @@
 .features-container {
   margin-bottom: 5rem;
 }
+@media (max-device-width: 1024px) {
+  .before-head {
+    margin-left: -3rem;
+  }
+}
 @media (max-device-width: 768px) {
   .before-head {
     margin-left: 0;

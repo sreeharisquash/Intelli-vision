@@ -1,17 +1,16 @@
 import React from "react";
-import './testimonials.css'
-import QuotationDown from '../../../assets/images/testimonial-quotation.svg'
-import QuotationUp from '../../../assets/images/testimonial-quotationUp.svg'
+import "./testimonials.css";
 
 export default function Testimonials({ imgSrc, name, para }) {
   return (
     <div className="testimonial-cont">
-            <img src={imgSrc} alt="" className="testimonial-img"/>
-            <img src={QuotationUp} alt="" className="quotation-up"/>
-           
-            <h2 className="mt-5">{name}</h2>
-            <p className="text-center mt-4">{para}</p>
-            <img src={QuotationDown} alt="" className="quotaion-down"/>
-          </div>
+      
+      <img src={imgSrc} alt="" className="testimonial-img" />
+      <div className="name-para">
+        <h4 className="mt-2">{name}</h4>
+      <p className="text-center mt-4">{para}</p>
+      </div>
+      
+    </div>
   );
 }

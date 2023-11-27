@@ -71,9 +71,6 @@
 .carousal-item.blur {
   filter: blur(5px);
 }
-.swiper-wrapper {
-  gap: 1rem;
-}
 /* .swiper-slide-active {
   background-image: url("../../../assets/images/mainScreen.svg");
   background-size: cover;
@@ -110,4 +107,11 @@
 .icon-align {
   position: absolute;
   right: 3%;
+}
+
+@media (max-device-width: 769px) {
+  .section8 .col-lg-5 {
+    display: flex;
+    justify-content: center;
+  }
 }

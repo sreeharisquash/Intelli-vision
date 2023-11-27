@@ -8,11 +8,13 @@ import ThreeDImg from "../../../assets/images/3D.svg";
 import MobCenter from "../../../assets/images/mob-center.svg";
 import ASFimg from "../../../assets/images/asf.svg";
 import Paint from "../../../assets/images/paint.svg";
-// import Productivities from "../productivityConcepts/productivity";
 import ProductivityImg from "../../../assets/images/productvity.svg";
 import Purchase from "../purchaseComponents/purchase";
-// import CommonButton from "../../commonButton/commonButton";
-// import Checks from "../checkPointComponent/checks";
+import Productivity from "../productivitySection/productivity";
+import ShareImg from '../../../assets/images/share.svg'
+import TruckImg from '../../../assets/images/truck.svg'
+import PuzzleImg from '../../../assets/images/puzzle.svg'
+
 
 export default function Section3() {
   const features1 = [
@@ -57,23 +59,29 @@ export default function Section3() {
     },
   ];
 
-  // const Productivity = [
-  //   {
-  //     id: "1",
-  //     head: "Elementum nibhd",
-  //     para: "In dictum non consectetur a. Adipiscing at in tellus integer feugiat scelerisque eleifend mi in nulla",
-  //   },
-  //   {
-  //     id: "2",
-  //     head: "Ornare aeneansd",
-  //     para: "Volutpat blandit aliquam etiam erat velit scelerisque elementum nisi quis eleifend quam adipiscing vitae ",
-  //   },
-  //   {
-  //     id: "3",
-  //     head: "Massa placeratds",
-  //     para: "Lorem ipsum dolor sit amet, consectetur adipiscing mod tempor incididunt inim veniam, nost exercitation ullamco",
-  //   },
-  // ];
+  const ProductivityData = [
+    {
+      id: "1",
+      image: ShareImg,
+      head: "Elementum nibhd",
+      para: "In dictum non consectetur a. Adipiscing at in tellus integer feugiat scelerisque eleifend mi in nulla",
+      customClass: "custom-class-1",
+    },
+    {
+      id: "2",
+      image: PuzzleImg,
+      head: "Ornare aeneansd",
+      para: "Volutpat blandit aliquam etiam erat velit scelerisque elementum nisi quis eleifend quam adipiscing vitae ",
+      customClass: "custom-class-2",
+    },
+    {
+      id: "3",
+      image:TruckImg,
+      head: "Massa placeratds",
+      para: "Lorem ipsum dolor sit amet, consectetur adipiscing mod tempor incididunt inim veniam, nost exercitation ullamco",
+      customClass: "custom-class-3",
+    },
+  ];
 
   const PurchaseData = [
     { id: "1", price: "49" },
@@ -144,13 +152,25 @@ export default function Section3() {
             <div className="col-lg-7 col-md-12">
               <div className="productivity-Bg">
                 <div className="productivity">
-                  <h2>Elementum nibhd</h2>
+                  {ProductivityData.map((items, index) => (
+                    <div key={items.id} className={items.customClass}>
+                      <Productivity
+                        key={index}
+                        image={items.image}
+                        head={items.head}
+                        para={items.para}
+                        customClass={items.customClass}
+                       
+                      />
+                    </div>
+                  ))}
+                  {/* <h2>Elementum nibhd</h2>
                   <p>
                     In dictum non consectetur a. Adipiscing at in tellus integer
                     feugiat scelerisque eleifend mi in nulla
                   </p>
                 </div>
-                <div style={{ marginTop: "8rem", marginBottom: "6rem" }}>
+                <div style={{ marginTop: "8rem", marginBottom: "6rem",  marginLeft: '4rem' }}>
                   <h2>Ornare aeneansd</h2>
                   <p>
                     Volutpat blandit aliquam etiam erat velit
@@ -163,7 +183,7 @@ export default function Section3() {
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing mod
                     tempor incididunt inim veniam, nost exercitation ullamco
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

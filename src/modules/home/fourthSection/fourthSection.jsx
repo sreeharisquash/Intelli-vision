@@ -72,7 +72,7 @@ export default function Section4() {
       <div className="section13">
         <div className="container mb-5">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6 mb-5">
               <div className="form-container">
                 <h3>Ready to get started?</h3>
                 <form>
@@ -137,7 +137,7 @@ export default function Section4() {
                   </div>
                 </div>
                 </div>
-                {/* <div className="row">
+                <div className="row">
                   <div className="col-lg-6 col-md-12">
                     <div className="d-flex aliign-center gap-4">
                       <img src={LocationLogo} alt="" />
@@ -146,8 +146,8 @@ export default function Section4() {
                         <p>alma.lawson@example.com</p>
                       </div>
                     </div>
-                  </div> */}
-                  {/* </div> */}
+                  </div>
+                </div>
                 {/* </div> */}
               </div>
             </div>
@@ -157,8 +157,8 @@ export default function Section4() {
 
       <div className="footer-section">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-3 col-md-12">
+          <div className="row ">
+            <div className="col-lg-3 col-md-12 ">
               <img src={LOGO} alt="" />
               <span className="ralewayFont">INTELLI VISION</span>
               <div className="unordered-list">
@@ -178,7 +178,7 @@ export default function Section4() {
                 <img src={Utub} alt="" />
               </div>
             </div>
-            <div className="col-lg-2 col-md-12 d-flex  listing">
+            <div className="col-lg-2 col-md-12 d-flex ">
               <ul>
                 <h3>Company</h3>
                 <li>Home</li>
@@ -187,7 +187,7 @@ export default function Section4() {
                 <li>Contact</li>
               </ul>
             </div>
-            <div className="col-lg-3 col-md-12 d-flex  ">
+            <div className="col-lg-3 col-md-12 d-flex ">
               <ul>
                 <h3>Useful links</h3>
                 <li>Lorem ipsum </li>
@@ -196,7 +196,7 @@ export default function Section4() {
                 <li>commodo</li>
               </ul>
             </div>
-            <div className="col-lg-3 col-md-12 d-flex">
+            <div className="col-lg-4 col-md-12 d-flex ">
               <ul>
                 <h3>Top Destination</h3>
                 <li>Lorem ipsum </li>
