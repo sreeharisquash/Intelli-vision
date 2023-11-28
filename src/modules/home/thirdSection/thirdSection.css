@@ -186,3 +186,15 @@
     width: 25%;
   }
 }
+@media (max-device-width: 320px) {
+  .productivity-Bg {
+    background-image: none;
+  }
+  .productivity-container.custom-class-2 {
+    margin-left: -16rem !important;
+    margin-right: 0 !important;
+  }
+  /* .section10 .productivity-container img {
+    width: 20%;
+  } */
+}

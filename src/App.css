@@ -48,7 +48,16 @@ body {
   body p {
     font-size: 12px;
   }
-  .section1 .d-flex {
+  body h2 {
+    font-size: 15px;
+  }
+  body h5 {
+    font-size: 15px;
+  }
+  .testimonial-cont h4 {
+    font-size: 15px !important;
+  }
+  .section1 .d-fle {
     flex-direction: column;
   }
   body h6 {

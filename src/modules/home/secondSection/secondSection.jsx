@@ -199,7 +199,6 @@ export default function Section2() {
                   <SwiperSlide>
                     <img src={Screen2} alt="" />
                   </SwiperSlide>
-                 
                 </Swiper>
               </div>
             </div>

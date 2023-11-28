@@ -115,3 +115,8 @@
     justify-content: center;
   }
 }
+@media (max-device-width: 320px) {
+  .section2 .img-contain {
+    max-width: 37%;
+  }
+}

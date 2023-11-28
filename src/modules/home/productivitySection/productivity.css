@@ -17,3 +17,13 @@
 .productivity-container.custom-class-1 {
   margin-top: 2rem;
 }
+@media (max-device-width: 320px) {
+  .productivity-container.custom-class-2 {
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 0;
+  }
+  .productivity-container.custom-class-3 {
+    margin-top: 0;
+  }
+}

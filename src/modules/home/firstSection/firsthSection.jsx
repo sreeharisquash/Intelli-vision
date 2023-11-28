@@ -11,13 +11,14 @@ import Desktop from "../../../assets/images/desktop.svg";
 import Profile from "../../../assets/images/profile.svg";
 import Shield from "../../../assets/images/shield.svg";
 // import Students from "../../../assets/images/students.svg";
-import PlayButton from "../../../assets/images/playButton.svg";
+import PlayButton from "../../../assets/images/play.svg";
 import CommonButton from "../../commonButton/commonButton";
 import VideoPopup from "../videoPopup/videoPopup";
 import AppleStore from "../../../assets/images/AppleStore.svg";
 import PlayStore from "../../../assets/images/playStore.svg";
 import Windows from "../../../assets/images/windows.svg";
 import StoreComponent from "../storeComponent/storeComponent";
+import studentsImg from '../../../assets/images/students.svg'
 
 export default function Section1() {
   const [isVideoPopupOn, setisVideoPopupOn] = useState(false);
@@ -260,7 +261,7 @@ export default function Section1() {
       <div className="section3">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-12">
+            <div className="col-lg-6 col-md-12 mb-5">
               <h1>Lorem ipsum dolor sit conse adipiscing </h1>
               <p className="mt-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -300,12 +301,13 @@ export default function Section1() {
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
-              <div className="background-img">
-                <div className="PlayButton" onClick={openVideoPopup}>
-                  <img src={PlayButton} alt="playButton" />
-                </div>
+              {/* <div className="background-img"> */}
+                {/* <div className="PlayButton" > */}
+                <img src={studentsImg} alt="" className="studentsImg"/>
+                  <img src={PlayButton} alt="playButton" onClick={openVideoPopup} className="img-fluid playButton"/>
+                {/* </div> */}
                 <VideoPopup isOpen={isVideoPopupOn} onClose={closeVideoPopup} />
-              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>
