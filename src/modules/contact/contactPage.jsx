@@ -3,8 +3,8 @@ import Header from "../header/header";
 import Footer from "../footer/footerComponent";
 import GoogleMap from "../googleMap/googleMap";
 import "./contactPage.css";
-import ContactMethods from "./contactMethods/ContactMethods";
-import utub from '../../assets/images/utub.svg'
+// import ContactMethods from "./contactMethods/ContactMethods";
+// import utub from '../../assets/images/utub.svg'
 
 
 export default function ContactPage() {

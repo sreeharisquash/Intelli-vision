@@ -5,7 +5,7 @@ import Albert from "../../../assets/images/albert.svg";
 import Ralph from "../../../assets/images/ralph.svg";
 import Brooklyn from "../../../assets/images/brooklyn.svg";
 import Marvin from "../../../assets/images/marvin.svg";
-import Reviews from "../../home/reviews/review";
+// import Reviews from "../../home/reviews/review";
 import './aboutTestimonial.css'
 import { SwiperSlide ,Swiper} from "swiper/react";
 

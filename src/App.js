@@ -1,5 +1,4 @@
 import "./App.css";
-import ContactPage from "./modules/contact/contactPage";
 // import Home from "./modules/home/homeModuleContainer/home";
 import Router from "./routes/Router";
 
