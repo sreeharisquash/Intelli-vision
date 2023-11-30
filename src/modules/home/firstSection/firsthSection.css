@@ -105,10 +105,14 @@
   color: #170f58;
 }
 
-.swiper-slide,
+/* .swiper-slide,
 .swiper-slide-next,
 .swiper-slide-prev {
   transform: scale(0.6);
+} */
+
+.swiper-slide-active {
+  transform: scale(1.5);
 }
 .section5 .swiper-slide-active {
   background-image: url("../../../assets/images/mob-outlay.svg");
@@ -129,9 +133,9 @@
   transform: scale(1);
 }
 @media (min-device-width: 1400px) {
-  .section5 .swiper-slide-active {
+  /* .section5 .swiper-slide-active {
     height: 32rem !important;
-  }
+  } */
 }
 @media (max-device-width: 1360px) {
   .playButton {

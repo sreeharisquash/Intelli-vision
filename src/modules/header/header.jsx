@@ -9,7 +9,9 @@ import "../../assets/css/main.css";
   @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 </style>
-export default function header() {
+export default function Header() {
+
+
   return (
     <nav class="navbar navBg navbar-expand-xl">
       <div class="container">
@@ -30,20 +32,14 @@ export default function header() {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav navBarData ms-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link colorForNavFont" href="#Home">
+              <a class="nav-link colorForNavFont" href="/">
                 Home
               </a>
             </li>
             <li class="nav-item dropdown">
-            <a class="nav-link colorForNavFont" href="#About">
+            <a class="nav-link colorForNavFont" href="/about">
                 About
               </a>
-              {/* <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Shooter Details</a>
-                  <a class="dropdown-item" href="#">Pistol Details</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div> */}
             </li>
             <li class="nav-item">
               <a class="nav-link colorForNavFont" href="# Features">
@@ -54,30 +50,24 @@ export default function header() {
             <a class="nav-link colorForNavFont" href="#Pages">
                Pages
               </a>
-              {/* <div class="dropdown-menu" aria-labelledby="navbarDropdownBlog">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div> */}
             </li>
             <li class="nav-item">
-              <a class="nav-link colorForNavFont" href="../modules/contactUs/contactUs.html">
+              <a class="nav-link colorForNavFont" href="#screenshots">
                 Screenshots
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link colorForNavFont" href="../modules/contactUs/contactUs.html">
+              <a class="nav-link colorForNavFont" href="#process">
                 Process
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link colorForNavFont" href="../modules/contactUs/contactUs.html">
+              <a class="nav-link colorForNavFont" href="#pricing">
                 Pricing
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link colorForNavFont" href="../modules/contactUs/contactUs.html">
+              <a class="nav-link colorForNavFont" href="/contact">
                Contact
               </a>
             </li>

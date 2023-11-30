@@ -7,11 +7,13 @@ import Comments from "../comments/comments";
 import CommonButton from "../../commonButton/commonButton";
 import EmailLogo from "../../../assets/images/emailLogo.svg";
 import LocationLogo from "../../../assets/images/locationLogo.svg";
-import LOGO from "../../../assets/images/LOGO.svg";
-import FB from "../../../assets/images/fb.svg";
-import Twit from "../../../assets/images/twitr.svg";
-import Linkdin from "../../../assets/images/linkdin.svg";
-import Utub from "../../../assets/images/utub.svg";
+import Footer from "../../footer/footerComponent";
+// import LOGO from "../../../assets/images/LOGO.svg";
+// import FB from "../../../assets/images/fb.svg";
+// import Twit from "../../../assets/images/twitr.svg";
+// import Linkdin from "../../../assets/images/linkdin.svg";
+// import Utub from "../../../assets/images/utub.svg";
+
 // import Footer from "../footerComponents/footerComponent";
 
 export default function Section4() {
@@ -152,73 +154,11 @@ export default function Section4() {
               </div>
             </div>
           </div>
+          <Footer/>
         </div>
+       
       </div>
 
-      <div className="footer-section">
-        <div className="container">
-          <div className="row ">
-            <div className="col-lg-3 col-md-12 ">
-              <img src={LOGO} alt="" />
-              <span className="ralewayFont">INTELLI VISION</span>
-              <div className="unordered-list">
-                <ul className="mt-5">
-                  <li className="number">845-522-8279</li>
-                  <li className="mail-add">company@example.com</li>
-                  <li className="per-loc">
-                    254 Route 17k suite 201 Newburgh,NY 12550
-                  </li>
-                </ul>
-              </div>
-
-              <div className="d-flex gap-3 mt-5">
-                <img src={FB} alt="" />
-                <img src={Twit} alt="" />
-                <img src={Linkdin} alt="" />
-                <img src={Utub} alt="" />
-              </div>
-            </div>
-            <div className="col-lg-2 col-md-12 d-flex ">
-              <ul>
-                <h3>Company</h3>
-                <li>Home</li>
-                <li>About</li>
-                <li>News</li>
-                <li>Contact</li>
-              </ul>
-            </div>
-            <div className="col-lg-3 col-md-12 d-flex ">
-              <ul>
-                <h3>Useful links</h3>
-                <li>Lorem ipsum </li>
-                <li>commodo</li>
-                <li>Lorem ipsum </li>
-                <li>commodo</li>
-              </ul>
-            </div>
-            <div className="col-lg-4 col-md-12 d-flex ">
-              <ul>
-                <h3>Top Destination</h3>
-                <li>Lorem ipsum </li>
-                <li>commodo</li>
-                <li>Lorem ipsum </li>
-                <li>commodo</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="section-end">
-        <div className="container">
-          <div className="row d-flex justify-content-center">
-            <div className="col-lg-12 col-md-12">
-              <p className="text-center">
-                © Copyright TRAVELING All Rights Reserved 2023
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   );
 }

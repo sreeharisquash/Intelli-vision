@@ -1,0 +1,18 @@
+.Form-section h1,
+.Form-section h5 {
+  color: #170f58;
+}
+.form-label {
+  display: flex;
+  justify-content: center;
+}
+#exampleFormControlTextarea1 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  resize: none;
+}
+.Form-section .btn-primary {
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 20px;
+}

@@ -1,8 +1,14 @@
 import "./App.css";
-import Home from "./modules/home/homeModuleContainer/home";
+import ContactPage from "./modules/contact/contactPage";
+// import Home from "./modules/home/homeModuleContainer/home";
+import Router from "./routes/Router";
 
 function App() {
-  return <Home />;
+  return (
+    <div>
+      <Router />
+    </div>
+  );
 }
 
 export default App;
