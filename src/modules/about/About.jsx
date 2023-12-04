@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Header from "../header/header";
 import Footer from "../footer/footerComponent";
 import "./About.css";
-import ReadMore from "./readmore/ReadMore";
+// import ReadMore from "./readmore/ReadMore";
 import CEOimg from "../../assets/images/medium-shot-woman-posing-indoors.jpg";
 import AboutTestimonial from "./aboutTestimonial/aboutTestimonial";
 import WhyChooseUs from "./whyChooseUs/WhyChooseUs";
-import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
+// import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
 const About = () => {
   const choosingData = [
     {
