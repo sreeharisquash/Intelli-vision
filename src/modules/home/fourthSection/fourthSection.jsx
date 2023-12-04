@@ -108,7 +108,6 @@ export default function Section4() {
                     fontClr="#FFFFFF"
                     color="#170F58"
                     label="Get started now"
-                   
                   />
                 </form>
               </div>
@@ -131,14 +130,14 @@ export default function Section4() {
               <div className="mt-2">
                 <div className="row ">
                   <div className="col">
-                  <div className="d-flex aliign-center gap-4">
-                    <img src={EmailLogo} alt="" />
-                    <div>
-                      <h3 className="mt-4">Company Location</h3>
-                      <p>4140 Parker Rd. Allentown, New Mexico 31134</p>
+                    <div className="d-flex aliign-center gap-4">
+                      <img src={EmailLogo} alt="" />
+                      <div>
+                        <h3 className="mt-4">Company Location</h3>
+                        <p>4140 Parker Rd. Allentown, New Mexico 31134</p>
+                      </div>
                     </div>
                   </div>
-                </div>
                 </div>
                 <div className="row">
                   <div className="col-lg-6 col-md-12">
@@ -151,15 +150,12 @@ export default function Section4() {
                     </div>
                   </div>
                 </div>
-                {/* </div> */}
               </div>
             </div>
           </div>
-          <Footer/>
         </div>
-       
       </div>
-
+      <Footer />
     </>
   );
 }
