@@ -3,18 +3,35 @@ import Header from "../header/header";
 import Footer from "../footer/footerComponent";
 import GoogleMap from "../googleMap/googleMap";
 import "./contactPage.css";
-// import ContactMethods from "./contactMethods/ContactMethods";
-// import utub from '../../assets/images/utub.svg'
-
+import ContactMethods from "./contactMethods/ContactMethods";
+import Location from "../../assets/images/blue-loc.svg";
+import CommonButton from "../commonButton/commonButton";
+// import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
 
 export default function ContactPage() {
-
-    // const contactMethods = [
-    //     {id: '1' , image: , method : "Talk to us", medium1: "Toll Free" , medium2: "Fax"},
-    //     {id: '1' , image: , method : "Talk to us", medium1: "Toll Free" , medium2: "Fax"},
-    //     {id: '1' , image: , method : "Talk to us", medium1: "Toll Free" , medium2: "Fax"},
-    //     {id: '1' , image: , method : "Talk to us", medium1: "Toll Free" , medium2: "Fax"},
-    // ]
+  const contactMethods = [
+    {
+      id: "1",
+      image: Location,
+      method: "Talk to us",
+      medium1: "1224 2234 LAW  ",
+      medium2: "1224 2235 225",
+    },
+    {
+      id: "2",
+      image: Location,
+      method: "Mail us @",
+      medium1: "admin@intelli.com",
+      medium2: "support@intelli.com",
+    },
+    {
+      id: "3",
+      image: Location,
+      method: "Our location",
+      medium1: "625 Blake Road, Kattaghat",
+      medium2: "LA 14536, USA",
+    },
+  ];
   return (
     <>
       <div>
@@ -22,6 +39,7 @@ export default function ContactPage() {
 
         <div className="Form-section mt-5 pt-5">
           <div className="container">
+            {/* <BreadCrumbs/> */}
             <div className="row">
               <div className="col-lg-12 jusitfy-content-center">
                 <h1 className="text-center">Enquiry Form</h1>
@@ -69,34 +87,49 @@ export default function ContactPage() {
                       style={{ maxWidth: "50%" }}
                     ></textarea>
                   </div>
-                  <button
+                  <div className="d-flex justify-content-center">
+                    <CommonButton
+                      fontClr="white"
+                      color="#170F58"
+                      label="Submit"
+                      borderClr="#170F58"
+                    />
+                  </div>
+
+                  {/* <button
                     type="submit"
-                    class="btn btn-primary d-flex mx-auto mt-5 mb-5" 
+                    class="btn btn-primary d-flex mx-auto mt-5 mb-5"
                   >
                     Submit
-                  </button>
+                  </button> */}
                 </form>
               </div>
             </div>
           </div>
-          
-        
 
-        {/* contact us  */}
+          {/* contact us  */}
 
-        <div className="contact-method">
-            <div className="row">
-
-            
-{/* {contactMethods.map((items) => (
-
-<ContactMethods image={items.image} method={items.method} medium1={items.medium1} medium2={items.medium2}/>
-))} */}
+          <div className="contact-method">
+            <div className="container mb-5">
+              <div className="row justify-content-center mt-5">
+                <h1>Reach us through</h1>
+                <h5>Our response time will get you surprised</h5>
+                {contactMethods.map((items) => (
+                  <div className="col-lg-4">
+                    <ContactMethods
+                      image={items.image}
+                      method={items.method}
+                      medium1={items.medium1}
+                      medium2={items.medium2}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <GoogleMap />
+            <Footer />
+          </div>
         </div>
-        </div>
-        <GoogleMap />
-        <Footer />
-      </div>
       </div>
     </>
   );

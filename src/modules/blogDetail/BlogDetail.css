@@ -1,0 +1,56 @@
+.bd-para {
+  background-color: aliceblue;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+}
+.bd-para p {
+  font-size: 18px;
+  line-height: 36px;
+}
+.comments {
+  background-color: aliceblue;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+.comments-profile {
+  border-radius: 5rem;
+  overflow: hidden;
+  max-width: 5%;
+  margin-bottom: 7rem;
+}
+.likes-reply {
+  display: flex;
+  gap: 2rem;
+  margin-left: 0.5rem;
+}
+.likes::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f164";
+  position: relative;
+  right: 0.5rem;
+}
+.reply::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f075";
+  position: relative;
+  right: 0.5rem;
+}
+.add-comment {
+  background-color: aliceblue;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+}
+.form-control {
+  margin-bottom: 1.5rem;
+}
+#input-sec {
+  height: 3.5rem;
+}

@@ -5,6 +5,8 @@ import "./About.css";
 import ReadMore from "./readmore/ReadMore";
 import CEOimg from "../../assets/images/medium-shot-woman-posing-indoors.jpg";
 import AboutTestimonial from "./aboutTestimonial/aboutTestimonial";
+import WhyChooseUs from "./whyChooseUs/WhyChooseUs";
+import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
 const About = () => {
   const choosingData = [
     {
@@ -49,15 +51,15 @@ const About = () => {
   ];
 
   const teamLeaders = [
-    {id : "1" , image:CEOimg },
-    {id : "2" , image:CEOimg },
-    {id : "3" , image:CEOimg },
-  ]
+    { id: "1", image: CEOimg },
+    { id: "2", image: CEOimg },
+    { id: "3", image: CEOimg },
+  ];
   const supportTeam = [
-    {id : "1" , image:CEOimg },
-    {id : "2" , image:CEOimg },
-    {id : "3" , image:CEOimg },
-  ]
+    { id: "1", image: CEOimg },
+    { id: "2", image: CEOimg },
+    { id: "3", image: CEOimg },
+  ];
 
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -65,6 +67,7 @@ const About = () => {
       <Header />
       <div className="about-us mt-5">
         <div className="container pt-5">
+        {/* <BreadCrumbs/> */}
           <h1 className="text-center mt-4 ">Reasons for choosing us</h1>
           <p className="mt-4 text-center mb-5">
             Innovate , change and transform
@@ -74,18 +77,13 @@ const About = () => {
             style={{ marginTop: "6rem" }}
           >
             {choosingData.map((items) => (
-              <div className="col-lg-6 col-md-12 inner-sec">
-                <div key={items.id} className="d-flex gap-4 align-items-center">
-                  <div>
-                    <img src={items.image} alt="" />
-                  </div>
-                  <div>
-                    <h3>{items.subhead}</h3>
-                    <h2>{items.mainhead}</h2>
-                  </div>
-                </div>
-                <p className="mt-4">{items.para}</p>
-                <ReadMore />
+              <div className="col-lg-6 col-md-12">
+                <WhyChooseUs
+                  image={items.image}
+                  subhead={items.subhead}
+                  mainhead={items.mainhead}
+                  para={items.para}
+                />
               </div>
             ))}
           </div>
@@ -115,25 +113,23 @@ const About = () => {
               ))}
 
               {/* team leaders  */}
-<h2 className="text-center mb-5">Team leaders</h2>
-{teamLeaders.map((items) => (
-<div className="col-lg-4" key={items.id}>
-    <div className="team-image">
-    <img src={items.image} alt="" />
-    </div>
-    
-</div>
-))}
-<h2 className="text-center mb-5">The support team</h2>
-{supportTeam.map((items) => (
-<div className="col-lg-4" key={items.id}>
-    <div className="team-image">
-    <img src={items.image} alt="" />
-    </div>
-    
-</div>
-))}
-<AboutTestimonial/>
+              <h2 className="text-center mb-5">Team leaders</h2>
+              {teamLeaders.map((items) => (
+                <div className="col-lg-4" key={items.id}>
+                  <div className="team-image">
+                    <img src={items.image} alt="" />
+                  </div>
+                </div>
+              ))}
+              <h2 className="text-center mb-5">The support team</h2>
+              {supportTeam.map((items) => (
+                <div className="col-lg-4" key={items.id}>
+                  <div className="team-image">
+                    <img src={items.image} alt="" />
+                  </div>
+                </div>
+              ))}
+              <AboutTestimonial />
             </div>
           </div>
         </div>

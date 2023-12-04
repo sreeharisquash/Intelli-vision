@@ -1,0 +1,13 @@
+.shop-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.page-link {
+  color: #170f58 !important;
+}
+.active > .page-link,
+.page-link.active {
+  background-color: #170f58;
+  color: white !important;
+  border-color: #170f58;
+}

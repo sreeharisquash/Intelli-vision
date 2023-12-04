@@ -2,7 +2,7 @@
   max-width: 100%;
   padding: 13px 44px 15px 44px;
   border-radius: 5rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 @media (max-device-width: 320px) {

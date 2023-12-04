@@ -1,0 +1,16 @@
+.contact-method-container {
+  background-color: #170f58;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+  border: 1px solid #170f58;
+  padding: 1rem 1rem 1rem 1rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+.image-cont {
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+}
+.contact-method-container h5,
+.contact-method-container h2 {
+  color: white;
+}

@@ -12,6 +12,12 @@ body h1 {
   letter-spacing: 0.02em;
   text-align: left;
 }
+body h2 {
+  color: #170f58;
+}
+.section6 h2 {
+  color: white;
+}
 .section1 h1 {
   color: white;
 }
@@ -23,8 +29,10 @@ p {
   text-align: left;
   /* color: #fff; */
 }
-body h4 {
+body h4,
+body h5 {
   font-weight: 700;
+  color: #170f58;
 }
 .section1 p {
   color: white;
@@ -39,6 +47,10 @@ body {
 }
 .navbar-toggler {
   background-color: white !important;
+}
+
+body textarea {
+  resize: none;
 }
 
 @media (max-device-width: 320px) {

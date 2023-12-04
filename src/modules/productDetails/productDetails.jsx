@@ -1,0 +1,131 @@
+import React, { useState } from "react";
+import "./productDetails.css";
+import Product1img from "../../assets/images/iphoneImg.jpg";
+import Header from "../header/header";
+import Footer from "../footer/footerComponent";
+import Rating from "../../assets/images/Frame7.png";
+import Counter from "./counter/counter";
+import CommonButton from "../commonButton/commonButton";
+import SectionDescribe from "./sectionDescription/sectionDescription";
+import AdditionalInfo from "./additionalInformation/additionalInformation";
+import Review from "./review/Review";
+import ShippingDelivery from "./shippingDelivery/ShippingDelivery";
+
+const ProductDetails = () => {
+  const subdata = [
+    {
+      id: "1",
+      class: "time-limit",
+      para: "Order in the next 11 hours 33 minutes to get it by December 2, 2023",
+    },
+    { id: "2", class: "visitors", para: "Real Time 109 Visitors Right Now" },
+    { id: "3", class: "spend", para: "Spend $1000 to get Free Shipping" },
+  ];
+
+  const [activeSection, setActiveSection] = useState("description");
+
+  const handleClick = (section) => {
+    setActiveSection(section);
+  };
+  return (
+    <div className="product-details">
+      <Header />
+      <div className="container pt-5">
+        <div className="row pt-5">
+          <div className="col-lg-6 mt-5">
+            <img src={Product1img} alt="" style={{ maxHeight: "70%" }} />
+          </div>
+          <div className="col-lg-6 mt-5">
+            <h1>Iphone 14 pro</h1>
+            <img
+              src={Rating}
+              alt=""
+              style={{ maxWidth: "25%" }}
+              className="mt-2 mb-4"
+            />
+            <h5>$999</h5>
+            <p className="mt-3">
+              A magical new way to interact with iPhone. Groundbreaking safety
+              features designed to save lives. An innovative 48MP camera for
+              mind-blowing detail. All powered by the ultimate smartphone chip.
+            </p>
+            <div className="button-container">
+              <Counter />
+              <CommonButton
+                color="#170F58"
+                fontClr="white"
+                borderClr="white"
+                label="Add to cart"
+              />
+              <CommonButton
+                color="grey"
+                fontClr="white"
+                borderClr="black"
+                label="Add to Wishlist"
+              />
+            </div>
+            <div className="buy-now">
+              <CommonButton
+                color="#170F58"
+                fontClr="white"
+                borderClr="white"
+                label="Buy now"
+              />
+            </div>
+            <div className="mt-3">
+              {subdata.map((items) => (
+                <div key={items.id}>
+                  <p className={items.class}>{items.para}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="d-flex gap-5 mb-5">
+          <div className="row">
+            <div className="col-lg-2 mb-5">
+              <h2
+                onClick={() => handleClick("description")}
+                className={activeSection === "description" ? "active-tab" : ""}
+              >
+                Description
+              </h2>
+            </div>
+            <div className="col-lg-4 mb-5">
+              <h2
+                onClick={() => handleClick("additionalinfo")}
+                className={
+                  activeSection === "additionalinfo" ? "active-tab" : ""
+                }
+              >
+                Additional Information
+              </h2>
+            </div>
+            <div className="col-lg-2 mb-5">
+              <h2
+                onClick={() => handleClick("reviews")}
+                className={activeSection === "reviews" ? "active-tab" : ""}
+              >
+                Reviews
+              </h2>
+            </div>
+            <div className="col-lg-4 mb-5">
+              <h2
+                onClick={() => handleClick("shippingdelivery")}
+                className={activeSection === "shippingdelivery" ? "active-tab" : ""}
+              >
+                Shipping delivery
+              </h2>
+            </div>
+            {activeSection === "description" && <SectionDescribe />}
+            {activeSection === "additionalinfo" && <AdditionalInfo />}
+            {activeSection === "reviews" && <Review />}
+            {activeSection === "shippingdelivery" && <ShippingDelivery/>}
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+};
+export default ProductDetails;

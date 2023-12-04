@@ -98,7 +98,7 @@ export default function Section4() {
                   <div class="form-check"></div>
                   <div class="form-group">
                     <textarea
-                      className="form-control"
+                      className="form-control mb-5"
                       id="exampleFormControlTextarea1"
                       rows="9"
                       placeholder="Message"
@@ -108,6 +108,7 @@ export default function Section4() {
                     fontClr="#FFFFFF"
                     color="#170F58"
                     label="Get started now"
+                   
                   />
                 </form>
               </div>

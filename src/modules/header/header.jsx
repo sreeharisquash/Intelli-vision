@@ -6,12 +6,12 @@ import "./header.css";
 import "../../assets/css/main.css";
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-</style>
+  @import
+  url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import
+  url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+</style>;
 export default function Header() {
-
-
   return (
     <nav class="navbar navBg navbar-expand-xl">
       <div class="container">
@@ -37,19 +37,26 @@ export default function Header() {
               </a>
             </li>
             <li class="nav-item dropdown">
-            <a class="nav-link colorForNavFont" href="/about">
+              <a class="nav-link colorForNavFont" href="/about">
                 About
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link colorForNavFont" href="# Features">
-               Features
+                Features
               </a>
             </li>
             <li class="nav-item dropdown">
-            <a class="nav-link colorForNavFont" href="#Pages">
-               Pages
+            <a class="nav-link colorForNavFont dropdown-toggle" href="#pages" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pages
               </a>
+              <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                <a class="dropdown-item" href="/shop">
+                  Shop
+                </a>
+                <a class="dropdown-item" href="/blog">Blog</a>
+    {/* <a class="dropdown-item" href="#">Dropdown Item 3</a> */}
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link colorForNavFont" href="#screenshots">
@@ -68,7 +75,7 @@ export default function Header() {
             </li>
             <li class="nav-item">
               <a class="nav-link colorForNavFont" href="/contact">
-               Contact
+                Contact
               </a>
             </li>
           </ul>
