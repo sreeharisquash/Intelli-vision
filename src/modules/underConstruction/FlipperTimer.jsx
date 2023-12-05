@@ -15,7 +15,7 @@ const FlipClock = () => {
     }, 250);
 
     return () => clearInterval(intervalId);
-  }, []);
+  },);
 
   const flipAllCards = (time) => {
     const seconds = time % 60;
