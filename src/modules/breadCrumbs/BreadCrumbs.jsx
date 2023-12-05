@@ -5,14 +5,14 @@ import { useLocation } from "react-router-dom";
 const BreadCrumbs = () => {
   const location = useLocation();
 
-  let currentLink = "/";
+  // let currentLink = "/";
   let breadcrumbPath = "Home";
 
   const crumbs = location.pathname
     .split("/")
     .filter((crumb) => crumb !== "")
     .map((crumb, index, array) => {
-      currentLink += `/${crumb}`;
+      // currentLink += `/${crumb}`;
       breadcrumbPath += ` / ${crumb}`;
 
       return (
