@@ -5,6 +5,7 @@ import Footer from "../footer/footerComponent";
 import Comments from "../home/comments/comments";
 import BlogImg from "../../assets/images/review1.svg";
 import { useNavigate } from "react-router-dom";
+import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
 
 const Blog = () => {
     const reviews = [
@@ -50,8 +51,15 @@ const Blog = () => {
   return (
     <>
       <Header />
-      <div className="blog-container" onClick={() =>navigate('/blogdetail') }>
+  
+     
+      <div className="blog-container" onClick={() =>navigate('/blog-details') }>
+        <div className="blog-breadcrumbs">
+        <BreadCrumbs/>
+        </div>
+     
         <div className="container">
+         
         <div className="row mt-5">
             {reviews.map((items) => (
               <div className="col-lg-4 mb-5">

@@ -47,15 +47,27 @@ export default function Header() {
               </a>
             </li>
             <li class="nav-item dropdown">
-            <a class="nav-link colorForNavFont dropdown-toggle" href="#pages" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                class="nav-link colorForNavFont dropdown-toggle"
+                href="#pages"
+                id="pagesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 Pages
               </a>
               <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                 <a class="dropdown-item" href="/shop">
                   Shop
                 </a>
-                <a class="dropdown-item" href="/blog">Blog</a>
-    {/* <a class="dropdown-item" href="#">Dropdown Item 3</a> */}
+                <a class="dropdown-item" href="/blog">
+                  Blog
+                </a>
+                <a class="dropdown-item" href="/service">
+                  Service
+                </a>
               </div>
             </li>
             <li class="nav-item">

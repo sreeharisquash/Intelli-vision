@@ -9,6 +9,7 @@ import Products from "../products/Products";
 import Rating from "../../assets/images/Frame7.png";
 import { Button, FormControl, InputGroup } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
 
 const Shop = () => {
   const displayProducts = [
@@ -60,9 +61,12 @@ const Shop = () => {
   return (
     <div>
       <Header />
-      {/* <BreadCrumbs/> */}
       <div className="shop-section">
+      <div className="contact-breadcrumbs">
+          <BreadCrumbs/>
+          </div>
         <div className="container">
+      
           <InputGroup className="mb-3 d-flex justify-content-end">
             <FormControl
               placeholder="Search..."

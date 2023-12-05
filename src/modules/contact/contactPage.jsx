@@ -6,7 +6,7 @@ import "./contactPage.css";
 import ContactMethods from "./contactMethods/ContactMethods";
 import Location from "../../assets/images/blue-loc.svg";
 import CommonButton from "../commonButton/commonButton";
-// import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
+import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
 
 export default function ContactPage() {
   const contactMethods = [
@@ -37,9 +37,11 @@ export default function ContactPage() {
       <div>
         <Header />
 
-        <div className="Form-section mt-5 pt-5">
+        <div className="Form-section">
+          <div className="contact-breadcrumb">
+          <BreadCrumbs/>
+          </div>
           <div className="container">
-            {/* <BreadCrumbs/> */}
             <div className="row">
               <div className="col-lg-12 jusitfy-content-center">
                 <h1 className="text-center">Enquiry Form</h1>

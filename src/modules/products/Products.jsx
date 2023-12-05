@@ -7,7 +7,7 @@ const Products = ({ image, productName, price, rating }) => {
   const navigate = useNavigate();
   return (
     <div className="products-container">
-      <img src={image} alt="" onClick={() => navigate("/productdetails")} />
+      <img src={image} alt="" onClick={() => navigate("/shop-details")} />
       <img
         src={rating}
         alt=""

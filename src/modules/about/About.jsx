@@ -6,7 +6,7 @@ import "./About.css";
 import CEOimg from "../../assets/images/medium-shot-woman-posing-indoors.jpg";
 import AboutTestimonial from "./aboutTestimonial/aboutTestimonial";
 import WhyChooseUs from "./whyChooseUs/WhyChooseUs";
-// import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
+import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
 const About = () => {
   const choosingData = [
     {
@@ -65,9 +65,11 @@ const About = () => {
   return (
     <>
       <Header />
-      <div className="about-us mt-5">
+      <div className="about-us">
+        <div className="about-breadcrumb">
+        <BreadCrumbs/>
+        </div>
         <div className="container pt-5">
-        {/* <BreadCrumbs/> */}
           <h1 className="text-center mt-4 ">Reasons for choosing us</h1>
           <p className="mt-4 text-center mb-5">
             Innovate , change and transform

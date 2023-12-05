@@ -10,6 +10,7 @@ import SectionDescribe from "./sectionDescription/sectionDescription";
 import AdditionalInfo from "./additionalInformation/additionalInformation";
 import Review from "./review/Review";
 import ShippingDelivery from "./shippingDelivery/ShippingDelivery";
+import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
 
 const ProductDetails = () => {
   const subdata = [
@@ -30,7 +31,12 @@ const ProductDetails = () => {
   return (
     <div className="product-details">
       <Header />
+      <div className="shop-detail-breadcrumbs">
+      <BreadCrumbs/>
+      </div>
+     
       <div className="container pt-5">
+    
         <div className="row pt-5">
           <div className="col-lg-6 mt-5">
             <img src={Product1img} alt="" style={{ maxHeight: "70%" }} />

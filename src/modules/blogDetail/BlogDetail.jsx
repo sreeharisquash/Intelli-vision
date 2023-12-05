@@ -8,6 +8,7 @@ import BlogImg from "../../assets/images/review1.svg";
 import Comments from "../home/comments/comments";
 import CommentsProfile from "../../assets/images/comments-profile.svg";
 import CommonButton from "../commonButton/commonButton";
+import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
 
 const BlogDetail = () => {
   const reviews = [
@@ -34,7 +35,12 @@ const BlogDetail = () => {
     <>
       <div className="blog-detail-container">
         <Header />
+        <div className="blog-detail-breadcrumbs">
+        <BreadCrumbs/>
+
+        </div>
         <div className="container mt-5 mb-5">
+      
           <div>
             <img src={BlogDetailImg1} alt="" />
           </div>
