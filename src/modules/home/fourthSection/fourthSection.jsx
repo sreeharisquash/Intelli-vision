@@ -23,18 +23,24 @@ export default function Section4() {
       image: Review1,
       head: "Gravida quis blandit",
       para: "Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor incididunt quisnostrud exercitation ullamco laboris",
+      day: '27',
+      month: 'Jan'
     },
     {
       id: "1",
       image: Review2,
       head: "Gravida quis blandit",
       para: "Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor incididunt quisnostrud exercitation ullamco laboris",
+      day: '27',
+      month: 'Jan'
     },
     {
       id: "1",
       image: Review3,
       head: "Gravida quis blandit",
       para: "Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor incididunt quisnostrud exercitation ullamco laboris",
+      day: '27',
+      month: 'Jan'
     },
   ];
 
@@ -60,11 +66,13 @@ export default function Section4() {
           </div>
           <div className="row mt-5">
             {reviews.map((items) => (
-              <div className="col-lg-4">
+              <div className="col-lg-4 mb-4">
                 <Comments
                   imgSrc={items.image}
                   head={items.head}
                   para={items.para}
+                  day={items.day}
+                  month={items.month}
                 />
               </div>
             ))}
@@ -80,18 +88,18 @@ export default function Section4() {
                 <form>
                   <div class="form-group">
                     <input
-                      type="email"
+                      type="text"
                       class="form-control mt-4"
-                      id="exampleInputEmail1"
+                      id="name"
                       aria-describedby="emailHelp"
                       placeholder="First Name"
                     />
                   </div>
                   <div class="form-group">
                     <input
-                      type="password"
+                      type="email"
                       class="form-control mt-4"
-                      id="exampleInputPassword1"
+                      id="email"
                       placeholder="E-mail"
                     />
                   </div>

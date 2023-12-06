@@ -38,7 +38,23 @@
 }
 .card {
   border-radius: 1rem;
+  position: relative;
 }
 .card-body {
   padding: 0 0 1rem 0;
+}
+.day-and-month {
+  /* position: relative; */
+  z-index: 1;
+  background-image: url("../../../assets/images/rose-round.svg");
+  background-size: cover;
+  width: 19%;
+  height: 5rem;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 1rem;
+  top: 16rem;
 }

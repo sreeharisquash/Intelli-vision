@@ -46,3 +46,8 @@
 .subnav-container.fixed h4.active {
   background-color: red;
 }
+@media (max-device-width: 992px) {
+  .subnav-container {
+    display: block;
+  }
+}

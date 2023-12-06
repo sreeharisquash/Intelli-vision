@@ -1,6 +1,7 @@
 .purchase-Container {
-  /* background-color: #59ed6c; */
-  background-color: #ededed;
+  background-image: url("../../../assets/images/green-grey-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 10px;
   padding: 30px 10px 30px 10px;
   display: flex;
@@ -9,11 +10,17 @@
   margin-bottom: 4rem;
   padding-top: 3rem;
 }
-/* .price-bg {
-  background-image: url("../../../assets/images/price-bg.svg");
-  min-width: 100%;
-  padding-top: 6rem;
-  padding-left: 6rem;
-  background-repeat: no-repeat;
-  background-size: auto;
-} */
+.purchase-Container h1 {
+  color: white;
+}
+.price-bg {
+  margin-top: 10rem;
+}
+@media (max-device-width: 991px) {
+  .price-bg {
+    margin-top: 14rem;
+  }
+  .purchase-Container h1 {
+    margin-top: 20%;
+  }
+}

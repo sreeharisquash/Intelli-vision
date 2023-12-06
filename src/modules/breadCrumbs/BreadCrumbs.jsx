@@ -18,7 +18,7 @@ const BreadCrumbs = () => {
       return (
         <span key={crumb}>
           <span className="crumb">
-            <h1 className="text-capitalize opacity-75 ">{crumb}</h1>
+            <h1>{crumb}</h1>
           </span>
           {index < array.length - 1 && <span> / </span>}
         </span>

@@ -1,6 +1,34 @@
 .section9 {
   padding-top: 10rem;
 }
+.purchase-Container {
+  background-image: url("../../../assets/images/green-grey-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 30px 10px 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding-top: 3rem;
+}
+.otherClass {
+  background-image: url("../../../assets/images/blue-grey-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 30px 10px 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding-top: 3rem;
+}
+.otherClass h1 {
+  color: white;
+}
+
 .feature-before::before {
   content: url("../../../assets/images/smilie.svg");
   position: relative;
@@ -41,23 +69,7 @@
   margin-left: -6rem;
   margin-right: 5rem;
 }
-/* .custom-class-1::before {
-  content: url("../../../assets/images/share.svg");
-  position: relative;
-  right: 11rem;
-  top: 8rem;
-}*/
-/* .custom-class-2::after {
-  content: url("../../../assets/images/puzzle.svg");
-  position: relative;
-  bottom: 3rem;
-  left: 14rem;
-} */
-/* .custom-class-3::before {
-  content: url("../../../assets/images/truck.svg");
-  position: relative;
-  right: 9rem;
-} */
+
 @media (max-device-width: 1360px) {
   .custom-class-1 {
     margin-left: -6rem;
@@ -94,6 +106,11 @@
   }
 }
 
+@media (max-device-width: 991px) {
+  .otherClass h1 {
+    margin-top: 20%;
+  }
+}
 @media (max-device-width: 820px) {
   .section10 .custom-class-1 {
     margin-left: -5rem;

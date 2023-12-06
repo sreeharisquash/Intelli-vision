@@ -11,10 +11,9 @@ import Paint from "../../../assets/images/paint.svg";
 import ProductivityImg from "../../../assets/images/productvity.svg";
 import Purchase from "../purchaseComponents/purchase";
 import Productivity from "../productivitySection/productivity";
-import ShareImg from '../../../assets/images/share.svg'
-import TruckImg from '../../../assets/images/truck.svg'
-import PuzzleImg from '../../../assets/images/puzzle.svg'
-
+import ShareImg from "../../../assets/images/share.svg";
+import TruckImg from "../../../assets/images/truck.svg";
+import PuzzleImg from "../../../assets/images/puzzle.svg";
 
 export default function Section3() {
   const features1 = [
@@ -76,7 +75,7 @@ export default function Section3() {
     },
     {
       id: "3",
-      image:TruckImg,
+      image: TruckImg,
       head: "Massa placeratds",
       para: "Lorem ipsum dolor sit amet, consectetur adipiscing mod tempor incididunt inim veniam, nost exercitation ullamco",
       customClass: "custom-class-3",
@@ -160,7 +159,6 @@ export default function Section3() {
                         head={items.head}
                         para={items.para}
                         customClass={items.customClass}
-                       
                       />
                     </div>
                   ))}
@@ -206,9 +204,11 @@ export default function Section3() {
             </div>
           </div>
           <div className="row mt-5">
-            {PurchaseData.map((items) => (
-              <div className="col-lg-4">
-                <Purchase price={items.price} />
+            {PurchaseData.map((items , index) => (
+              <div className="col-lg-4 col-md-12">
+                <div className={`${index === 1 ? 'otherClass' : 'purchase-Container'}`}>
+                  <Purchase price={items.price} />
+                </div>
               </div>
             ))}
           </div>

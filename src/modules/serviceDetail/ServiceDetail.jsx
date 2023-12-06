@@ -218,10 +218,9 @@ const ServiceDetails = () => {
     const element = document.getElementById(tab);
     // console.log(tab)
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
-
 
   return (
     <>
@@ -230,7 +229,7 @@ const ServiceDetails = () => {
         <div className="service-detail-breadcrumb">
           <BreadCrumbs />
         </div>
-        <SubNavBar onTabClick={handleTabClick}/>
+        <SubNavBar onTabClick={handleTabClick} />
         <div className="container">
           <div className="row">
             {whatIsItSection.map((items) => (
@@ -400,7 +399,9 @@ const ServiceDetails = () => {
             ))}
           </div>
           <div>
-            <h1 className="text-center mb-5" id="clientsWords">Client's words</h1>
+            <h1 className="text-center mb-5" id="clientsWords">
+              Client's words
+            </h1>
             <Swiper
               grabCursor={true}
               centeredSlides={true}

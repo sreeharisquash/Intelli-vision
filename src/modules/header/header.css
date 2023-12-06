@@ -43,3 +43,6 @@
 .navbar-nav {
   --bs-nav-link-hover-color:white:
 }
+.dropdown-menu {
+  --bs-dropdown-link-active-bg:#170F58
+}

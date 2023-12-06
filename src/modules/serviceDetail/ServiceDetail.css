@@ -30,7 +30,8 @@
   opacity: 70%;
   margin-bottom: 3rem;
 }
-.service-details-container li {
+.why-is-it-best li,
+.fitness-training li {
   font-size: 20px;
   opacity: 70%;
 }
