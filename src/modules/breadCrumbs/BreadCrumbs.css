@@ -1,25 +1,3 @@
-/* .bread-crumbs {
-  background-image: url("../../assets/images/breadcrumb-shop.jpg");
-  background-position: center center;
-  background-size: cover;
-  max-width: 100%;
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
-} */
-/* .bread-crumbs::before { */
-/* content: ""; */
-/* position: absolute; */
-/* top: 0;
-  left: 0; */
-/* width: 100%; */
-/* height: 20rem; */
-/* background-color: rgba(0, 0, 0, 0.7); */
-/* z-index: 1; */
-/* } */
 .bread-crumbs h4 {
   color: white;
   text-align: center;

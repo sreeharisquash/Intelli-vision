@@ -14,10 +14,37 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import DietMaintanance from "./DietMaintanance";
 
 import UsersImg from "../../assets/images/user-solid.svg";
-import ClockImg from '../../assets/images/clock-solid.svg'
+import ClockImg from "../../assets/images/clock-solid.svg";
 // import AwardImg from '../../assets/images/award-solid.svg'
 import EnrollSectionImg from "../../assets/images/steam-symbol.svg";
 import EnrollSection from "./EnrollSection";
+import Darell from "../../assets/images/darell.svg";
+import Dianne from "../../assets/images/dianna.svg";
+import Albert from "../../assets/images/albert.svg";
+import Ralph from "../../assets/images/ralph.svg";
+import Brooklyn from "../../assets/images/brooklyn.svg";
+import fbLogo from "../../assets/images/fb-mini.svg";
+import twitterLogo from "../../assets/images/twit-mini.svg";
+import linkdinLogo from "../../assets/images/linkdin-mini.svg";
+import TrainingAmenitiesImg from "../../assets/images/training-amenities.jpg";
+import Marvin from "../../assets/images/marvin.svg";
+import SearchIcon from "../../assets/images/magnifying-glass-solid (1).svg";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+// import {Autoplay} from 'swiper/modules'
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
+
+import { register } from "swiper/element/bundle";
+import SwiperComponent from "./swiperComponent";
+import FindComponent from "./FindComponent";
+import SubNavBar from "./subNavbar";
+
+register();
 
 const ServiceDetails = () => {
   const whatIsItSection = [
@@ -69,10 +96,55 @@ const ServiceDetails = () => {
     },
   ];
 
+  const reviews = [
+    {
+      id: "1",
+      image: Darell,
+      name: "Darrell Steward",
+      Designation: "Web Designer",
+      para: "Lorem ipsum dolor sit consectetur dolor sit amet, consectetur adipiscing elit, sed doeiusmodut labore enim ad minim veniam, quis nostrud exercitationdolor sit amet, consectetur adipiscing adipiscing doeiusmod tempor incididunt ut labore minim veniam, quis nostrud exercitation.",
+    },
+    {
+      id: "2",
+      image: Dianne,
+      name: "Dianne Russell",
+      Designation: "App Developer",
+      para: "Lorem ipsum dolor sit consectetur dolor sit amet, consectetur adipiscing elit, sed doeiusmodut labore enim ad minim veniam, quis nostrud exercitationdolor sit amet, consectetur adipiscing adipiscing doeiusmod tempor incididunt ut labore minim veniam, quis nostrud exercitation.",
+    },
+    {
+      id: "3",
+      image: Albert,
+      name: "Albert Flores",
+      Designation: "Marketing Coordinator",
+      para: "Lorem ipsum dolor sit consectetur dolor sit amet, consectetur adipiscing elit, sed doeiusmodut labore enim ad minim veniam, quis nostrud exercitationdolor sit amet, consectetur adipiscing adipiscing doeiusmod tempor incididunt ut labore minim veniam, quis nostrud exercitation.",
+    },
+    {
+      id: "4",
+      image: Ralph,
+      name: "Ralph Edwards",
+      Designation: "Web Designer",
+      para: "Lorem ipsum dolor sit consectetur dolor sit amet, consectetur adipiscing elit, sed doeiusmodut labore enim ad minim veniam, quis nostrud exercitationdolor sit amet, consectetur adipiscing adipiscing doeiusmod tempor incididunt ut labore minim veniam, quis nostrud exercitation.",
+    },
+    {
+      id: "5",
+      image: Brooklyn,
+      name: "Brooklyn Simmons",
+      Designation: "App Developer",
+      para: "Lorem ipsum dolor sit consectetur dolor sit amet, consectetur adipiscing elit, sed doeiusmodut labore enim ad minim veniam, quis nostrud exercitationdolor sit amet, consectetur adipiscing adipiscing doeiusmod tempor incididunt ut labore minim veniam, quis nostrud exercitation.",
+    },
+    {
+      id: "6",
+      image: Marvin,
+      name: "Marvin McKinney",
+      Designation: "Marketing Coordinator",
+      para: "Lorem ipsum dolor sit consectetur dolor sit amet, consectetur adipiscing elit, sed doeiusmodut labore enim ad minim veniam, quis nostrud exercitationdolor sit amet, consectetur adipiscing adipiscing doeiusmod tempor incididunt ut labore minim veniam, quis nostrud exercitation.",
+    },
+  ];
+
   const dietData = [
-    { id: "1", image: UsersImg, number: "7254" , head:'Happy clients'},
-    { id: "2", image: UsersImg, number: "1276" , head : 'Awards won'},
-    { id: "3", image: ClockImg, number: "32658" , head: '  Hours worked'},
+    { id: "1", image: UsersImg, number: "7254", head: "Happy clients" },
+    { id: "2", image: UsersImg, number: "1276", head: "Awards won" },
+    { id: "3", image: ClockImg, number: "32658", head: "  Hours worked" },
   ];
 
   const enrollSection = [
@@ -95,12 +167,61 @@ const ServiceDetails = () => {
       para: "Enroll Now",
     },
     {
-        id: "4",
-        image: EnrollSectionImg,
-        head: "Pilates Intensive",
-        para: "Enroll Now",
-      },
+      id: "4",
+      image: EnrollSectionImg,
+      head: "Pilates Intensive",
+      para: "Enroll Now",
+    },
   ];
+
+  const trainingAmenities = [
+    {
+      id: "1",
+      image: TrainingAmenitiesImg,
+      name: "Klaus mikaelson",
+      designation: "Developer",
+      logos: [fbLogo, twitterLogo, linkdinLogo],
+      para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+    {
+      id: "2",
+      image: TrainingAmenitiesImg,
+      name: "Elijah mikaelson",
+      designation: "Tester",
+      logos: [fbLogo, twitterLogo, linkdinLogo],
+      para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+  ];
+
+  const findData = [
+    {
+      id: "1",
+      image: SearchIcon,
+      head: "Find",
+      para: "Quisque volutpat mattis eros nullam malesuada",
+    },
+    {
+      id: "2",
+      image: SearchIcon,
+      head: "Find",
+      para: "Quisque volutpat mattis eros nullam malesuada",
+    },
+    {
+      id: "3",
+      image: SearchIcon,
+      head: "Find",
+      para: "Quisque volutpat mattis eros nullam malesuada",
+    },
+  ];
+
+  const handleTabClick = (tab) => {
+    const element = document.getElementById(tab);
+    // console.log(tab)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
 
   return (
     <>
@@ -109,15 +230,16 @@ const ServiceDetails = () => {
         <div className="service-detail-breadcrumb">
           <BreadCrumbs />
         </div>
+        <SubNavBar onTabClick={handleTabClick}/>
         <div className="container">
           <div className="row">
             {whatIsItSection.map((items) => (
-              <div className="col-lg-4">
+              <div className="col-lg-4 mb-5">
                 <img src={items.image} alt="" />
               </div>
             ))}
           </div>
-          <div className="pt-5 pb-5">
+          <div className="pt-5 pb-5" id="whatIsIt">
             <h1>What is it?</h1>
             <p className="mt-4">
               Duas molestias excepturi sint occaecati cupiditate non provident,
@@ -134,7 +256,7 @@ const ServiceDetails = () => {
             </p>
           </div>
           <div className="row">
-            <div className="col-lg-7">
+            <div className="col-lg-7" id="whyIsBest">
               <h1>Why is it best?</h1>
               <p className="mt-4">
                 Duas molestias excepturi sint occaecati cupiditate non
@@ -155,9 +277,14 @@ const ServiceDetails = () => {
               <img src={WhyIsItBest} alt="" />
             </div>
           </div>
-          <div className="picture-gallery pt-5 mt-3">
+          <div className="picture-gallery pt-5 mt-3" id="pictureGallery">
             <h1>Picture Gallery</h1>
-            <Carousel showIndicators={false} showStatus={false} autoPlay={true} infiniteLoop={true}>
+            <Carousel
+              showIndicators={false}
+              showStatus={false}
+              autoPlay={true}
+              infiniteLoop={true}
+            >
               {carouselData.map((items) => (
                 <div key={items.id}>
                   <img src={items.image} alt="" />
@@ -176,7 +303,7 @@ const ServiceDetails = () => {
               ))}
             </ul>
           </div>
-          <div className="diet-maintanance ">
+          <div className="diet-maintanance" id="dietMaintenance">
             <h1>Diet Maintenance</h1>
             <p>
               Duas molestias excepturi sint occaecati cupiditate non provident,
@@ -205,13 +332,102 @@ const ServiceDetails = () => {
           </div>
           <div>
             <div className="row pb-5">
-                {enrollSection.map((items) => (
-                    <div className="col-lg-3 col-md-12 mb-5" key={items.id}>
-                    <EnrollSection image={items.image} head={items.head} para={items.para}/>
-                    </div>
-                ))}
-             
+              {enrollSection.map((items) => (
+                <div className="col-lg-3 col-md-12 mb-5" key={items.id}>
+                  <EnrollSection
+                    image={items.image}
+                    head={items.head}
+                    para={items.para}
+                  />
+                </div>
+              ))}
+              <p className="mt-4">
+                Duas molestias excepturi sint occaecati cupiditate non
+                provident, similique sunt in culpa qui officia deserunt mollitia
+                animi, id est laborum et dolorum fuga. Et harum quidem rerum
+                facilis est et expedita distinctio.. Duas molestias excepturi
+                sint occaecati cupiditate non provident, similique sunt in culpa
+                qui
+              </p>
             </div>
+            <div className="training-amenities">
+              <h1>Training Amenities</h1>
+              <div className="row pt-5 pb-5">
+                {trainingAmenities.map((items) => (
+                  <div className="col-lg-6 pb-5 " key={items.id}>
+                    <div className="image-underline">
+                      <img
+                        src={items.image}
+                        alt=""
+                        className="training-eminity-img"
+                      />
+                      <div className="items-container">
+                        <h3>{items.name}</h3>
+                        <p>{items.designation}</p>
+                        <div className="logos">
+                          <div className="d-flex gap-4">
+                            {items.logos.map((data) => (
+                              <img src={data} alt="" className="logos-con" />
+                            ))}
+                          </div>
+                        </div>
+                        <p className="mt-3">{items.para}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+                <p>
+                  Duas molestias excepturi sint occaecati cupiditate non
+                  provident, similique sunt in culpa qui officia deserunt
+                  mollitia animi, id est laborum et dolorum fuga. Et harum
+                  quidem rerum facilis est et expedita distinctio.. Duas
+                  molestias excepturi sint occaecati cupiditate non provident,
+                  similique sunt in culpa qui officia deserunt mollitia animi,
+                  id est laborum et dolorum fuga. molestias excepturi sint.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="row pb-5">
+            {findData.map((items) => (
+              <div className="col-lg-4 pb-5">
+                <FindComponent
+                  image={items.image}
+                  head={items.head}
+                  para={items.para}
+                />
+              </div>
+            ))}
+          </div>
+          <div>
+            <h1 className="text-center mb-5" id="clientsWords">Client's words</h1>
+            <Swiper
+              grabCursor={true}
+              centeredSlides={true}
+              loop={true}
+              slidesPerView={1}
+              dots={false}
+              pagination={false}
+              autoplay={true}
+              autoplaySpeed={2000}
+              navigation={true}
+            >
+              {reviews.map((items) => (
+                <SwiperSlide>
+                  <div
+                    className="col-lg-12 text-center carousal-item"
+                    key={items.id}
+                  >
+                    <SwiperComponent
+                      image={items.image}
+                      name={items.name}
+                      para={items.para}
+                      designation={items.Designation}
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
         <Footer />

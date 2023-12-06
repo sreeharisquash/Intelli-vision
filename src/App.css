@@ -30,6 +30,7 @@ p {
   text-align: left;
   /* color: #fff; */
 }
+body h3,
 body h4,
 body h5 {
   font-weight: 700;
@@ -65,7 +66,7 @@ body textarea {
     font-size: 15px;
   }
   body h5 {
-    font-size: 15px;
+    font-size: 13px;
   }
   .testimonial-cont h4 {
     font-size: 15px !important;

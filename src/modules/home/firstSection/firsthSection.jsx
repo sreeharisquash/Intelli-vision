@@ -211,10 +211,10 @@ export default function Section1() {
       {/* section two  */}
 
       <div className="container section2 ">
-        <div className="row">
-          <div className="col-lg-12">
+        <div className="row pt-5 d-flex justify-content-center mb-4">
+          <div className="col-lg-8">
             <h1 className="text-center">
-              Lorem ipsum dolor consectetur adipiscing elit
+              Lorem ipsum dolor 
             </h1>
             <p className="mt-4 text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
