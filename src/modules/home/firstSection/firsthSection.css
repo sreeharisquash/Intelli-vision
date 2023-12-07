@@ -192,7 +192,11 @@
     bottom: 14rem;
     max-width: 12%;
   }
+  .section1 .carousel-item .d-flex {
+    flex-direction: column;
+  }
 }
+
 @media (max-device-width: 320px) {
   .section1 .carousel-item .d-flex {
     flex-direction: column;

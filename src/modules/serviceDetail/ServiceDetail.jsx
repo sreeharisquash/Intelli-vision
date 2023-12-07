@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ServiceDetail.css";
 import serviceDetailimg from "../../assets/images/service-details.jpg";
 import Header from "../header/header";
@@ -43,6 +43,7 @@ import { register } from "swiper/element/bundle";
 import SwiperComponent from "./swiperComponent";
 import FindComponent from "./FindComponent";
 import SubNavBar from "./subNavbar";
+import { tab } from "@testing-library/user-event/dist/tab";
 
 register();
 
@@ -214,9 +215,12 @@ const ServiceDetails = () => {
     },
   ];
 
+  const [activeTab, setActiveTab] = useState("whatIsIt");
+
   const handleTabClick = (tab) => {
     const element = document.getElementById(tab);
-    // console.log(tab)
+    // setActiveTab(tab);
+    console.log(tab)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -229,7 +233,7 @@ const ServiceDetails = () => {
         <div className="service-detail-breadcrumb">
           <BreadCrumbs />
         </div>
-        <SubNavBar onTabClick={handleTabClick} />
+        <SubNavBar activeTab={activeTab} onTabClick={handleTabClick} />
         <div className="container">
           <div className="row">
             {whatIsItSection.map((items) => (

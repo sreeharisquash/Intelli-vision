@@ -162,26 +162,6 @@ export default function Section3() {
                       />
                     </div>
                   ))}
-                  {/* <h2>Elementum nibhd</h2>
-                  <p>
-                    In dictum non consectetur a. Adipiscing at in tellus integer
-                    feugiat scelerisque eleifend mi in nulla
-                  </p>
-                </div>
-                <div style={{ marginTop: "8rem", marginBottom: "6rem",  marginLeft: '4rem' }}>
-                  <h2>Ornare aeneansd</h2>
-                  <p>
-                    Volutpat blandit aliquam etiam erat velit
-                    <br /> scelerisque elementum nisi quis eleifend <br /> quam
-                    adipiscing vitae
-                  </p>
-                </div>
-                <div className="productivity">
-                  <h2>Massa placeratds</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing mod
-                    tempor incididunt inim veniam, nost exercitation ullamco
-                  </p> */}
                 </div>
               </div>
             </div>

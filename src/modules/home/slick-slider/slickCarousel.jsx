@@ -20,7 +20,7 @@ export default function SlickCarousel() {
         {
             breakpoint: 400,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               slidesToScroll: 1,
             },
           },

@@ -16,6 +16,7 @@
 }
 .testimonial-cont p {
   font-size: 13px;
+  line-height: 24px;
 }
 .testimonial-img {
   max-width: 20%;
@@ -72,7 +73,7 @@
 
 @media (max-device-width: 768px) {
   .testimonial-cont {
-    padding: 0rem 9rem 6rem 6rem;
+    padding: 0rem 3rem 4rem 3rem;
   }
   .name-para {
     margin-top: 1rem;

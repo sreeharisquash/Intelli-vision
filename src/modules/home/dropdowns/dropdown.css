@@ -84,3 +84,9 @@
     font-size: 19px;
   }
 }
+
+@media (max-device-width: 567px) {
+  .section8 .btn-primary {
+    font-size: 13px;
+  }
+}

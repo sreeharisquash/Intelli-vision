@@ -36,11 +36,9 @@ const BlogDetail = () => {
       <div className="blog-detail-container">
         <Header />
         <div className="blog-detail-breadcrumbs">
-        <BreadCrumbs/>
-
+          <BreadCrumbs />
         </div>
         <div className="container mt-5 mb-5">
-      
           <div>
             <img src={BlogDetailImg1} alt="" />
           </div>
@@ -101,12 +99,33 @@ const BlogDetail = () => {
           </div>
           <h2>Add comment</h2>
           <div className="add-comment">
-          {/* <div class="mb-3"> */}
-          <input type="text" class="form-control" id="input-sec" placeholder="Your name" rows="5"/>
-          <input type="email" class="form-control" id="input-sec" placeholder="Your E-mail"/>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Comment"></textarea>
-          <CommonButton fontClr="white" color="#170F58" borderClr="#170F58" label="Leave a comment"/>
-          {/* </div> */}
+            {/* <div class="mb-3"> */}
+            <input
+              type="text"
+              class="form-control"
+              id="input-sec"
+              placeholder="Your name"
+              rows="5"
+            />
+            <input
+              type="email"
+              class="form-control"
+              id="input-sec"
+              placeholder="Your E-mail"
+            />
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="10"
+              placeholder="Comment"
+            ></textarea>
+            <CommonButton
+              fontClr="white"
+              color="#170F58"
+              borderClr="#170F58"
+              label="Leave a comment"
+            />
+            {/* </div> */}
           </div>
         </div>
         <Footer />
