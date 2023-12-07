@@ -409,8 +409,8 @@ export default function Section2() {
               slidesPerView={3}
               dots={false}
               pagination={false}
-              autoplay={true}
-              autoplaySpeed={2000}
+              // autoplay={true}
+              // autoplaySpeed={2000}
               // coverflowEffect={{
               //   rotate: 0,
               //   stretch: 0,

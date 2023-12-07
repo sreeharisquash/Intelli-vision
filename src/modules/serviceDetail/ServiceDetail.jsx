@@ -215,7 +215,7 @@ const ServiceDetails = () => {
     },
   ];
 
-  const [activeTab, setActiveTab] = useState("whatIsIt");
+  const [activeTab, setActiveTab] = useState("");
 
   const handleTabClick = (tab) => {
     const element = document.getElementById(tab);

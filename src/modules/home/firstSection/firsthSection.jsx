@@ -10,7 +10,6 @@ import Services from "../servicesComponent/services";
 import Desktop from "../../../assets/images/desktop.svg";
 import Profile from "../../../assets/images/profile.svg";
 import Shield from "../../../assets/images/shield.svg";
-// import Students from "../../../assets/images/students.svg";
 import PlayButton from "../../../assets/images/play.svg";
 import CommonButton from "../../commonButton/commonButton";
 import VideoPopup from "../videoPopup/videoPopup";
@@ -75,8 +74,8 @@ export default function Section1() {
   return (
     <>
       {/* section one  */}
+      <Header />
       <div className="section1">
-        <Header />
         <div className="container py-5">
           <div
             id="carouselExampleInterval"

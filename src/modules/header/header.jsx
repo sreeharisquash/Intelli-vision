@@ -12,7 +12,6 @@ export default function Header() {
           <img src={LOGO} alt="logo" />
           <span className="ralewayFont">INTELLI VISION</span>
         </div>
-
         <button
           class="navbar-toggler customBtn"
           type="button"
@@ -21,7 +20,6 @@ export default function Header() {
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav navBarData ms-auto">
             <li class="nav-item dropdown">
