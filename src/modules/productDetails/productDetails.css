@@ -72,7 +72,9 @@ body h4 {
   max-width: max-content;
 }
 
-.tab-class @media (max-device-width: 657px) {
+.tab-class {
+}
+@media (max-device-width: 657px) {
   .name-email {
     flex-direction: column;
   }
