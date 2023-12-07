@@ -34,9 +34,7 @@ const ProductDetails = () => {
       <div className="shop-detail-breadcrumbs">
       <BreadCrumbs/>
       </div>
-     
       <div className="container pt-5">
-    
         <div className="row pt-5">
           <div className="col-lg-6 mt-5">
             <img src={Product1img} alt="" style={{ maxHeight: "70%" }} />
@@ -92,7 +90,7 @@ const ProductDetails = () => {
             <div className="col-lg-2 mb-5">
               <h2
                 onClick={() => handleClick("description")}
-                className={activeSection === "description" ? "active-tab" : ""}
+                className={activeSection === "description" ? "active-tab" : "tab-class"}
               >
                 Description
               </h2>
@@ -101,7 +99,7 @@ const ProductDetails = () => {
               <h2
                 onClick={() => handleClick("additionalinfo")}
                 className={
-                  activeSection === "additionalinfo" ? "active-tab" : ""
+                  activeSection === "additionalinfo" ? "active-tab" : "tab-class"
                 }
               >
                 Additional Information
@@ -110,7 +108,7 @@ const ProductDetails = () => {
             <div className="col-lg-2 mb-5">
               <h2
                 onClick={() => handleClick("reviews")}
-                className={activeSection === "reviews" ? "active-tab" : ""}
+                className={activeSection === "reviews" ? "active-tab" : "tab-class"}
               >
                 Reviews
               </h2>
@@ -118,7 +116,7 @@ const ProductDetails = () => {
             <div className="col-lg-4 mb-5">
               <h2
                 onClick={() => handleClick("shippingdelivery")}
-                className={activeSection === "shippingdelivery" ? "active-tab" : ""}
+                className={activeSection === "shippingdelivery" ? "active-tab" : "tab-class"}
               >
                 Shipping delivery
               </h2>

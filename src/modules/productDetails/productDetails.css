@@ -14,19 +14,19 @@
   font-family: "Font Awesome 5 Free";
   content: "\f017";
   position: relative;
-  right: 1rem;
+  right: 0.5rem;
 }
 .visitors::before {
   font-family: "Font Awesome 5 Free";
   content: "\f007";
   position: relative;
-  right: 1rem;
+  right: 0.5rem;
 }
 .spend::before {
   font-family: "Font Awesome 5 Free";
   content: "\f1d8";
   position: relative;
-  right: 1rem;
+  right: 0.5rem;
 }
 .active-tab {
   color: lightgrey;
@@ -71,12 +71,18 @@ body h4 {
 .buttons-container {
   max-width: max-content;
 }
-@media (max-device-width: 657px) {
+
+.tab-class @media (max-device-width: 657px) {
   .name-email {
     flex-direction: column;
   }
 }
 
+@media (max-device-width: 567px) {
+  .button-container {
+    flex-direction: column;
+  }
+}
 @media (max-device-width: 467px) {
   .button-container {
     flex-direction: column;

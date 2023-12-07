@@ -73,7 +73,7 @@ export default function SlickCarousel() {
           {loopedData.map((items) => (
             <div className="head-image" key={items.id}>
               <img src={items.image} alt="" className="before-images" />
-              <h2>{items.head}</h2>
+              <h3>{items.head}</h3>
             </div>
           ))}
         </Slider>

@@ -56,3 +56,8 @@
   background-color: #170f58;
   border-color: #170f58;
 }
+@media (max-device-width: 517px) {
+  .stars-container {
+    display: block;
+  }
+}
