@@ -43,7 +43,7 @@ import { register } from "swiper/element/bundle";
 import SwiperComponent from "./swiperComponent";
 import FindComponent from "./FindComponent";
 import SubNavBar from "./subNavbar";
-import { tab } from "@testing-library/user-event/dist/tab";
+// import { tab } from "@testing-library/user-event/dist/tab";
 
 register();
 
@@ -219,7 +219,7 @@ const ServiceDetails = () => {
 
   const handleTabClick = (tab) => {
     const element = document.getElementById(tab);
-    // setActiveTab(tab);
+    setActiveTab(tab);
     console.log(tab)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
