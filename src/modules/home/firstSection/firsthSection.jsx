@@ -18,7 +18,7 @@ import AppleStore from "../../../assets/images/AppleStore.svg";
 import PlayStore from "../../../assets/images/playStore.svg";
 import Windows from "../../../assets/images/windows.svg";
 import StoreComponent from "../storeComponent/storeComponent";
-import studentsImg from '../../../assets/images/students.svg'
+import studentsImg from "../../../assets/images/students.svg";
 
 export default function Section1() {
   const [isVideoPopupOn, setisVideoPopupOn] = useState(false);
@@ -94,7 +94,6 @@ export default function Section1() {
                       minim veniam, quis nostrud exercitation ullamco laboris
                       nisi ut aliquip ex ea commodo tempor
                     </p>{" "}
-                    
                     <div className="d-flex gap-3">
                       <StoreButton
                         imgSrc={AppleStoreIcon}
@@ -121,7 +120,6 @@ export default function Section1() {
                       minim veniam, quis nostrud exercitation ullamco laboris
                       nisi ut aliquip ex ea commodo tempor
                     </p>{" "}
-                    
                     <div className="d-flex gap-3">
                       <StoreButton
                         imgSrc={AppleStoreIcon}
@@ -149,7 +147,6 @@ export default function Section1() {
                       minim veniam, quis nostrud exercitation ullamco laboris
                       nisi ut aliquip ex ea commodo tempor
                     </p>{" "}
-                    
                     <div className="d-flex gap-3">
                       <StoreButton
                         imgSrc={AppleStoreIcon}
@@ -213,9 +210,7 @@ export default function Section1() {
       <div className="container section2 ">
         <div className="row pt-5 d-flex justify-content-center mb-4">
           <div className="col-lg-8">
-            <h1 className="text-center">
-              Lorem ipsum dolor 
-            </h1>
+            <h1 className="text-center">Lorem ipsum dolor</h1>
             <p className="mt-4 text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis
@@ -302,11 +297,16 @@ export default function Section1() {
             </div>
             <div className="col-lg-6 col-md-12">
               {/* <div className="background-img"> */}
-                {/* <div className="PlayButton" > */}
-                <img src={studentsImg} alt="" className="studentsImg"/>
-                  <img src={PlayButton} alt="playButton" onClick={openVideoPopup} className="img-fluid playButton"/>
-                {/* </div> */}
-                <VideoPopup isOpen={isVideoPopupOn} onClose={closeVideoPopup} />
+              {/* <div className="PlayButton" > */}
+              <img src={studentsImg} alt="" className="studentsImg" />
+              <img
+                src={PlayButton}
+                alt="playButton"
+                onClick={openVideoPopup}
+                className="img-fluid playButton"
+              />
+              {/* </div> */}
+              <VideoPopup isOpen={isVideoPopupOn} onClose={closeVideoPopup} />
               {/* </div> */}
             </div>
           </div>

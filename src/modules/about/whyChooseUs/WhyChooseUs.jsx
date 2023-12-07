@@ -9,7 +9,7 @@ const WhyChooseUs = ({ id, image, subhead, mainhead, para }) => {
         <div>
           <img src={image} alt="" />
         </div>
-        <div>
+        <div className="before-icons">
           <h3>{subhead}</h3>
           <h2>{mainhead}</h2>
         </div>

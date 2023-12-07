@@ -5,3 +5,6 @@
 .btn-primary {
   height: 10%;
 }
+.ReactModal__Overlay--after-open {
+  z-index: 1000;
+}

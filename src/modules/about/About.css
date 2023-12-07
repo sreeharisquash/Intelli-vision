@@ -110,3 +110,8 @@ body h2 {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
+@media (max-device-width: 567px) {
+  .inner-sec {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+}

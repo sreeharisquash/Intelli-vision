@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './slickCarousel.css'
 import PaperBird from "../../../assets/images/pb-before.svg";
 import ModernCity from "../../../assets/images/mc-before.svg";
 import Alpha from "../../../assets/images/alpha&co-before.svg";
@@ -20,8 +21,10 @@ export default function SlickCarousel() {
         {
             breakpoint: 400,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 1,
+              centerMode: true,
+              centerPadding: 0,
             },
           },
         {
@@ -46,7 +49,7 @@ export default function SlickCarousel() {
             },
           },
     ]
-    //   centerMode: true,
+      // centerMode: true,
     //   centerPadding: "15px"
     };
   
@@ -54,7 +57,7 @@ export default function SlickCarousel() {
       { id: "1", image: PaperBird, head: "PAPER BIRD" },
       { id: "2", image: ModernCity, head: "MODERN" },
       { id: "3", image: Alpha, head: "ALPHA & CO" },
-      { id: "4", image: Alpha, head: "WOOD FLOOR" },
+      { id: "4", image: PaperBird, head: "WOOD FLOOR" },
     
     ];
   
@@ -68,7 +71,7 @@ export default function SlickCarousel() {
       <div className="slick">
         <Slider {...settings}>
           {loopedData.map((items) => (
-            <div className="d-flex" key={items.id}>
+            <div className="head-image" key={items.id}>
               <img src={items.image} alt="" className="before-images" />
               <h2>{items.head}</h2>
             </div>

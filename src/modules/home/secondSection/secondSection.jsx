@@ -124,7 +124,7 @@ export default function Section2() {
     {
       id: "1",
       dropdownTitle:
-        "What’s the most important thing you’ve learned from a peer?",
+        "What’s the most important thing?",
       para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris",
     },
   ];
@@ -297,7 +297,7 @@ export default function Section2() {
                 {/* <ScreenSlicker/> */}
                 <swiper-container
           ref={swiperRef}
-          pagination="true"
+          pagination="false"
           loop="false"
           autoplay="false"
           init="false"
