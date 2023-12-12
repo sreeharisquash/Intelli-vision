@@ -1,16 +1,10 @@
-.before-head {
+/* .before-head {
   margin-left: -5rem;
-}
+} */
 .features-container {
   margin-bottom: 5rem;
 }
-@media (max-device-width: 1024px) {
-  .before-head {
-    margin-left: -3rem;
-  }
-}
-@media (max-device-width: 768px) {
-  .before-head {
-    margin-left: 0;
-  }
+.features-para {
+  margin-left: 5rem;
+  margin-top: 0.5rem;
 }

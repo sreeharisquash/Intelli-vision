@@ -23,3 +23,15 @@
 .section-end p {
   color: #909090;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
+.footer-section img {
+  cursor: pointer;
+}
+.footer-section li {
+  cursor: pointer;
+}
+.footer-section h3 {
+  font-size: 20px;
+}

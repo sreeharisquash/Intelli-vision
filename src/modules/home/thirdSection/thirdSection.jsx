@@ -102,8 +102,8 @@ export default function Section3() {
               </p>
             </div>
           </div>
-          <div className="row d-flex gap-5 justify-content-end">
-            <div className="col-lg-3">
+          <div className="row d-flex gap- justify-content-end">
+            <div className="col-lg-4">
               <div className="row">
                 <div className="col">
                   {features1.map((items) => (
@@ -116,10 +116,10 @@ export default function Section3() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 my-auto">
-              <img src={MobCenter} alt="" />
+            <div className="col-lg-4 my-auto mx-auto d-flex justify-content-center mb-5 pb-4">
+              <img src={MobCenter} alt=""/>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-4">
               <div className="row">
                 <div className="col">
                   {features2.map((items) => (
@@ -148,8 +148,8 @@ export default function Section3() {
             </div>
           </div>
           <div className="row mt-5">
-            <div className="col-lg-7 col-md-12">
-              <div className="productivity-Bg">
+            <div className="col-lg-7 col-md-12 ">
+              <div className="productivity-Bg mb-5">
                 <div className="productivity">
                   {ProductivityData.map((items, index) => (
                     <div key={items.id} className={items.customClass}>

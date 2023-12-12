@@ -85,8 +85,8 @@ export default function ContactPage() {
                     <textarea
                       class="form-control"
                       id="exampleFormControlTextarea1"
-                      rows="7"
-                      style={{ maxWidth: "50%" }}
+                      rows="10"
+                      style={{ maxWidth: "50%" , minWidth: "50%"}}
                     ></textarea>
                   </div>
                   <div className="d-flex justify-content-center">

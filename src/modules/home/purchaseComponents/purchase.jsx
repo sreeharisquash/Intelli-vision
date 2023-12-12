@@ -12,7 +12,7 @@ export default function Purchase({ price }) {
     { id: "1", para: "50GB Cloud Storage" },
   ];
   return (
-    <div>
+    <div className="data-container">
       <h1 className="text-center ">${price}</h1>
       <div className="price-bg">
         {checkData.map((items) => (

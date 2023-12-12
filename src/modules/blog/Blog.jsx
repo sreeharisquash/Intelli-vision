@@ -8,61 +8,58 @@ import { useNavigate } from "react-router-dom";
 import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
 
 const Blog = () => {
-    const reviews = [
-        {
-          id: "1",
-          image: BlogImg,
-          head: "Gravida quis blandit",
-          para: "Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor incididunt quisnostrud exercitation ullamco laboris",
-        },
-        {
-          id: "1",
-          image: BlogImg,
-          head: "Gravida quis blandit",
-          para: "Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor incididunt quisnostrud exercitation ullamco laboris",
-        },
-        {
-          id: "1",
-          image: BlogImg,
-          head: "Gravida quis blandit",
-          para: "Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor incididunt quisnostrud exercitation ullamco laboris",
-        },
-        {
-            id: "1",
-            image: BlogImg,
-            head: "Gravida quis blandit",
-            para: "Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor incididunt quisnostrud exercitation ullamco laboris",
-          },
-          {
-            id: "1",
-            image: BlogImg,
-            head: "Gravida quis blandit",
-            para: "Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor incididunt quisnostrud exercitation ullamco laboris",
-          },
-          {
-            id: "1",
-            image: BlogImg,
-            head: "Gravida quis blandit",
-            para: "Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor incididunt quisnostrud exercitation ullamco laboris",
-          },
-      ];
+  const reviews = [
+    {
+      id: "1",
+      image: BlogImg,
+      head: "Gravida quis blandit",
+      para: "Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor incididunt quisnostrud exercitation ullamco laboris",
+    },
+    {
+      id: "1",
+      image: BlogImg,
+      head: "Gravida quis blandit",
+      para: "Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor incididunt quisnostrud exercitation ullamco laboris",
+    },
+    {
+      id: "1",
+      image: BlogImg,
+      head: "Gravida quis blandit",
+      para: "Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor incididunt quisnostrud exercitation ullamco laboris",
+    },
+    {
+      id: "1",
+      image: BlogImg,
+      head: "Gravida quis blandit",
+      para: "Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor incididunt quisnostrud exercitation ullamco laboris",
+    },
+    {
+      id: "1",
+      image: BlogImg,
+      head: "Gravida quis blandit",
+      para: "Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor incididunt quisnostrud exercitation ullamco laboris",
+    },
+    {
+      id: "1",
+      image: BlogImg,
+      head: "Gravida quis blandit",
+      para: "Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor incididunt quisnostrud exercitation ullamco laboris",
+    },
+  ];
 
-      const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <>
       <Header />
-  
-     
-      <div className="blog-container" onClick={() =>navigate('/blog-details') }>
+
+      <div className="blog-container" onClick={() => navigate("/blog-details")}>
         <div className="blog-breadcrumbs">
-        <BreadCrumbs/>
+          <BreadCrumbs />
         </div>
-     
         <div className="container">
-         
-        <div className="row mt-5">
+          <div className="row mt-5">
             {reviews.map((items) => (
-              <div className="col-lg-4 mb-5">
+              <div className="col-lg-4 mb-5 blogs">
                 <Comments
                   imgSrc={items.image}
                   head={items.head}

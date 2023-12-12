@@ -19,8 +19,8 @@ const About = () => {
     },
     {
       id: "1",
-      subhead: "Maximum",
-      mainhead: "Querry Solved",
+      subhead: "Querry",
+      mainhead: " Solved",
       image:
         "https://dtconsultancy.wpengine.com/wp-content/uploads/2017/06/service-color-icon4.png",
       para: "Unlike other Frameworks which try to cover everything, It has been built specifically for wordpress.",
@@ -37,8 +37,8 @@ const About = () => {
 
     {
       id: "1",
-      subhead: "Unimaginable",
-      mainhead: "Response time",
+      subhead: "Response",
+      mainhead: " time",
       image:
         "https://dtconsultancy.wpengine.com/wp-content/uploads/2017/06/service-color-icon1.png",
       para: "Unlike other Frameworks which try to cover everything, It has been built specifically for wordpress.",

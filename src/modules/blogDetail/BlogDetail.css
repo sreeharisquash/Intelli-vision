@@ -78,3 +78,22 @@
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
+.blog-detail-blog {
+  cursor: pointer;
+}
+@media (min-device-width: 1025px) {
+  .comments-profile {
+    min-width: 10%;
+  }
+}
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+  .comments-profile {
+    min-width: 20%;
+  }
+}
+
+@media (min-device-width: 320px) and (max-device-width: 767px) {
+  .comments-profile {
+    min-width: 25%;
+  }
+}

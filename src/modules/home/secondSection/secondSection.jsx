@@ -409,8 +409,8 @@ export default function Section2() {
               slidesPerView={3}
               dots={false}
               pagination={false}
-              autoplay={true}
-              autoplaySpeed={2000}
+              // autoplay={true}
+              // autoplaySpeed={2000}
               // coverflowEffect={{
               //   rotate: 0,
               //   stretch: 0,
@@ -429,7 +429,7 @@ export default function Section2() {
                 },
 
                 992: {
-                  slidesPerView: 3,
+                  slidesPerView: 1,
                 },
 
                 1024: {
@@ -445,7 +445,7 @@ export default function Section2() {
               {reviews.map((items) => (
                 <SwiperSlide>
                   <div
-                    className="col-lg-12 text-center carousal-item"
+                    className="col-lg-12 text-center carousal-item d-flex justify-content-center"
                     key={items.id}
                   >
                     <Testimonials
@@ -474,7 +474,7 @@ export default function Section2() {
             </div>
           </div>
           <div className="row pt-5">
-            <div className="col-lg-5 col-md-12 mb-5">
+            <div className="col-lg-5 col-md-12 mb-5 d-flex justify-content-center">
               <img src={DoubtsLogo} alt="doubts" />
             </div>
             <div className="col-lg-7 col-md-12">

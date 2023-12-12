@@ -54,7 +54,7 @@ export default function Section4() {
     <>
       <div className="section12">
         <div className="container">
-          <div className="row d-flex justify-content-center">
+          <div className="row d-flex justify-content-center ">
             <div className="col-lg-6">
               <h1 className="text-center mt-5">Aliquam sem </h1>
               <p className="mt-5 text-center">
@@ -66,7 +66,7 @@ export default function Section4() {
           </div>
           <div className="row mt-5">
             {reviews.map((items) => (
-              <div className="col-lg-4 mb-4">
+              <div className="col-lg-4 mb-4  cursor-pointer">
                 <Comments
                   imgSrc={items.image}
                   head={items.head}

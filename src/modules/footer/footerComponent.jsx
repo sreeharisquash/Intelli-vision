@@ -3,8 +3,9 @@ import LOGO from "../../assets/images/LOGO.svg";
 import FB from "../../assets/images/fb.svg";
 import Twit from "../../assets/images/twitr.svg";
 import Linkdin from "../../assets/images/linkdin.svg";
-import Utub from "../../assets/images/utub.svg"
-import './footerComponent.css'
+import Utub from "../../assets/images/utub.svg";
+import "./footerComponent.css";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Footer({ head, para }) {
   const footerContactData = [
@@ -17,10 +18,10 @@ export default function Footer({ head, para }) {
   ];
 
   const usefullLinks = [
-    { id: "1", link: "Home" },
-    { id: "1", link: "About" },
-    { id: "1", link: "News" },
-    { id: "1", link: "Contact" },
+    { id: "1", link: "Home" , path: '/'},
+    { id: "1", link: "About" , path: '/about' },
+    { id: "1", link: "News" , path : '/'},
+    { id: "1", link: "Contact" ,path: '/contact'},
   ];
 
   const companyNames = [
@@ -37,15 +38,20 @@ export default function Footer({ head, para }) {
     { id: "1", location: "commodo" },
   ];
 
+  const navigate = useNavigate();
+
   return (
     <>
       <h2>{head}</h2>
       <div className="footer-section">
         <div className="container">
           <div className="row ">
-            <div className="col-lg-3 col-md-12 mb-5">
-              <img src={LOGO} alt="" />
-              <span className="ralewayFont">INTELLI VISION</span>
+            <div className="col-lg-4 col-md-12 mb-5">
+              <div className="cursor-pointer" onClick={() => navigate("/")}>
+                <img src={LOGO} alt="" />
+                <span className="ralewayFont">INTELLI VISION</span>
+              </div>
+
               {footerContactData.map((items) => (
                 <div className="unordered-list">
                   <ul className="mt-5">
@@ -65,18 +71,20 @@ export default function Footer({ head, para }) {
 
             {/* Useful Links */}
 
-            <div className="col-lg-3 col-md-12 mb-5">
+            <div className="col-lg-2 col-md-12 mb-5">
               <h3>Useful Links</h3>
               {usefullLinks.map((items) => (
-                <div key={items.id} className="d-flex">
-                  <li>{items.link}</li>
+                <div key={items.id} className="d-flex ">
+                  <Link to={items.path} className="cursor-pointer" style={{ textDecoration: 'none' }}>
+                    <li>{items.link}</li>
+                  </Link>
                 </div>
               ))}
             </div>
 
             {/* Company  */}
 
-            <div className="col-lg-3 col-md-12 mb-5">
+            <div className="col-lg-2 col-md-12 mb-5">
               <h3>Company</h3>
               {companyNames.map((items) => (
                 <div className="d-flex" key={items.id}>

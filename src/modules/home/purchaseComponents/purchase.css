@@ -16,6 +16,14 @@
 .price-bg {
   margin-top: 10rem;
 }
+@media (max-device-width: 1024px) {
+  .data-container {
+    margin-top: 3rem;
+  }
+  .price-bg {
+    margin-top: 15rem;
+  }
+}
 @media (max-device-width: 991px) {
   .price-bg {
     margin-top: 14rem;

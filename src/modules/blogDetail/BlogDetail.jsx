@@ -72,7 +72,7 @@ const BlogDetail = () => {
           <h2>Related posts</h2>
           <div className="row mt-3">
             {reviews.map((items) => (
-              <div className="col-lg-4 mb-5">
+              <div className="col-lg-4 mb-5 blog-detail-blog">
                 <Comments
                   imgSrc={items.image}
                   head={items.head}
