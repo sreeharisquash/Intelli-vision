@@ -46,7 +46,7 @@ export default function Footer({ head, para }) {
       <div className="footer-section">
         <div className="container">
           <div className="row ">
-            <div className="col-lg-4 col-md-12 mb-5">
+            <div className="col-lg-4 col-md-12 mb-3">
               <div className="cursor-pointer" onClick={() => navigate("/")}>
                 <img src={LOGO} alt="" />
                 <span className="ralewayFont">INTELLI VISION</span>
@@ -61,7 +61,7 @@ export default function Footer({ head, para }) {
                   </ul>
                 </div>
               ))}
-              <div className="d-flex gap-3 mt-5">
+              <div className="d-flex gap-3 mt-3">
                 <img src={FB} alt="" />
                 <img src={Twit} alt="" />
                 <img src={Linkdin} alt="" />
@@ -71,7 +71,7 @@ export default function Footer({ head, para }) {
 
             {/* Useful Links */}
 
-            <div className="col-lg-2 col-md-12 mb-5" >
+            <div className="col-lg-2 col-md-12 mb-3" >
               <h3>Useful Links</h3>
               {usefullLinks.map((items) => (
                 <div key={items.id} className="d-flex ">
@@ -84,7 +84,7 @@ export default function Footer({ head, para }) {
 
             {/* Company  */}
 
-            <div className="col-lg-2 col-md-12 mb-5">
+            <div className="col-lg-2 col-md-12 mb-3">
               <h3>Company</h3>
               {companyNames.map((items) => (
                 <div className="d-flex" key={items.id}>
