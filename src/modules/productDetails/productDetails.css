@@ -7,9 +7,7 @@
   margin-top: 2rem;
   min-width: 100%;
 }
-.product-details:hover {
-  cursor: pointer;
-}
+
 .time-limit::before {
   font-family: "Font Awesome 5 Free";
   content: "\f017";
@@ -31,6 +29,7 @@
 .active-tab {
   color: lightgrey;
   margin-bottom: 2rem;
+  background-color: #170f58;
 }
 
 .tabs {
@@ -72,7 +71,15 @@ body h4 {
   max-width: max-content;
 }
 
-.tab-class {
+.active-styles h3 {
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  cursor: pointer;
 }
 @media (max-device-width: 657px) {
   .name-email {

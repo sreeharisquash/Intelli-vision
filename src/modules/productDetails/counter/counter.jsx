@@ -6,7 +6,7 @@ const Counter = () => {
 
   return (
     <div className="d-flex align-items-center gap-4 buttons-container">
-      <button className="button" onClick={() => setAdd(add - 1)}>
+      <button className="button" onClick={() => setAdd( add >= 1 ? add - 1: add)}>
         -
       </button>
       <div className="number-counter">{add}</div>

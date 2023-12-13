@@ -4,11 +4,15 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import LOGO from "../../assets/images/LOGO.svg";
 import "./header.css";
 import "../../assets/css/main.css";
+import { useNavigate } from "react-router-dom";
 export default function Header() {
+
+  const navigate = useNavigate();
+
   return (
     <nav class="navbar navBg navbar-expand-xl">
       <div class="container">
-        <div className="nav-contain">
+        <div className="nav-contain" onClick={()=> navigate('/')}>
           <img src={LOGO} alt="logo" />
           <span className="ralewayFont">INTELLI VISION</span>
         </div>

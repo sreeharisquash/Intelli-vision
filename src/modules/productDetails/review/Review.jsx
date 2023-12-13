@@ -63,8 +63,6 @@ const Review = () => {
           <CommonButton color="#170F58" label="Submit" fontClr="white"/>
         </div>
       </div>
-
-      {/* </div> */}
     </>
   );
 };

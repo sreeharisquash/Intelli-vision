@@ -30,7 +30,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "swiper/css/autoplay"
+import "swiper/css/autoplay";
 
 // import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -40,9 +40,7 @@ import SlickCarousel from "../slick-slider/slickCarousel";
 import { register } from "swiper/element/bundle";
 // Import Swiper React components
 
-
 register();
-
 
 export default function Section2() {
   // const datas = [
@@ -123,8 +121,7 @@ export default function Section2() {
     },
     {
       id: "1",
-      dropdownTitle:
-        "What’s the most important thing?",
+      dropdownTitle: "What’s the most important thing?",
       para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris",
     },
   ];
@@ -154,7 +151,7 @@ export default function Section2() {
         640: {
           slidesPerView: 1,
           spaceBetween: 20,
-          centeredSlides: false
+          centeredSlides: false,
         },
         992: {
           slidesPerView: 3,
@@ -163,7 +160,7 @@ export default function Section2() {
         1440: {
           slidesPerView: 5,
           spaceBetween: 10,
-          centeredSlides: true
+          centeredSlides: true,
         },
       },
       injectStyles: [
@@ -182,8 +179,8 @@ export default function Section2() {
           }
       `,
       ],
-    }
-   
+    };
+
     Object.assign(swiperContainer, params);
     swiperContainer.initialize();
 
@@ -226,13 +223,13 @@ export default function Section2() {
                     "stopOnLastSlide": false,
                     "waitForTransition": true
                 }} */}
-                  {/* loop={true}
+                {/* loop={true}
                   spaceBetween={50}
                   autoplay={{delay:2000}}
                   slidesPerView={5}
                   slidesPerGroup={1}
                 coverflowEffect={{ */}
-                   {/* rotate: 0,
+                {/* rotate: 0,
                     stretch: 0,
                  depth: 100,
                     modifier: 2.5,
@@ -257,7 +254,7 @@ export default function Section2() {
                     },
                   }}
                 > */}
-                  {/* <SwiperSlide>
+                {/* <SwiperSlide>
                     <img src={Screen1} alt="" />
                   </SwiperSlide>
                   <SwiperSlide>
@@ -296,50 +293,49 @@ export default function Section2() {
                 </Swiper> */}
                 {/* <ScreenSlicker/> */}
                 <swiper-container
-          ref={swiperRef}
-          pagination="false"
-          loop="false"
-          autoplay="false"
-          init="false"
-        >
-              <swiper-slide>
-                    <img src={Screen1} alt="" />
-                    </swiper-slide>
-                    <swiper-slide>
-                    <img src={Screen2} alt="" />
-                    </swiper-slide>
-                  <swiper-slide>
-                    <img src={Screen3} alt="" />
-                    </swiper-slide>
-                  <swiper-slide>
-                    <img src={Screen4} alt="" />
-                    </swiper-slide>
-                  <swiper-slide>
-                    <img src={Screen2} alt="" />
-                    </swiper-slide>
-                  <swiper-slide>
-                    <img src={Screen3} alt="" />
-                    </swiper-slide>
+                  ref={swiperRef}
+                  pagination="false"
+                  loop="true"
+                  autoplay="true"
+                  init="true"
+                >
                   <swiper-slide>
                     <img src={Screen1} alt="" />
-                    </swiper-slide>
+                  </swiper-slide>
                   <swiper-slide>
                     <img src={Screen2} alt="" />
-                    </swiper-slide>
+                  </swiper-slide>
                   <swiper-slide>
                     <img src={Screen3} alt="" />
-                    </swiper-slide>
+                  </swiper-slide>
                   <swiper-slide>
                     <img src={Screen4} alt="" />
-                    </swiper-slide>
+                  </swiper-slide>
                   <swiper-slide>
                     <img src={Screen2} alt="" />
-                    </swiper-slide>
+                  </swiper-slide>
                   <swiper-slide>
                     <img src={Screen3} alt="" />
-                    </swiper-slide>
-              {/* </swiper-slide> */}
-        </swiper-container>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src={Screen1} alt="" />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src={Screen2} alt="" />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src={Screen3} alt="" />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src={Screen4} alt="" />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src={Screen2} alt="" />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src={Screen3} alt="" />
+                  </swiper-slide>
+                </swiper-container>
               </div>
             </div>
           </div>

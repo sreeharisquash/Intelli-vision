@@ -32,12 +32,15 @@ const ProductDetails = () => {
     <div className="product-details">
       <Header />
       <div className="shop-detail-breadcrumbs">
-      <BreadCrumbs/>
+        <BreadCrumbs />
       </div>
       <div className="container pt-5">
         <div className="row pt-5">
-          <div className="col-lg-6 mt-5">
-            <img src={Product1img} alt="" style={{ maxHeight: "70%" }} />
+          <div
+            className="col-lg-6 mt-5 d-flex justify-content-center mb-5"
+            style={{ height: "40rem" }}
+          >
+            <img src={Product1img} alt="" style={{ height: "100%" }} />
           </div>
           <div className="col-lg-6 mt-5">
             <h1>Iphone 14 pro</h1>
@@ -86,45 +89,55 @@ const ProductDetails = () => {
           </div>
         </div>
         <div className="d-flex gap-5 mb-5">
-          <div className="row">
-            <div className="col-lg-2 mb-5">
-              <h2
+          <div className="row active-styles">
+            <div className="col-lg-3 mb-5">
+              <h3
                 onClick={() => handleClick("description")}
-                className={activeSection === "description" ? "active-tab" : "tab-class"}
+                className={
+                  activeSection === "description" ? "active-tab" : "tab-class"
+                }
               >
                 Description
-              </h2>
+              </h3>
             </div>
-            <div className="col-lg-4 mb-5">
-              <h2
+            <div className="col-lg-3 mb-5">
+              <h3
                 onClick={() => handleClick("additionalinfo")}
                 className={
-                  activeSection === "additionalinfo" ? "active-tab" : "tab-class"
+                  activeSection === "additionalinfo"
+                    ? "active-tab"
+                    : "tab-class"
                 }
               >
                 Additional Information
-              </h2>
+              </h3>
             </div>
             <div className="col-lg-2 mb-5">
-              <h2
+              <h3
                 onClick={() => handleClick("reviews")}
-                className={activeSection === "reviews" ? "active-tab" : "tab-class"}
+                className={
+                  activeSection === "reviews" ? "active-tab" : "tab-class"
+                }
               >
                 Reviews
-              </h2>
+              </h3>
             </div>
             <div className="col-lg-4 mb-5">
-              <h2
+              <h3
                 onClick={() => handleClick("shippingdelivery")}
-                className={activeSection === "shippingdelivery" ? "active-tab" : "tab-class"}
+                className={
+                  activeSection === "shippingdelivery"
+                    ? "active-tab"
+                    : "tab-class"
+                }
               >
                 Shipping delivery
-              </h2>
+              </h3>
             </div>
             {activeSection === "description" && <SectionDescribe />}
             {activeSection === "additionalinfo" && <AdditionalInfo />}
             {activeSection === "reviews" && <Review />}
-            {activeSection === "shippingdelivery" && <ShippingDelivery/>}
+            {activeSection === "shippingdelivery" && <ShippingDelivery />}
           </div>
         </div>
       </div>
