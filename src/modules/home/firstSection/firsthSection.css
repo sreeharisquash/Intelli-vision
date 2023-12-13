@@ -111,8 +111,6 @@
   transform: scale(0.6);
 } */
 
-.swiper-slide-active {
-}
 .section5 .swiper-slide-active {
   background-image: url("../../../assets/images/mob-outlay.svg");
   background-size: contain;

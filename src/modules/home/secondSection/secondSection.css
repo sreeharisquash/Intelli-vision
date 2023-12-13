@@ -85,13 +85,15 @@
   margin-top: 0.7rem;
   height: 96%;
 }
+.section-testimonials .swiper-slide,
 .section-testimonials .swiper-slide-prev,
 .section-testimonials .swiper-slide-next {
   filter: blur(8px);
   transform: scale(0.5);
 }
 .section-testimonials .swiper-slide-active {
-  /* transform: scale(1.3); */
+  transform: scale(1);
+  filter: none;
 }
 /* .swiper-slide-active {
   transform: scale(1.2);
