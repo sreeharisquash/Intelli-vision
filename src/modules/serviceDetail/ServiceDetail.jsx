@@ -391,7 +391,7 @@ const ServiceDetails = () => {
               </div>
             </div>
           </div>
-          <div className="row pb-5">
+          <div className="row pb-3">
             {findData.map((items) => (
               <div className="col-lg-4 pb-5">
                 <FindComponent

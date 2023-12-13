@@ -56,7 +56,7 @@ export default function Section4() {
         <div className="container">
           <div className="row d-flex justify-content-center ">
             <div className="col-lg-6">
-              <h1 className="text-center mt-5">Aliquam sem </h1>
+              <h1 className="text-center mt-3">Aliquam sem </h1>
               <p className="mt-5 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 doeiusmod tempor incididunt ut labore Ut enim ad minim veniam,
@@ -82,7 +82,7 @@ export default function Section4() {
       <div className="section13">
         <div className="container mb-5">
           <div className="row">
-            <div className="col-lg-6 mb-5">
+            <div className="col-lg-6 mb-5 pb-5">
               <div className="form-container">
                 <h3>Ready to get started?</h3>
                 <form>
@@ -104,7 +104,7 @@ export default function Section4() {
                     />
                   </div>
                   <div class="form-check"></div>
-                  <div class="form-group">
+                  <div class="form-group mb-4">
                     <textarea
                       className="form-control mb-5"
                       id="exampleFormControlTextarea1"

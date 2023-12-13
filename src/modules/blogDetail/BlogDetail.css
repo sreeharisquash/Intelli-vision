@@ -22,7 +22,10 @@
   border-radius: 5rem;
   overflow: hidden;
   max-width: 5%;
-  margin-bottom: 7rem;
+  /* margin-bottom: 7rem; */
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .likes-reply {
   display: flex;

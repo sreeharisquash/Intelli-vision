@@ -37,7 +37,7 @@ const ProductDetails = () => {
       <div className="container pt-5">
         <div className="row pt-5">
           <div
-            className="col-lg-6 mt-5 d-flex justify-content-center mb-5"
+            className="col-lg-6 d-flex justify-content-center mb-5"
             style={{ height: "40rem" }}
           >
             <img src={Product1img} alt="" style={{ height: "100%" }} />

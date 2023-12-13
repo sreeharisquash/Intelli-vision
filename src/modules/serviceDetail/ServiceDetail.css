@@ -92,6 +92,9 @@
 /* .image-underline:hover {
   border-color: #170f58;
 } */
+.logos {
+  margin-top: -2rem;
+}
 .logos-con {
   transition: 0.2s ease-in-out;
 }
@@ -109,7 +112,7 @@
 }
 @media (max-device-width: 420px) {
   .service-details-container p {
-    font-size: 13px;
+    font-size: 15px;
   }
   .service-details-container li {
     font-size: 13px;

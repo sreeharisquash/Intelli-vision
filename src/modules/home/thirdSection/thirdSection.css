@@ -126,19 +126,19 @@
 }
 
 @media (max-device-width: 768px) {
+  .productivity-Bg {
+    background-image: none;
+  }
   .section10 .col-lg-7 {
     display: flex;
     justify-content: center;
     margin-bottom: 4rem;
   }
-  .section10 .productivity-container img {
+  /* .section10 .productivity-container img {
     width: 30%;
-  }
+  } */
 }
 @media (max-device-width: 679px) {
-  .productivity-Bg {
-    background-image: none;
-  }
 }
 
 @media (max-device-width: 576px) {

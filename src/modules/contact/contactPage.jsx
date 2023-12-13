@@ -46,8 +46,8 @@ export default function ContactPage() {
               <div className="col-lg-12 jusitfy-content-center">
                 <h1 className="text-center">Enquiry Form</h1>
                 <h5 className="text-center">Its now easy to contact us</h5>
-                <form className="mt-5 pt-5">
-                  <div className="d-flex justify-content-center gap-5">
+                <form className="mt-5">
+                  <div className="d-flex justify-content-center name-sec">
                     <div class="mb-3">
                       <label for="firstName" class="form-label">
                         First Name
@@ -64,7 +64,7 @@ export default function ContactPage() {
                       <input type="text" class="form-control" id="lastName" />
                     </div>
                   </div>
-                  <div className="d-flex justify-content-center gap-5">
+                  <div className="d-flex justify-content-center  name-sec">
                     <div class="mb-3">
                       <label for="email" class="form-label">
                         E-mail

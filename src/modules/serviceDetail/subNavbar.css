@@ -55,4 +55,7 @@
   .subnav-container {
     display: block;
   }
+  .subnav-container.fixed {
+    position: relative;
+  }
 }

@@ -16,7 +16,7 @@ const Products = ({ image, productName, price, rating }) => {
       />
       <h4> {productName}</h4>
       <h5>${price}</h5>
-      <div className="d-flex gap-4">
+      <div className="buy-and-cart-btn">
         <CommonButton color="white" fontClr="black" label="Buy now" />
         <CommonButton color="#170F58" fontClr="white" label="Add to cart" />
       </div>

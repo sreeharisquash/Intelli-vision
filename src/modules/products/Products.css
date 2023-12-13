@@ -10,3 +10,13 @@
 .products-container:hover {
   transform: scale(1.01);
 }
+.buy-and-cart-btn {
+  display: flex;
+  gap: 3rem;
+}
+@media (max-device-width: 495px) {
+  .buy-and-cart-btn {
+    margin-top: 1.5rem;
+    flex-direction: column;
+  }
+}

@@ -42,3 +42,22 @@ body h5 {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
+.name-sec {
+  gap: 3rem;
+}
+
+@media (max-device-width: 580px) {
+  .name-sec {
+    flex-direction: column;
+  }
+  .form-label {
+    justify-content: left;
+  }
+  .name-sec {
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  #exampleFormControlTextarea1 {
+    max-width: 100% !important;
+  }
+}

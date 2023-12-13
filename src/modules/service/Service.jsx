@@ -98,7 +98,7 @@ const Service = () => {
           <BreadCrumbs />
         </div>
 
-        <div className="container pt-5">
+        <div className="container pt-3">
           <div className="row d-flex justify-content-center">
             <div className="col-lg-7">
               <h1>All these Services for you</h1>
@@ -116,7 +116,7 @@ const Service = () => {
               ))}
             </div>
           </div>
-          <div className="row d-flex justify-content-center pt-5">
+          <div className="row d-flex justify-content-center pt-3">
             <div className="col-lg-7 ">
               <h1>Lorem ipsum dolor</h1>
               <h5>FOR FREE. HOW TO LEARN</h5>
@@ -130,14 +130,16 @@ const Service = () => {
           </div>
         </div>
         <div className="left-right-contents">
-          <div className="row" style={{ maxWidth: "100%" }}>
-            <div className="col-lg-6 text-center mb-5">
-              <h2>Want to know what is best for you</h2>
-              <a href="#view-catogories">View categories</a>
-            </div>
-            <div className="col-lg-6 text-center">
-              <h2>Take a look at popular collection</h2>
-              <a href="#view-catogories">View collections</a>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6 text-center mb-5">
+                <h2>Want to know what is best for you</h2>
+                <a href="#view-catogories">View categories</a>
+              </div>
+              <div className="col-lg-6 text-center">
+                <h2>Take a look at popular collection</h2>
+                <a href="#view-catogories">View collections</a>
+              </div>
             </div>
           </div>
         </div>
@@ -154,7 +156,7 @@ const Service = () => {
               </p>
             </div>
           </div>
-          <div className="row mb-5">
+          <div className="row mb-3">
             {tpHeadData.map((items) => (
               <div className="col-lg-4" key={items.id}>
                 <TrainingPackages
@@ -180,14 +182,14 @@ const Service = () => {
           </div>
           <div className="row d-flex justify-content-center ">
             <div className="col-lg-6">
-            <h1>Direct links</h1>
-            <h5 className="mb-5">become a part by enrolling</h5>
+              <h1>Direct links</h1>
+              <h5 className="mb-5">become a part by enrolling</h5>
             </div>
           </div>
           <div className="row mb-5">
             {enrollData.map((items) => (
               <div className="col-lg-3 d-flex justify-content-center">
-                <EnrollSecion logo={items.image}/>
+                <EnrollSecion logo={items.image} />
               </div>
             ))}
           </div>

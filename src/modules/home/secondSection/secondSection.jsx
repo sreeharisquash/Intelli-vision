@@ -210,7 +210,7 @@ export default function Section2() {
             </div>
 
             <div className="row d-flex justify-content-center">
-              <div className="col-lg-12">
+              <div className="col-lg-12 text-center ">
                 {/* <Swiper
                  modules={{Autoplay}}
                 effect={"coverflow"}
@@ -297,7 +297,8 @@ export default function Section2() {
                   pagination="false"
                   loop="true"
                   autoplay="true"
-                  init="true"
+                  init="false"
+                  slides-per-view="3"
                 >
                   <swiper-slide>
                     <img src={Screen1} alt="" />
@@ -344,10 +345,8 @@ export default function Section2() {
 
       <div className="section6 ">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-12">
-              <SlickCarousel />
-            </div>
+          <div className="mx-auo">
+            <SlickCarousel />
           </div>
         </div>
       </div>
@@ -356,7 +355,7 @@ export default function Section2() {
           <div className="row d-flex justify-content-center">
             <div className="col-lg-8 mb-5">
               <h1 className="text-center">Dolor Lorem ipsum</h1>
-              <p className="mt-4 text-center mb-5">
+              <p className="mt-4 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 doeiusmod tempor incididunt ut labore Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris
@@ -392,21 +391,22 @@ export default function Section2() {
             </div>
           </div>
         </div>
-        <div className="testimonial-sec">
+        <div className="testimonial-container">
           <div
-            className="row d-flex justify-content-center"
+            className=" d-flex justify-content-center"
             style={{ maxWidth: "100%" }}
           >
             <Swiper
               // effect={"coverflow"}
               grabCursor={true}
               centeredSlides={true}
+              centeredSlidesBounds={true}
               loop={true}
               slidesPerView={3}
               dots={false}
               pagination={false}
-              autoplay={true}
-              autoplaySpeed={2000}
+              // autoplay={true}
+              // autoplaySpeed={2000}
               // coverflowEffect={{
               //   rotate: 0,
               //   stretch: 0,
@@ -441,7 +441,7 @@ export default function Section2() {
               {reviews.map((items) => (
                 <SwiperSlide>
                   <div
-                    className="col-lg-12 text-center carousal-item d-flex justify-content-center"
+                    className=" text-center carousal-item d-flex justify-content-center"
                     key={items.id}
                   >
                     <Testimonials

@@ -17,7 +17,7 @@
   margin-left: 3rem;
 }
 .section2 {
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding-bottom: 5rem;
 }
 .section3 {
@@ -112,7 +112,6 @@
 } */
 
 .swiper-slide-active {
-  transform: scale(1.5);
 }
 .section5 .swiper-slide-active {
   background-image: url("../../../assets/images/mob-outlay.svg");

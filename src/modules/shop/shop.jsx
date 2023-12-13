@@ -72,12 +72,12 @@ const Shop = () => {
               placeholder="Search..."
               aria-label="Search"
               aria-describedby="basic-addon2"
-              style={{ maxWidth: "26%", minWidth: "26%" }}
+              className="search-button"
             />
             <Button
               variant="outline-secondary"
               id="button-addon2"
-              className="search-button"
+             
             >
               Search
             </Button>

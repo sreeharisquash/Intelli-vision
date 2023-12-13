@@ -29,7 +29,7 @@
   color: white;
 }
 .colorForNavFont:hover{
-  transform: scale(1.2);
+  color:goldenrod
 }
 .navBg {
   padding-top: 2rem;
@@ -47,5 +47,5 @@
   --bs-dropdown-link-active-bg:#170F58
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-  color: red;
+  color: goldenrod;
 }

@@ -71,7 +71,7 @@ export default function Footer({ head, para }) {
 
             {/* Useful Links */}
 
-            <div className="col-lg-2 col-md-12 mb-5">
+            <div className="col-lg-2 col-md-12 mb-5" >
               <h3>Useful Links</h3>
               {usefullLinks.map((items) => (
                 <div key={items.id} className="d-flex ">
@@ -95,7 +95,7 @@ export default function Footer({ head, para }) {
 
             {/* Top Destinations  */}
 
-            <div className="col-lg-3 col-md-12">
+            <div className="col-lg-3 col-md-12" >
               <h3>Top Destinations</h3>
               {topDestinations.map((items) => (
                 <div className="d-flex" key={items.id}>

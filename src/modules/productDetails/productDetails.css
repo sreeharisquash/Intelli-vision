@@ -91,6 +91,9 @@ body h4 {
   .button-container {
     flex-direction: column;
   }
+  .product-details .buy-now .btn-bg {
+    margin-top: 1rem;
+  }
 }
 @media (max-device-width: 467px) {
   .button-container {
