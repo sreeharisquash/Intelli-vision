@@ -8,3 +8,10 @@
   margin-left: 5rem;
   margin-top: 0.5rem;
 }
+.before-head {
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.before-head:hover {
+  transform: scale(1.2);
+}

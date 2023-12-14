@@ -9,6 +9,10 @@
   align-items: center;
   margin-bottom: 4rem;
   padding-top: 3rem;
+  transition: 0.3s all ease-in-out;
+}
+.purchase-Container:hover {
+  transform: scale(1.07);
 }
 .purchase-Container h1 {
   color: white;

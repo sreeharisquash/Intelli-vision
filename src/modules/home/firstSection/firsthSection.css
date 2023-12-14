@@ -67,6 +67,7 @@
   position: relative;
   z-index: 1;
   bottom: 20rem;
+  cursor: pointer;
 }
 .popup {
   display: none;

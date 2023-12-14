@@ -200,8 +200,8 @@ export default function Section2() {
     <>
       <div className="section5">
         <div className="container pt-5">
-          <div className="row justify-content-center pt-5 mt-5">
-            <div className="col-lg-6 pt-5">
+          <div className="row justify-content-center pt-5 mt-5" >
+            <div className="col-lg-6 pt-5" data-aos="fade-down">
               <h1 className="text-center">Dolor Lorem ipsum</h1>
               <p className="mt-4 text-center mb-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -355,7 +355,7 @@ export default function Section2() {
       <div className="section7">
         <div className="container">
           <div className="row d-flex justify-content-center">
-            <div className="col-lg-8 mb-5">
+            <div className="col-lg-8 mb-5" data-aos="fade-down">
               <h1 className="text-center">Dolor Lorem ipsum</h1>
               <p className="mt-4 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -367,7 +367,7 @@ export default function Section2() {
           <div className="row">
             {reviews.map((items) => {
               return (
-                <div className="col-lg-4 mb-5">
+                <div className="col-lg-4 mb-5" data-aos="fade-up">
                   <Reviews
                     imgSrc={items.image}
                     name={items.name}
@@ -384,7 +384,7 @@ export default function Section2() {
       <div className="section-testimonials">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-6 ">
+            <div className="col-lg-6 " data-aos="fade-down">
               <h1 className="text-center">Testimonials</h1>
               <p className="mt-4 text-center mb-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -462,9 +462,9 @@ export default function Section2() {
       <div className="section8">
         <div className="container">
           <div className="row d-flex justify-content-center">
-            <div className="col-lg-7">
+            <div className="col-lg-7" data-aos="fade-down">
               <h1 className="text-center">Dolor Lorem ipsum</h1>
-              <p className="mt-4 text-center mb-5">
+              <p className="mt-4 text-center mb-5" >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 doeiusmod tempor incididunt ut labore Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris
@@ -472,10 +472,10 @@ export default function Section2() {
             </div>
           </div>
           <div className="row pt-5">
-            <div className="col-lg-5 col-md-12 mb-5 d-flex justify-content-center">
+            <div className="col-lg-5 col-md-12 mb-5 d-flex justify-content-center" data-aos="fade-right">
               <img src={DoubtsLogo} alt="doubts" />
             </div>
-            <div className="col-lg-7 col-md-12">
+            <div className="col-lg-7 col-md-12 d-flex flex-column my-auto" data-aos="fade-left">
               {dropDowns.map((items) => (
                 <div className="row">
                   <div className="col">

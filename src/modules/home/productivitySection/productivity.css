@@ -8,6 +8,13 @@
   gap: 4rem;
   flex-direction: row-reverse;
 }
+.productivity-container img {
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.productivity-container img:hover {
+  transform: scale(1.1);
+}
 @media (min-device-width: 1921px) {
   .custom-class-1 {
     margin-left: -5rem;

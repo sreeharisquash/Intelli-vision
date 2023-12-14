@@ -4,10 +4,17 @@
   padding: 32px 22px 32px 22px;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.3s all ease-in-out;
 }
 .designation {
   color: #a9a9a9;
 }
 .name-sec {
   color: #2b36ff;
+}
+.review-container:hover {
+  transform: scale(1.1);
+}
+.image-hov:hover {
+  transform: scale(1.2);
 }

@@ -51,6 +51,7 @@
   position: relative;
   top: 0.2rem;
   right: 1rem;
+  /* vertical-align: baseline; */
 }
 .footer-section h3 {
   color: white;

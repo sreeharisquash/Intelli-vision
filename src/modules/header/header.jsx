@@ -10,8 +10,8 @@ export default function Header() {
   const navigate = useNavigate();
 
   return (
-    <nav class="navbar navBg navbar-expand-xl">
-      <div class="container">
+    <nav class="navbar navBg navbar-expand-xl" >
+      <div class="container" data-aos="zoom-in-down">
         <div className="nav-contain" onClick={()=> navigate('/')}>
           <img src={LOGO} alt="logo" />
           <span className="ralewayFont">INTELLI VISION</span>

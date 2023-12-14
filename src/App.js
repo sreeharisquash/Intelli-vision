@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Router from "./routes/Router";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   function BackToTopButton() {
@@ -29,25 +31,27 @@ function App() {
       });
     };
 
+    useEffect(() => {
+      Aos.init({ duration: 2000 });
+    }, []);
+
     return (
       <div className="app-container">
         <Router />
         {backToTopButton && (
-          <div className="go-to-top">
-            <button
-              className="btn btn-primary"
-              style={{
-                position: "fixed",
-                zIndex: "500",
-                bottom: "50px",
-                right: "50px",
-                fontSize: "40px",
-              }}
-              onClick={scrollUp}
-            >
-              ^
-            </button>
-          </div>
+          <button
+            className="goto-top"
+            style={{
+              position: "fixed",
+              zIndex: "500",
+              bottom: "50px",
+              right: "50px",
+              fontSize: "40px",
+            }}
+            onClick={scrollUp}
+          >
+            ^
+          </button>
         )}
       </div>
     );

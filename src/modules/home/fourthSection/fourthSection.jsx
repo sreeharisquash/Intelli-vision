@@ -55,7 +55,7 @@ export default function Section4() {
       <div className="section12">
         <div className="container">
           <div className="row d-flex justify-content-center ">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-down">
               <h1 className="text-center mt-3">Aliquam sem </h1>
               <p className="mt-3 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -66,7 +66,7 @@ export default function Section4() {
           </div>
           <div className="row mt-5">
             {reviews.map((items) => (
-              <div className="col-lg-4 mb-4  cursor-pointer">
+              <div className="col-lg-4 mb-4  cursor-pointer" data-aos="fade-up">
                 <Comments
                   imgSrc={items.image}
                   head={items.head}
@@ -82,7 +82,7 @@ export default function Section4() {
       <div className="section13">
         <div className="container mb-5">
           <div className="row">
-            <div className="col-lg-6 mb-5 pb-5">
+            <div className="col-lg-6 mb-5 pb-5" data-aos="fade-right">
               <div className="form-container">
                 <h3>Ready to get started?</h3>
                 <form>
@@ -120,7 +120,7 @@ export default function Section4() {
                 </form>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-left">
               <h1>Elit pellentesque lacus habitant morbi</h1>
               <p className="mt-3">
                 Lorem ipsum dolor sit consectetur dolor sit amet, dolor

@@ -6,7 +6,7 @@ const CommonButton=({color ,fontClr, borderClr , label}) => {
     const buttonStyle = {
         backgroundColor: color,
         color:fontClr,
-        border:borderClr,
+        // border:borderClr,
       };
     return(
       <button style={buttonStyle} className="btn-bg">{label}</button>

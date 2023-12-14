@@ -58,9 +58,23 @@ body textarea {
   background-color: #170f58;
   border: 3px solid white;
 }
-.go-to-top {
-  border-radius: 5rem;
-  overflow: hidden;
+.goto-top {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+  color: white;
+  font-size: x-large;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid white;
+  background-color: #170f58;
+  transition: 0.3s transform ease-in-out;
+}
+.goto-top:hover {
+  transform: scale(1.2);
 }
 @media (max-device-width: 420px) {
   body h1 {

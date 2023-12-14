@@ -85,7 +85,7 @@ export default function Section1() {
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
                 <div className="row mt-5 mb-5">
-                  <div className="col-lg-6 col-md-12 my-auto mb-5">
+                  <div className="col-lg-7 col-md-12 my-auto mb-5" data-aos="fade-right">
                     <h1>Lorem ipsum dolor consectetur adipiscing elit</h1>
                     <p className="mt-4">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -104,14 +104,14 @@ export default function Section1() {
                       />
                     </div>
                   </div>
-                  <div className="col-lg-6 col-md-12">
+                  <div className="col-lg-5 col-md-12"  data-aos="fade-left">
                     <img src={MobileLogo} alt="" />
                   </div>
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="2000">
                 <div className="row mt-5 mb-5">
-                  <div className="col-lg-6 col-md-12 my-auto mb-5">
+                  <div className="col-lg-7 col-md-12 my-auto mb-5" data-aos="fade-right">
                     <h1>Lorem ipsum dolor consectetur adipiscing elit</h1>
                     <p className="mt-4">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -130,7 +130,7 @@ export default function Section1() {
                       />
                     </div>
                   </div>
-                  <div className="col-lg-6 col-md-12">
+                  <div className="col-lg-5 col-md-12" data-aos="fade-left">
                     <img src={MobileLogo} alt="" />
                   </div>
                   {/* </div> */}
@@ -138,7 +138,7 @@ export default function Section1() {
               </div>
               <div class="carousel-item">
                 <div className="row mt-5 mb-5">
-                  <div className="col-lg-6 col-md-12 my-auto mb-5">
+                  <div className="col-lg-7 col-md-12 my-auto mb-5" data-aos="fade-right">
                     <h1>Lorem ipsum dolor consectetur adipiscing elit</h1>
                     <p className="mt-4">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -157,7 +157,7 @@ export default function Section1() {
                       />
                     </div>
                   </div>
-                  <div className="col-lg-6 col-md-12">
+                  <div className="col-lg-5 col-md-12" data-aos="fade-left">
                     <img src={MobileLogo} alt="" />
                   </div>
                 </div>
@@ -185,30 +185,11 @@ export default function Section1() {
         </button>
       </div>
 
-      {/* <h1>Lorem ipsum dolor consectetur adipiscing elit</h1>
-              <p className="mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo tempor
-              </p> *
-             <div className="d-flex gap-3">
-                <StoreButton imgSrc={AppleStoreIcon} storeName="Apple Store" />
-                <StoreButton imgSrc={PlayStoreIcon} storeName="Play Store" />
-              </div> 
-             </div> 
-            <div className="col-lg-6 col-md-12">
-              <img src={MobileLogo} alt="" />
-            </div>   */}
-      {/* </div>
-        </div>
-      </div> */}
-
       {/* section two  */}
 
       <div className="container section2 ">
         <div className="row pt-5 d-flex justify-content-center mb-4">
-          <div className="col-lg-8">
+          <div className="col-lg-8"  data-aos="flip-left">
             <h1 className="text-center">Lorem ipsum dolor</h1>
             <p className="mt-4 text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -218,44 +199,24 @@ export default function Section1() {
             </p>
           </div>
         </div>
-        <div className="row ">
+        <div className="row">
           {serviceData.map((items) => (
-            <div className="col-lg-4">
+            <div className="col-lg-4" data-aos="fade-up">
               <Services
                 para={items.para}
                 head={items.head}
                 imgSrc={items.image}
+                
               />
             </div>
           ))}
 
-          {/* <Services
-            head="Tempor incididunt "
-            para="Lorem ipsum dolor sit amet, consectetur 
-          adipiscing eiusmod tempor incididunt inim 
-          veniam, nostrud exercitation ullamco "
-            imgSrc={Desktop}
-          /> */}
-          {/* <Services
-            head="Tempor incididunt "
-            para="Lorem ipsum dolor sit amet, consectetur 
-          adipiscing eiusmod tempor incididunt inim 
-          veniam, nostrud exercitation ullamco "
-            imgSrc={Profile}
-          />
-          <Services
-            head="Tempor incididunt "
-            para="Lorem ipsum dolor sit amet, consectetur 
-          adipiscing eiusmod tempor incididunt inim 
-          veniam, nostrud exercitation ullamco "
-            imgSrc={Shield}
-          /> */}
         </div>
       </div>
       <div className="section3">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-12 mb-5">
+            <div className="col-lg-6 col-md-12 mb-5" data-aos="fade-right">
               <h1>Lorem ipsum dolor sit conse adipiscing </h1>
               <p className="mt-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -294,7 +255,7 @@ export default function Section1() {
                 />
               </div>
             </div>
-            <div className="col-lg-6 col-md-12">
+            <div className="col-lg-6 col-md-12" data-aos="fade-left">
               {/* <div className="background-img"> */}
               {/* <div className="PlayButton" > */}
               <img src={studentsImg} alt="" className="studentsImg" />
@@ -314,7 +275,7 @@ export default function Section1() {
       <div className="section4">
         <div className="container">
           <div className="row pt-5 d-flex justify-content-center">
-            <div className="col-lg-8">
+            <div className="col-lg-8" data-aos="fade-down">
               <h1 className="text-center mt-5">Lorem ipsum dolor </h1>
               <p className="mt-5 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -323,7 +284,7 @@ export default function Section1() {
               </p>
             </div>
           </div>
-          <div className="row stores d-flex justify-content-center">
+          <div className="row stores d-flex justify-content-center" data-aos="fade-up">
             {store.map((items) => {
               return (
                 <div className="col-lg-4 text-center">

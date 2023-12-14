@@ -3,8 +3,13 @@
   padding: 13px 44px 15px 44px;
   border-radius: 5rem;
   /* margin-top: 1rem; */
+  border: 1px solid #170f58;
+  transition: 0.3s all ease-in-out;
 }
-
+.btn-bg:hover {
+  transform: scale(1.08);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.3);
+}
 @media (max-device-width: 320px) {
   .btn-bg {
     padding: 1rem 1rem 1rem 1rem;

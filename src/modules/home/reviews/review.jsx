@@ -13,9 +13,9 @@ export default function Reviews({ imgSrc, name, designation, para }) {
         <h5 className="mb-4 designation">{designation}</h5>
         <p className="text-center mb-4">{para}</p>
         <div className="d-flex justify-content-center gap-3">
-          <img src={MiniFb} alt="" />
-          <img src={MiniTwit} alt="" />
-          <img src={MiniLinkdin} alt="" />
+          <img src={MiniFb} alt="" className="image-hov"/>
+          <img src={MiniTwit} alt="" className="image-hov"/>
+          <img src={MiniLinkdin} alt="" className="image-hov"/>
         </div>
       </div>
     </>

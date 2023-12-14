@@ -24,6 +24,10 @@
   align-items: center;
   margin-bottom: 4rem;
   padding-top: 3rem;
+  transition: 0.3s all ease-in-out;
+}
+.otherClass:hover {
+  transform: scale(1.07);
 }
 .otherClass h1 {
   color: white;
@@ -40,8 +44,8 @@
 }
 .section10 {
   background-color: #fafbfd;
-  padding-top: 6.25rem;
-  padding-bottom: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 .productivity {
   margin-left: 16rem;

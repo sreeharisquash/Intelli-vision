@@ -93,7 +93,7 @@ export default function Section3() {
       <div className="section9">
         <div className="container">
           <div className="row d-flex justify-content-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-down">
               <h1 className="text-center">Perspiciatis unde</h1>
               <p className="mt-4 text-center mb-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -105,7 +105,7 @@ export default function Section3() {
           <div className="row d-flex gap- justify-content-end">
             <div className="col-lg-4">
               <div className="row">
-                <div className="col">
+                <div className="col" data-aos="fade-right">
                   {features1.map((items) => (
                     <FeaturesPage
                       imgSrc={items.Image}
@@ -116,12 +116,12 @@ export default function Section3() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 my-auto mx-auto d-flex justify-content-center mb-5 pb-4">
+            <div className="col-lg-4 mx-auto d-flex justify-content-center mb-5 pb-4">
               <img src={MobCenter} alt=""/>
             </div>
             <div className="col-lg-4">
               <div className="row">
-                <div className="col">
+                <div className="col" data-aos="fade-left">
                   {features2.map((items) => (
                     <FeaturesPage
                       imgSrc={items.Image}
@@ -138,7 +138,7 @@ export default function Section3() {
       <div className="section10">
         <div className="container">
           <div className="row d-flex justify-content-center">
-            <div className="col-lg-6 col-md-12">
+            <div className="col-lg-6 col-md-12" data-aos="fade-down">
               <h1 className="text-center">Perspiciatis unde</h1>
               <p className="mt-2 text-center mb-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -149,8 +149,8 @@ export default function Section3() {
           </div>
           <div className="row mt-5">
             <div className="col-lg-7 col-md-12 ">
-              <div className="productivity-Bg mb-5">
-                <div className="productivity">
+              <div className="productivity-Bg mb-5" data-aos="fade-right">
+                <div className="productivity" >
                   {ProductivityData.map((items, index) => (
                     <div key={items.id} className={items.customClass}>
                       <Productivity
@@ -165,7 +165,7 @@ export default function Section3() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-5 col-md-12 d-flex justify-content-center">
+            <div className="col-lg-5 col-md-12 d-flex justify-content-center" data-aos="fade-left">
               <img src={ProductivityImg} alt="" className="mt-4" />
             </div>
           </div>
@@ -174,7 +174,7 @@ export default function Section3() {
       <div className="section11">
         <div className="container">
           <div className="row d-flex justify-content-center">
-            <div className="col-lg-7">
+            <div className="col-lg-7" data-aos="fade-down">
               <h1 className="text-center">Perspiciatis unde</h1>
               <p className="mt-4 text-center mb-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -185,7 +185,7 @@ export default function Section3() {
           </div>
           <div className="row mt-5">
             {PurchaseData.map((items , index) => (
-              <div className="col-lg-4 col-md-12">
+              <div className="col-lg-4 col-md-12" data-aos="fade-up">
                 <div className={`${index === 1 ? 'otherClass' : 'purchase-Container'}`}>
                   <Purchase price={items.price} />
                 </div>
