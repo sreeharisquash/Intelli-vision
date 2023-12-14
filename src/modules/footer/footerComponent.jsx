@@ -47,7 +47,7 @@ export default function Footer({ head, para }) {
         <div className="container">
           <div className="row ">
             <div className="col-lg-4 col-md-12 mb-3">
-              <div className="cursor-pointer" onClick={() => navigate("/")}>
+              <div className="logo-name-sec" onClick={() => navigate("/")}>
                 <img src={LOGO} alt="" />
                 <span className="ralewayFont">INTELLI VISION</span>
               </div>

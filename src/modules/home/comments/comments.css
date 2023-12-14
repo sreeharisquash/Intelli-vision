@@ -33,7 +33,7 @@
   top: 0.1rem;
 }
 .margin-container {
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   padding-bottom: 1rem;
 }
 .card {
@@ -41,7 +41,7 @@
   position: relative;
 }
 .card-body {
-  padding: 0 0 1rem 0;
+  padding: 0 2rem 1rem 2rem;
 }
 .day-and-month {
   /* position: relative; */

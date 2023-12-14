@@ -146,6 +146,7 @@ export default function Section2() {
     const params = {
       // pagination: true,
       loop: true,
+    
       autoplay: true,
       breakpoints: {
         640: {
@@ -299,6 +300,7 @@ export default function Section2() {
                   autoplay="true"
                   init="false"
                   slides-per-view="3"
+                  
                 >
                   <swiper-slide>
                     <img src={Screen1} alt="" />

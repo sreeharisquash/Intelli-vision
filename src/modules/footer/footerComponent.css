@@ -38,3 +38,7 @@
 .unordered-list {
   margin-left: -1rem;
 }
+.logo-name-sec {
+  cursor: pointer;
+  margin-top: -1rem;
+}

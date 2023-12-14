@@ -54,7 +54,14 @@ body {
 body textarea {
   resize: none;
 }
-
+.app-container .btn-primary {
+  background-color: #170f58;
+  border: 3px solid white;
+}
+.go-to-top {
+  border-radius: 5rem;
+  overflow: hidden;
+}
 @media (max-device-width: 420px) {
   body h1 {
     font-size: 30px;

@@ -140,7 +140,7 @@ export default function Section3() {
           <div className="row d-flex justify-content-center">
             <div className="col-lg-6 col-md-12">
               <h1 className="text-center">Perspiciatis unde</h1>
-              <p className="mt-4 text-center mb-5">
+              <p className="mt-2 text-center mb-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 doeiusmod tempor incididunt ut labore Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris

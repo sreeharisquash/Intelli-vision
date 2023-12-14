@@ -57,7 +57,7 @@ export default function Section4() {
           <div className="row d-flex justify-content-center ">
             <div className="col-lg-6">
               <h1 className="text-center mt-3">Aliquam sem </h1>
-              <p className="mt-5 text-center">
+              <p className="mt-3 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 doeiusmod tempor incididunt ut labore Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris{" "}
@@ -122,7 +122,7 @@ export default function Section4() {
             </div>
             <div className="col-lg-6">
               <h1>Elit pellentesque lacus habitant morbi</h1>
-              <p className="mt-2">
+              <p className="mt-3">
                 Lorem ipsum dolor sit consectetur dolor sit amet, dolor
                 consectetur adipiscing sed doeiusmodut labore enim ad minim
                 dolor veniam nostrud exercitation dolor sit, consectetur

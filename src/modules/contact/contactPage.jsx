@@ -28,7 +28,7 @@ export default function ContactPage() {
       id: "3",
       image: Location,
       method: "Our location",
-      medium1: "625 Blake Road, Kattaghat",
+      medium1: "625 Road, Kattaghat",
       medium2: "LA 14536, USA",
     },
   ];
@@ -128,7 +128,10 @@ export default function ContactPage() {
                 ))}
               </div>
             </div>
+            <div>
             <GoogleMap />
+            </div>
+            
             <Footer />
           </div>
         </div>

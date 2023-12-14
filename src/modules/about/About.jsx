@@ -71,12 +71,12 @@ const About = () => {
         </div>
         <div className="container pt-5">
           <h1 className="text-center mt-4 ">Reasons for choosing us</h1>
-          <p className="mt-4 text-center mb-5">
+          <p className="mt- text-center mb-3">
             Innovate , change and transform
           </p>
           <div
             className="row reason-section justify-content-center"
-            style={{ marginTop: "6rem" }}
+            style={{ marginTop: "3rem" }}
           >
             {choosingData.map((items) => (
               <div className="col-lg-6 col-md-12">

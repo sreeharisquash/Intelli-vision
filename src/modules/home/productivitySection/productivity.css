@@ -62,46 +62,80 @@
 }
 @media (min-device-width: 1092px) and (max-device-width: 1319px) {
   .custom-class-1 {
-    margin-left: -8rem;
+    margin-left: -6rem;
     margin-right: 2rem;
   }
   .custom-class-2 {
     margin-top: 5rem;
     margin-left: -8rem;
-    margin-right: 1rem;
+    margin-right: 3rem;
   }
 
   .custom-class-3 {
     margin-top: 3rem;
-    margin-left: -8rem;
+    margin-left: -6rem;
     margin-right: 1rem;
   }
 }
-@media (min-device-width: 845px) and (max-device-width: 1091px) {
+@media (min-device-width: 1025px) and (max-device-width: 1091px) {
   .custom-class-1 {
-    margin-left: -5rem;
+    margin-left: -9rem;
     margin-right: 3rem;
   }
   .custom-class-2 {
     margin-top: 5rem;
-    margin-left: -5rem;
+    margin-left: -8rem;
+    margin-right: 1rem;
+  }
+
+  .custom-class-3 {
+    margin-top: 3rem;
+    margin-left: -8rem;
+    margin-right: 2rem;
+  }
+}
+@media (min-device-width: 992px) and (max-device-width: 1024px) {
+  .custom-class-1 {
+    margin-left: -3rem;
+    margin-right: 5rem;
+  }
+  .custom-class-2 {
+    margin-top: 5rem;
+    margin-left: -3rem;
+    margin-right: 7rem;
+  }
+
+  .custom-class-3 {
+    margin-top: 3rem;
+    margin-left: -3rem;
+    margin-right: 5rem;
+  }
+}
+@media (min-device-width: 769px) and (max-device-width: 991px) {
+  .custom-class-1 {
+    margin-left: -6rem;
+    margin-right: 3rem;
+  }
+  .custom-class-2 {
+    margin-top: 5rem;
+    margin-left: -8rem;
     margin-right: 3rem;
   }
 
   .custom-class-3 {
     margin-top: 3rem;
-    margin-left: -5rem;
-    margin-right: 2rem;
+    margin-left: -6rem;
+    margin-right: 3rem;
   }
 }
-@media (min-device-width: 680px) and (max-device-width: 845px) {
+@media (min-device-width: 680px) and (max-device-width: 768px) {
   .custom-class-1 {
     margin-left: -8rem;
     margin-right: 0;
   }
   .custom-class-2 {
     margin-top: 5rem;
-    margin-left: -9rem;
+    margin-left: -8rem;
     margin-right: 1rem;
   }
 

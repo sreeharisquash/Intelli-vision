@@ -128,4 +128,7 @@
   .section2 .img-contain {
     max-width: 37%;
   }
+  .section8 .btn-primary {
+    font-size: 9px !important;
+  }
 }

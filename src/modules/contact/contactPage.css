@@ -46,6 +46,11 @@ body h5 {
   gap: 3rem;
 }
 
+@media (max-device-width: 991px) {
+  #exampleFormControlTextarea1 {
+    max-width: 72% !important;
+  }
+}
 @media (max-device-width: 580px) {
   .name-sec {
     flex-direction: column;

@@ -84,7 +84,7 @@ const Shop = () => {
           </InputGroup>
           <div className="row">
             {displayProducts.map((items) => (
-              <div className="col-lg-4 mb-5" onClick={navigate('/')}>
+              <div className="col-lg-4 mb-5" onClick={()=> navigate('/')}>
                 <Products
                   image={items.image}
                   rating={items.rating}
