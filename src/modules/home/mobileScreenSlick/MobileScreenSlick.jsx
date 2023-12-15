@@ -66,7 +66,7 @@ const MobileScreenSlick = () => {
     { id: "5", image: Screen1 },
   ];
 
-  const loopCount = 5;
+//   const loopCount = 5;
 
   return (
     <>
