@@ -10,6 +10,13 @@ import Screen4 from "../../../assets/images/screen4.svg";
 
 const MobileScreenSlick = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const datas = [
+    { id: "1", image: Screen1 },
+    { id: "2", image: Screen2 },
+    { id: "3", image: Screen3 },
+    { id: "4", image: Screen4 },
+    { id: "5", image: Screen1 },
+  ];
 
   useEffect(() => {
     // Calculate the middle slide index
@@ -58,13 +65,7 @@ const MobileScreenSlick = () => {
     ],
   };
 
-  const datas = [
-    { id: "1", image: Screen1 },
-    { id: "2", image: Screen2 },
-    { id: "3", image: Screen3 },
-    { id: "4", image: Screen4 },
-    { id: "5", image: Screen1 },
-  ];
+
 
 //   const loopCount = 5;
 
