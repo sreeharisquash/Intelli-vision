@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./secondSection.css";
 
 // import PaperBird from "../../../assets/images/pb-before.svg";
@@ -126,7 +126,7 @@ export default function Section2() {
       para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris",
     },
   ];
-  
+
   return (
     <>
       <div className="section5">
