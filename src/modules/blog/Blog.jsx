@@ -52,14 +52,14 @@ const Blog = () => {
     <>
       <Header />
 
-      <div className="blog-container" onClick={() => navigate("/blog-details")}>
+      <div className="blog-container" >
         <div className="blog-breadcrumbs">
           <BreadCrumbs />
         </div>
         <div className="container">
           <div className="row mt-5">
             {reviews.map((items) => (
-              <div className="col-lg-4 mb-5 blogs">
+              <div className="col-lg-4 mb-5 blogs" onClick={() => navigate("/blog-details")}>
                 <Comments
                   imgSrc={items.image}
                   head={items.head}

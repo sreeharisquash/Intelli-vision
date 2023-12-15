@@ -114,10 +114,10 @@
   transform: scale(0.8);
 } */
 
-.swiper-slide-next,
+/* .swiper-slide-next,
 .swiper-slide-prev {
   transform: scale(0.7);
-}
+} */
 @media (max-device-width: 769px) {
   .section8 .col-lg-5 {
     display: flex;

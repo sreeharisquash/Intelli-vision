@@ -64,17 +64,20 @@ body textarea {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   color: white;
   font-size: x-large;
-  width: 4rem;
-  height: 4rem;
+  width: 7rem;
+  height: 7rem;
   border: 2px solid white;
   background-color: #170f58;
   transition: 0.3s transform ease-in-out;
 }
 .goto-top:hover {
   transform: scale(1.2);
+}
+body {
+  overflow-x: hidden;
 }
 @media (max-device-width: 420px) {
   body h1 {

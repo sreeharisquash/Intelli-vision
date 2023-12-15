@@ -3,7 +3,7 @@ import "./App.css";
 import Router from "./routes/Router";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import gotToTop from "./assets/images/plane-up-solid.svg";
 function App() {
   function BackToTopButton() {
     const [backToTopButton, setBackToTopButton] = useState(false);
@@ -46,11 +46,11 @@ function App() {
               zIndex: "500",
               bottom: "50px",
               right: "50px",
-              fontSize: "40px",
+              // fontSize: "80px",
             }}
             onClick={scrollUp}
           >
-            ^
+            <img src={gotToTop} alt="" style={{ width: "50%" }} />
           </button>
         )}
       </div>

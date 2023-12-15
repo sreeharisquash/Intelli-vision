@@ -7,10 +7,10 @@ export default function Comments({ imgSrc, head, para, day, month }) {
     // <div className="comment-container">
     <div class="card">
       <img src={imgSrc} class="card-img-top" alt="..." />
-      {/* <div className="day-and-month">
+      <div className="day-and-month">
         <h5 className="text-white">{day}</h5>
         <p className="text-white">{month}</p>
-      </div> */}
+      </div>
       <div class="card-body">
         <div className="margin-container">
           <div className="d-flex mt-4 gap-5">

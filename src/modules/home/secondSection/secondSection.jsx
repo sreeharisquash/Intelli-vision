@@ -4,10 +4,10 @@ import "./secondSection.css";
 // import PaperBird from "../../../assets/images/pb-before.svg";
 // import ModernCity from "../../../assets/images/mc-before.svg";
 // import Alpha from "../../../assets/images/alpha&co-before.svg";
-import Screen1 from "../../../assets/images/screen1.svg";
-import Screen2 from "../../../assets/images/screen2.svg";
-import Screen3 from "../../../assets/images/screen3.svg";
-import Screen4 from "../../../assets/images/screen4.svg";
+// import Screen1 from "../../../assets/images/screen1.svg";
+// import Screen2 from "../../../assets/images/screen2.svg";
+// import Screen3 from "../../../assets/images/screen3.svg";
+// import Screen4 from "../../../assets/images/screen4.svg";
 // import MainScreen from "../../../assets/images/mainScreen.svg";
 import Darell from "../../../assets/images/darell.svg";
 import Dianne from "../../../assets/images/dianna.svg";
@@ -38,6 +38,7 @@ import "slick-carousel/slick/slick-theme.css";
 import SlickCarousel from "../slick-slider/slickCarousel";
 // import ScreenSlicker from "../mobScreensSwiper/mobScreensSwiper";
 import { register } from "swiper/element/bundle";
+import MobileScreenSlick from "../mobileScreenSlick/MobileScreenSlick";
 // Import Swiper React components
 
 register();
@@ -125,82 +126,12 @@ export default function Section2() {
       para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris",
     },
   ];
-
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   arrows: false,
-  //   centerMode: true,
-  //   centerPadding: "15px"
-  // };
-
-  const swiperRef = useRef(null);
-
-  useEffect(() => {
-    const swiperContainer = swiperRef.current;
-    const params = {
-      // pagination: true,
-      loop: true,
-    
-      autoplay: true,
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-          centeredSlides: false,
-        },
-        992: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        1440: {
-          slidesPerView: 5,
-          spaceBetween: 10,
-          centeredSlides: true,
-        },
-      },
-      injectStyles: [
-        `
-          .swiper-wrapper {
-            min-height: 300px;
-          }
-          .swiper-pagination-bullet{
-            width: 1rem;
-            height: 1rem;
-            background-color: #D9D9D9;
-          }
-          .swiper-pagination-bullet-active {
-            background: #FAC641;
-            box-shadow: 2px 2px 0px 0px #000000BF;
-          }
-      `,
-      ],
-    };
-
-    Object.assign(swiperContainer, params);
-    swiperContainer.initialize();
-
-    // // listen for Swiper events using addEventListener
-    // swiperElRef.current.addEventListener("swiperprogress", (e) => {
-    //   // eslint-disable-next-line no-unused-vars
-    //   const [swiper, progress] = e.detail;
-    //   console.log(progress);
-    // });
-
-    // swiperElRef.current.addEventListener("swiperslidechange", (e) => {
-    //   console.log("slide changed");
-    // });
-  }, []);
+  
   return (
     <>
       <div className="section5">
         <div className="container pt-5">
-          <div className="row justify-content-center pt-5 mt-5" >
+          <div className="row justify-content-center pt-5 mt-5">
             <div className="col-lg-6 pt-5" data-aos="fade-down">
               <h1 className="text-center">Dolor Lorem ipsum</h1>
               <p className="mt-4 text-center mb-5">
@@ -209,137 +140,8 @@ export default function Section2() {
                 quis nostrud exercitation ullamco laboris
               </p>
             </div>
-
-            <div className="row d-flex justify-content-center">
-              <div className="col-lg-12 text-center ">
-                {/* <Swiper
-                 modules={{Autoplay}}
-                effect={"coverflow"}
-                  grabCursor={true}
-                  centeredSlides={true}
-                  autoplay={{
-                    "delay": 1,
-                    "disableOnInteraction": false,
-                    "pauseOnMouseEnter": false,
-                    "stopOnLastSlide": false,
-                    "waitForTransition": true
-                }} */}
-                {/* loop={true}
-                  spaceBetween={50}
-                  autoplay={{delay:2000}}
-                  slidesPerView={5}
-                  slidesPerGroup={1}
-                coverflowEffect={{ */}
-                {/* rotate: 0,
-                    stretch: 0,
-                 depth: 100,
-                    modifier: 2.5,
-                   }}
-                  breakpoints={{
-                    0: {
-                      slidesPerView: 1,
-                    },
-                    499: {
-                      slidesPerView: 1,
-                    },
-                    768: {
-                      slidesPerView: 3,
-                    },
-
-                    992: {
-                      slidesPerView: 4,
-                    },
-
-                    1024: {
-                      slidesPerView: 5,
-                    },
-                  }}
-                > */}
-                {/* <SwiperSlide>
-                    <img src={Screen1} alt="" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={Screen2} alt="" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={Screen3} alt="" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={Screen4} alt="" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={Screen2} alt="" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={Screen3} alt="" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={Screen1} alt="" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={Screen2} alt="" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={Screen3} alt="" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={Screen4} alt="" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={Screen2} alt="" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={Screen3} alt="" />
-                  </SwiperSlide>
-                </Swiper> */}
-                {/* <ScreenSlicker/> */}
-                <swiper-container
-                  ref={swiperRef}
-                  pagination="false"
-                  loop="true"
-                  autoplay="true"
-                  init="false"
-                  slides-per-view="3"
-                  
-                >
-                  <swiper-slide>
-                    <img src={Screen1} alt="" />
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src={Screen2} alt="" />
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src={Screen3} alt="" />
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src={Screen4} alt="" />
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src={Screen2} alt="" />
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src={Screen3} alt="" />
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src={Screen1} alt="" />
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src={Screen2} alt="" />
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src={Screen3} alt="" />
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src={Screen4} alt="" />
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src={Screen2} alt="" />
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src={Screen3} alt="" />
-                  </swiper-slide>
-                </swiper-container>
-              </div>
+            <div>
+              <MobileScreenSlick />
             </div>
           </div>
         </div>
@@ -464,7 +266,7 @@ export default function Section2() {
           <div className="row d-flex justify-content-center">
             <div className="col-lg-7" data-aos="fade-down">
               <h1 className="text-center">Dolor Lorem ipsum</h1>
-              <p className="mt-4 text-center mb-5" >
+              <p className="mt-4 text-center mb-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 doeiusmod tempor incididunt ut labore Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris
@@ -472,10 +274,16 @@ export default function Section2() {
             </div>
           </div>
           <div className="row pt-5">
-            <div className="col-lg-5 col-md-12 mb-5 d-flex justify-content-center" data-aos="fade-right">
+            <div
+              className="col-lg-5 col-md-12 mb-5 d-flex justify-content-center"
+              data-aos="fade-right"
+            >
               <img src={DoubtsLogo} alt="doubts" />
             </div>
-            <div className="col-lg-7 col-md-12 d-flex flex-column my-auto" data-aos="fade-left">
+            <div
+              className="col-lg-7 col-md-12 d-flex flex-column my-auto"
+              data-aos="fade-left"
+            >
               {dropDowns.map((items) => (
                 <div className="row">
                   <div className="col">

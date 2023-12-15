@@ -68,6 +68,10 @@
   z-index: 1;
   bottom: 20rem;
   cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.playButton:hover {
+  transform: scale(1.1);
 }
 .popup {
   display: none;

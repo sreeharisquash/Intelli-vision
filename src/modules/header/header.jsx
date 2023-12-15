@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <nav class="navbar navBg navbar-expand-xl" >
-      <div class="container" data-aos="zoom-in-down">
+      <div class="container">
         <div className="nav-contain" onClick={()=> navigate('/')}>
           <img src={LOGO} alt="logo" />
           <span className="ralewayFont">INTELLI VISION</span>
