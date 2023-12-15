@@ -15,7 +15,7 @@ const MobileScreenSlick = () => {
     // Calculate the middle slide index
     const middleSlideIndex = Math.floor(datas.length / 2) + (datas.length % 2 === 0 ? 0 : 1);
     setCurrentSlide(middleSlideIndex);
-  });   
+  }, [datas.length]);   
   const settings = {
     infinite: true,
     slidesToShow: 5,
