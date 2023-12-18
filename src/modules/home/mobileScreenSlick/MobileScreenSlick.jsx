@@ -1,36 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./MobileScreenSlick.css";
+// import "./slickCarousel.css";
 import Screen1 from "../../../assets/images/screen1.svg";
 import Screen2 from "../../../assets/images/screen2.svg";
 import Screen3 from "../../../assets/images/screen3.svg";
 import Screen4 from "../../../assets/images/screen4.svg";
 
 const MobileScreenSlick = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const datas = [
-    { id: "1", image: Screen1 },
-    { id: "2", image: Screen2 },
-    { id: "3", image: Screen3 },
-    { id: "4", image: Screen4 },
-    { id: "5", image: Screen1 },
-  ];
-
-  useEffect(() => {
-    // Calculate the middle slide index
-    const middleSlideIndex = Math.floor(datas.length / 2) + (datas.length % 2 === 0 ? 0 : 1);
-    setCurrentSlide(middleSlideIndex);
-  }, [datas.length]);   
+    
   const settings = {
+    //   dots: true,
     infinite: true,
+    // speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
-    initialSlide: currentSlide,
+    centerMode: true,
+    centerPadding: "0",
     responsive: [
       {
         breakpoint: 400,
@@ -63,23 +54,30 @@ const MobileScreenSlick = () => {
         },
       },
     ],
+    // centerMode: true,
+    //   centerPadding: "15px"
   };
 
+  const datas = [
+    { id: "1", image: Screen1 },
+    { id: "2", image: Screen2 },
+    { id: "3", image: Screen3 },
+    { id: "4", image: Screen4 },
+    { id: "4", image: Screen1 },
+  ];
 
+  const loopCount = 5;
 
-//   const loopCount = 5;
+  const loopedData = Array(datas.length * loopCount)
+    .fill()
+    .map((_, index) => datas[index % datas.length]);
 
   return (
     <>
       <div className="mobile-screen-slick">
         <Slider {...settings}>
-          {datas.map((items, index) => (
-            <div
-              key={items.id}
-              className={`head-image ${
-                index === currentSlide ? "slick-current" : ""
-              }`}
-            >
+          {loopedData.map((items) => (
+            <div className="head-image" key={items.id}>
               <img src={items.image} alt="" className="before-images" />
             </div>
           ))}
@@ -88,5 +86,4 @@ const MobileScreenSlick = () => {
     </>
   );
 };
-
 export default MobileScreenSlick;

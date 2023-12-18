@@ -1,5 +1,5 @@
 .mobile-screen-slick .slick-slide {
-  /* transform: scale(0.7); */
+  transform: scale(0.8);
 }
 .mobile-screen-slick .slick-current {
   transform: scale(1.001);
@@ -10,7 +10,4 @@
 }
 .slick-slide:focus {
   outline: none !important;
-}
-.middle-slide {
-  background-color: rebeccapurple;
 }

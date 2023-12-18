@@ -16,8 +16,8 @@
   padding: 1rem 2rem 1rem 2rem;
   font-size: 20px;
 }
-body h1,
-body h5 {
+.Form-section h1,
+.Form-section h5 {
   text-align: center;
 }
 .contact-breadcrumb {

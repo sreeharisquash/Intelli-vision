@@ -49,16 +49,24 @@
 }
 .day-and-month {
   /* position: relative; */
+  /* position: relative; */
   z-index: 1;
-  background-image: url("../../../assets/images/rose-round.svg");
-  background-size: cover;
-  width: 19%;
-  height: 5rem;
-  padding-top: 0.5rem;
+  /* background-image: url(http://localhost:3001/static/media/rose-round.9f46001….svg); */
+  background-color: #ff007a;
+  border-radius: 100%;
+  padding: 1rem 2rem 0rem 2rem;
+  /* background-repeat: no-repeat; */
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  right: 1rem;
+  right: 0rem;
   top: 16rem;
+}
+
+@media (min-device-width: 1240px) and (max-device-width: 1399px) {
+  .day-and-month {
+    padding: 0rem 1rem 0rem 1rem;
+    top: 12rem;
+  }
 }

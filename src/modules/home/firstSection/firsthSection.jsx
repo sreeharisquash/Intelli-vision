@@ -18,6 +18,7 @@ import PlayStore from "../../../assets/images/playStore.svg";
 import Windows from "../../../assets/images/windows.svg";
 import StoreComponent from "../storeComponent/storeComponent";
 import studentsImg from "../../../assets/images/students.svg";
+import MainSlider from "../mainSlider/MainSlider";
 
 export default function Section1() {
   const [isVideoPopupOn, setisVideoPopupOn] = useState(false);
@@ -83,7 +84,7 @@ export default function Section1() {
             data-bs-ride="carousel"
           >
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
+              <div class="carousel-item active" data-bs-interval="2000">
                 <div className="row mt-5 mb-5">
                   <div className="col-lg-7 col-md-12 my-auto mb-5" data-aos="fade-right">
                     <h1>Lorem ipsum dolor consectetur adipiscing elit</h1>
@@ -133,10 +134,10 @@ export default function Section1() {
                   <div className="col-lg-5 col-md-12" data-aos="fade-left">
                     <img src={MobileLogo} alt="" />
                   </div>
-                  {/* </div> */}
+                  </div>
                 </div>
-              </div>
-              <div class="carousel-item">
+            
+              <div class="carousel-item" data-bs-interval="2000">
                 <div className="row mt-5 mb-5">
                   <div className="col-lg-7 col-md-12 my-auto mb-5" data-aos="fade-right">
                     <h1>Lorem ipsum dolor consectetur adipiscing elit</h1>
@@ -160,11 +161,17 @@ export default function Section1() {
                   <div className="col-lg-5 col-md-12" data-aos="fade-left">
                     <img src={MobileLogo} alt="" />
                   </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        {/* <div className="container"> */}
+        {/* <MainSlider/> */}
+        {/* </div> */}
+      
+        
         <button
           class="carousel-control-prev"
           type="button"
@@ -183,7 +190,7 @@ export default function Section1() {
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      {/* </div> */}
 
       {/* section two  */}
 
@@ -255,7 +262,7 @@ export default function Section1() {
                 />
               </div>
             </div>
-            <div className="col-lg-6 col-md-12" data-aos="fade-left">
+            <div className="col-lg-6 col-md-12 d-flex flex-column justify-content-center" data-aos="fade-left">
               {/* <div className="background-img"> */}
               {/* <div className="PlayButton" > */}
               <img src={studentsImg} alt="" className="studentsImg" />
