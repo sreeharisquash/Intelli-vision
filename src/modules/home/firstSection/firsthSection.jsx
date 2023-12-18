@@ -18,7 +18,7 @@ import PlayStore from "../../../assets/images/playStore.svg";
 import Windows from "../../../assets/images/windows.svg";
 import StoreComponent from "../storeComponent/storeComponent";
 import studentsImg from "../../../assets/images/students.svg";
-import MainSlider from "../mainSlider/MainSlider";
+// import MainSlider from "../mainSlider/MainSlider";
 
 export default function Section1() {
   const [isVideoPopupOn, setisVideoPopupOn] = useState(false);

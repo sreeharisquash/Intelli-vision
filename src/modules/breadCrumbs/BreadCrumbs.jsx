@@ -73,7 +73,7 @@ const BreadCrumbs = () => {
   const navigateLinks = breadcrumbPath
     .split(" / ")
     .map((section, index, array) => {
-      const path = array.slice(0, index + 1).join(" / ");
+      // const path = array.slice(0, index + 1).join(" / ");
       return (
         <span key={index}>
           {index < array.length - 1 && (

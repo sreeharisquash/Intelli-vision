@@ -67,8 +67,8 @@ body textarea {
   /* padding-top: 1rem; */
   color: white;
   font-size: x-large;
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
   border: 2px solid white;
   background-color: #170f58;
   transition: 0.3s transform ease-in-out;

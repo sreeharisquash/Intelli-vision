@@ -39,6 +39,7 @@
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
+  flex-direction: column;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 5), 0 1px 2px -1px rgb(0 0 0 / 5);
   border: 3px solid whitesmoke;
 }
@@ -48,12 +49,37 @@
   position: relative;
   overflow: hidden;
 }
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
 
+  /* background: rgba(0, 0, 0, 0.4); */
+}
+.support-team p,
+.team-leaders p {
+  font-size: 15px;
+}
+
+.team-image:hover .content {
+  opacity: 1;
+}
+.team-image:hover img {
+  opacity: 0.5;
+}
 .team-image img {
   width: 100%;
   height: auto;
   display: block;
-  transition: filter 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .team-image {
   position: relative;
@@ -76,9 +102,9 @@
   z-index: 2;
 }
 
-.team-image:hover .overlay-text {
-  visibility: visible;
-  opacity: 1;
+.content:hover {
+  /* transform: scale(1.1); */
+  opacity: 0.5;
 }
 body h2 {
   text-transform: capitalize;

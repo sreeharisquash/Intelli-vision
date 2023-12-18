@@ -76,7 +76,7 @@ export default function Section2() {
     {
       id: "4",
       image: Ralph,
-      name: "Ralph Edwards",
+      name: "Niklaus mikaelson",
       Designation: "Web Designer",
       para: "Lorem ipsum dolor sit consectetur dolor sit amet, consectetur adipiscing elit, sed doeiusmodut labore enim ad minim veniam, quis nostrud exercitationdolor sit amet, consectetur adipiscing adipiscing doeiusmod tempor incididunt ut labore minim veniam, quis nostrud exercitation.",
     },

@@ -8,7 +8,7 @@ export default function Reviews({ imgSrc, name, designation, para }) {
   return (
     <>
       <div className="review-container">
-        <img src={imgSrc} alt="" className="mb-5"/>
+        <img src={imgSrc} alt="" className="mb-3"/>
         <h2 className="mb-2 name-sec" >{name}</h2>
         <h5 className="mb-4 designation">{designation}</h5>
         <p className="text-center mb-4">{para}</p>

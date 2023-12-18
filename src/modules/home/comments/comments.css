@@ -54,19 +54,112 @@
   /* background-image: url(http://localhost:3001/static/media/rose-round.9f46001….svg); */
   background-color: #ff007a;
   border-radius: 100%;
-  padding: 1rem 2rem 0rem 2rem;
+  width: 20%;
+  height: 13%;
+  padding-top: 0.3rem;
+  /* padding: 1rem 2rem 0rem 2rem; */
   /* background-repeat: no-repeat; */
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  right: 0rem;
+  right: 0.5rem;
   top: 16rem;
 }
 
-@media (min-device-width: 1240px) and (max-device-width: 1399px) {
+@media (min-device-width: 1200px) and (max-device-width: 1399px) {
   .day-and-month {
-    padding: 0rem 1rem 0rem 1rem;
+    /* padding: 0rem 1rem 0rem 1rem; */
+    width: 20%;
+    height: 11%;
+    /* padding-top: 0.3rem; */
+    top: 13rem;
+  }
+}
+@media (min-device-width: 992px) and (max-device-width: 1199px) {
+  .day-and-month {
+    /* padding: 0rem 1rem 0rem 1rem; */
+    width: 20%;
+    height: 11%;
+    /* padding-top: 0.3rem; */
+    top: 11rem;
+  }
+}
+@media (min-device-width: 768px) and (max-device-width: 991px) {
+  .day-and-month {
+    width: 13%;
+    height: 11%;
+    top: 29rem;
+    padding-top: 0.8rem;
+  }
+}
+@media (min-device-width: 548px) and (max-device-width: 767px) {
+  .day-and-month {
+    width: 13%;
+    height: 10%;
+    top: 21rem;
+    /* padding-top: 0.3rem;  */
+  }
+}
+@media (min-device-width: 510px) and (max-device-width: 547px) {
+  .day-and-month {
+    width: 13%;
+    height: 10%;
+    top: 20rem;
+    /* padding-top: 0.3rem;  */
+  }
+}
+@media (min-device-width: 460px) and (max-device-width: 509px) {
+  .day-and-month {
+    width: 13%;
+    height: 10%;
+    top: 18rem;
+    /* padding-top: 0.3rem;  */
+  }
+}
+@media (min-device-width: 400px) and (max-device-width: 459px) {
+  .day-and-month {
+    width: 16%;
+    height: 12%;
+    top: 15rem;
+    padding-top: 0.3rem;
+  }
+}
+@media (min-device-width: 370px) and (max-device-width: 399px) {
+  .day-and-month {
+    width: 14%;
+    height: 10%;
+    top: 14rem;
+    padding-top: 0.2rem;
+  }
+}
+@media (min-device-width: 340px) and (max-device-width: 369px) {
+  .day-and-month {
+    width: 14%;
+    height: 10%;
+    top: 13rem;
+    padding-top: 0.2rem;
+  }
+}
+@media (min-device-width: 325px) and (max-device-width: 339px) {
+  .day-and-month {
+    width: 14%;
+    height: 9%;
     top: 12rem;
+    padding-top: 0.2rem;
+  }
+  .day-and-month h5 {
+    font-size: 12px;
+  }
+}
+@media (max-device-width: 324px) {
+  .day-and-month {
+    width: 15%;
+    height: 9%;
+    top: 11rem;
+    padding-top: 0.2rem;
+  }
+  .day-and-month h5 {
+    font-size: 12px;
   }
 }

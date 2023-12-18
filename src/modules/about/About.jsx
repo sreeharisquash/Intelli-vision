@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../header/header";
 import Footer from "../footer/footerComponent";
 import "./About.css";
@@ -46,22 +46,21 @@ const About = () => {
   ];
 
   const ourTeam = [
-    { id: "1", position: "CEO", image: CEOimg },
-    { id: "2", position: "Managing director", image: CEOimg },
+    { id: "1", position: "CEO", image: CEOimg , name: "Katherine Pierce" , para:"Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor "  },
+    { id: "2", position: "Managing director", image: CEOimg , name: "Katherine Pierce" , para:"Lorem ipsum dolor sit consecteturadipiscing doeiusmod tempor "},
   ];
 
   const teamLeaders = [
-    { id: "1", image: CEOimg },
-    { id: "2", image: CEOimg },
-    { id: "3", image: CEOimg },
+    { id: "1", image: CEOimg , name: "Katherine Pierce" , para:"Lorem ipsum dolor sit consecteturadipiscing  "   },
+    { id: "2", image: CEOimg ,name: "Katherine Pierce" , para:"Lorem ipsum dolor sit consecteturadipiscing  "   },
+    { id: "3", image: CEOimg ,name: "Katherine Pierce" , para:"Lorem ipsum dolor sit consecteturadipiscing  "   },
   ];
   const supportTeam = [
-    { id: "1", image: CEOimg },
-    { id: "2", image: CEOimg },
-    { id: "3", image: CEOimg },
+    { id: "1", image: CEOimg ,name: "Katherine Pierce" , para:"Lorem ipsum dolor sit consecteturadipiscing  "   },
+    { id: "2", image: CEOimg  , name: "Katherine Pierce" , para:"Lorem ipsum dolor sit consecteturadipiscing  "  },
+    { id: "3", image: CEOimg , name: "Katherine Pierce" , para:"Lorem ipsum dolor sit consecteturadipiscing  "  },
   ];
 
-  const [isHovered, setIsHovered] = useState(false);
   return (
     <>
       <Header />
@@ -104,12 +103,13 @@ const About = () => {
                 <div className="col-lg-6" key={items.id}>
                   <h2 className="text-center mb-5">{items.position}</h2>
                   <div
-                    className={`team-image ${isHovered ? "hovered" : ""}`}
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
+                    className="team-image"
                   >
-                    <img src={items.image} alt="" />
-                    {/* {isHovered && <p className="overlay-text">{items.name}</p>} */}
+                    <img src={items.image} alt="" className=""/>
+                   <div className="content">
+                    <h3 className="text-center" style={{width:"80%"}}>{items.name}</h3>
+                    <p className="text-center" style={{width:"50%"}}>{items.para}</p>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -120,6 +120,10 @@ const About = () => {
                 <div className="col-lg-4" key={items.id}>
                   <div className="team-image">
                     <img src={items.image} alt="" />
+                    <div className="content team-leaders">
+                    <h5 className="text-center" style={{width:"80%"}}>{items.name}</h5>
+                    <p className="text-center" style={{width:"50%"}}>{items.para}</p>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -128,6 +132,10 @@ const About = () => {
                 <div className="col-lg-4" key={items.id}>
                   <div className="team-image">
                     <img src={items.image} alt="" />
+                    <div className="content support-team">
+                    <h5 className="text-center" style={{width:"80%"}}>{items.name}</h5>
+                    <p className="text-center" style={{width:"50%"}}>{items.para}</p>
+                    </div>
                   </div>
                 </div>
               ))}
