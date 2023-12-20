@@ -92,8 +92,8 @@ export default function Section3() {
     <>
       <div className="section9">
         <div className="container">
-          <div className="row d-flex justify-content-center">
-            <div className="col-lg-6" data-aos="fade-down">
+          <div className="row d-flex justify-content-center pt-5">
+            <div className="col-lg-6 " data-aos="fade-down">
               <h1 className="text-center">Perspiciatis unde</h1>
               <p className="mt-4 text-center mb-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

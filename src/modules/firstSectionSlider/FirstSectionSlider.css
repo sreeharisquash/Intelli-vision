@@ -1,0 +1,22 @@
+.slick-prev:before {
+  margin-left: -1rem;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 32px !important;
+}
+.store-download-buttons {
+  display: flex;
+  gap: 2rem;
+}
+@media (max-device-width: 620px) {
+  .slick-prev:before,
+  .slick-next:before {
+    content: none !important;
+  }
+}
+@media (max-device-width: 567px) {
+  .store-download-buttons {
+    flex-direction: column;
+  }
+}

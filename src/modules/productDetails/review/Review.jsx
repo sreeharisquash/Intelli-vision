@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Review.css";
 import CommonButton from "../../commonButton/commonButton";
 
 const Review = () => {
-  const starsSequence = [1, 2, 3, 4, 5];
+  // const starsSequence = [ 5];
+
+  const maxStars = 5; // Define the maximum number of stars
+  const [selectedStars, setSelectedStars] = useState(0);
+
+  const handleStarClick = (starIndex) => {
+    setSelectedStars(starIndex + 1); // Index is 0-based, so add 1 to get the selected star count
+  };
+
+  const starsSequence = Array.from({ length: maxStars }, (_, index) => (
+    <i
+      key={index}
+      className={`fas fa-star star-icon ${index < selectedStars ? 'selected' : ''}`}
+      onClick={() => handleStarClick(index)}
+    ></i>
+  ));
   return (
     <>
       <div className="add-review">
@@ -16,16 +31,12 @@ const Review = () => {
       <div className="rating-section">
         <h5>Your rating</h5>
         <div className="stars-container">
-          {starsSequence.map((groupSize, groupIndex) => (
-            <React.Fragment key={groupIndex}>
-              {Array.from({ length: groupSize }, (_, starIndex) => (
-                <i key={starIndex} className="fas fa-star star-icon"></i>
-              ))}
-              {groupIndex < starsSequence.length - 1 && (
-                <div className="gap"></div>
-              )}
-            </React.Fragment>
-          ))}
+        {starsSequence.map((star, index) => (
+        <React.Fragment key={index}>
+          {star}
+          {index < maxStars - 1 && <div className="gap"></div>}
+        </React.Fragment>
+      ))}
         </div>
         <div className="your-review">
           <h5 className="important">
@@ -33,7 +44,7 @@ const Review = () => {
           </h5>
           <textarea type="text-area" class="form-control mt-4" id="text-area" />
           <div className="name-email">
-            <div class="mb-3" style={{ minWidth: "48%" }}>
+            <div style={{ minWidth: "48%" }}>
               <h5 for="firstName" class="form-label">
                 Name
                 <i className="fas fa-star"></i>
@@ -60,7 +71,9 @@ const Review = () => {
               I comment.
             </h5>
           </div>
-          <CommonButton color="#170F58" label="Submit" fontClr="white"/>
+          <div className="contact-common-button">
+            <CommonButton color="#170F58" label="Submit" fontClr="white" />
+          </div>
         </div>
       </div>
     </>

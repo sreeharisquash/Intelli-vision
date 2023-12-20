@@ -81,6 +81,10 @@ body h4 {
   height: 6rem;
   cursor: pointer;
 }
+.buy-now .butn:link,
+.buy-now .butn:visited {
+  width: 100%;
+}
 @media (max-device-width: 657px) {
   .name-email {
     flex-direction: column;

@@ -25,11 +25,6 @@ function DropdownItemTags({ dropdownTitle, para , activeIcon, inactiveIcon }) {
       className={`custom-dropdown-arrow ${isOpen ? "dropdown-open" : ""}`}
       onToggle={handleDropdownToggle}
     >
-      {/* <span
-        className={`custom-dropdown-arrow ${
-          isOpen ? "active-caret" : "inactive-caret"
-        }`}
-      ></span> */}
       <Dropdown.ItemText>
         <p>{para}</p>
       </Dropdown.ItemText>

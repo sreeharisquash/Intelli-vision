@@ -9,7 +9,8 @@ const CommonButton=({color ,fontClr, borderClr , label}) => {
         // border:borderClr,
       };
     return(
-      <button style={buttonStyle} className="btn-bg">{label}</button>
+      // <button style={buttonStyle} className="btn-bg">{label}</button>
+      <a href="#s" style={buttonStyle} class='butn butn__new'><span>{label}</span></a>
 
     )
 }

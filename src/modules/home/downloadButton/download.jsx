@@ -1,17 +1,24 @@
 import React from "react";
-import './download.css'
+import "./download.css";
 
-            
-
-
-export default function downloadButton({onclick ,  imgSrc , altText , storeName}){
-    return(
-            <button className="download-button">
-            <img src={imgSrc} alt={altText} className="store-image"/>
-            <div>
-              <h6>Download on</h6>
-              <h4>{storeName}</h4>
-            </div>
-            </button>
-    )
+export default function downloadButton({
+  onclick,
+  imgSrc,
+  altText,
+  storeName,
+}) {
+  return (
+    <>
+    <div className="download-buttons-container">
+      <a href="#a" class="butn butn__new">
+        {" "}
+        <img src={imgSrc} alt={altText} className="store-image" />
+        <div>
+          <h6>Download on</h6>
+          <h4>{storeName}</h4>
+        </div>
+      </a>
+      </div>
+    </>
+  );
 }

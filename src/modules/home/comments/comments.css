@@ -66,14 +66,18 @@
   right: 0.5rem;
   top: 16rem;
 }
-
+@media (min-device-width: 1400px) {
+  .day-and-month {
+    width: 19%;
+    height: 13%;
+    top: 16rem;
+  }
+}
 @media (min-device-width: 1200px) and (max-device-width: 1399px) {
   .day-and-month {
-    /* padding: 0rem 1rem 0rem 1rem; */
-    width: 20%;
+    width:18%;
     height: 11%;
-    /* padding-top: 0.3rem; */
-    top: 13rem;
+    top: 13.5rem;
   }
 }
 @media (min-device-width: 992px) and (max-device-width: 1199px) {
@@ -82,14 +86,14 @@
     width: 20%;
     height: 11%;
     /* padding-top: 0.3rem; */
-    top: 11rem;
+    top: 10rem;
   }
 }
 @media (min-device-width: 768px) and (max-device-width: 991px) {
   .day-and-month {
     width: 13%;
     height: 11%;
-    top: 29rem;
+    top: 27rem;
     padding-top: 0.8rem;
   }
 }
@@ -97,7 +101,7 @@
   .day-and-month {
     width: 13%;
     height: 10%;
-    top: 21rem;
+    top: 20rem;
     /* padding-top: 0.3rem;  */
   }
 }
@@ -105,7 +109,7 @@
   .day-and-month {
     width: 13%;
     height: 10%;
-    top: 20rem;
+    top: 19rem;
     /* padding-top: 0.3rem;  */
   }
 }
@@ -113,7 +117,7 @@
   .day-and-month {
     width: 13%;
     height: 10%;
-    top: 18rem;
+    top: 17rem;
     /* padding-top: 0.3rem;  */
   }
 }
@@ -129,7 +133,7 @@
   .day-and-month {
     width: 14%;
     height: 10%;
-    top: 14rem;
+    top: 13rem;
     padding-top: 0.2rem;
   }
 }
@@ -137,22 +141,22 @@
   .day-and-month {
     width: 14%;
     height: 10%;
-    top: 13rem;
+    top: 12rem;
     padding-top: 0.2rem;
   }
 }
-@media (min-device-width: 325px) and (max-device-width: 339px) {
+@media (min-device-width: 324px) and (max-device-width: 339px) {
   .day-and-month {
     width: 14%;
     height: 9%;
-    top: 12rem;
+    top: 11rem;
     padding-top: 0.2rem;
   }
   .day-and-month h5 {
     font-size: 12px;
   }
 }
-@media (max-device-width: 324px) {
+@media (max-device-width: 323px) {
   .day-and-month {
     width: 15%;
     height: 9%;

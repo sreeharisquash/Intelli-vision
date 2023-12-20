@@ -18,6 +18,7 @@ import PlayStore from "../../../assets/images/playStore.svg";
 import Windows from "../../../assets/images/windows.svg";
 import StoreComponent from "../storeComponent/storeComponent";
 import studentsImg from "../../../assets/images/students.svg";
+import FirstSectionSlicker from "../../firstSectionSlider/FirstSectionSlider";
 // import MainSlider from "../mainSlider/MainSlider";
 
 export default function Section1() {
@@ -78,126 +79,16 @@ export default function Section1() {
       <Header />
       <div className="section1">
         <div className="container py-5">
-          <div
-            id="carouselExampleInterval"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="2000">
-                <div className="row mt-5 mb-5">
-                  <div className="col-lg-7 col-md-12 my-auto mb-5" data-aos="fade-right">
-                    <h1>Lorem ipsum dolor consectetur adipiscing elit</h1>
-                    <p className="mt-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi ut aliquip ex ea commodo tempor
-                    </p>{" "}
-                    <div className="d-flex gap-3">
-                      <StoreButton
-                        imgSrc={AppleStoreIcon}
-                        storeName="Apple Store"
-                      />
-                      <StoreButton
-                        imgSrc={PlayStoreIcon}
-                        storeName="Play Store"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-lg-5 col-md-12"  data-aos="fade-left">
-                    <img src={MobileLogo} alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <div className="row mt-5 mb-5">
-                  <div className="col-lg-7 col-md-12 my-auto mb-5" data-aos="fade-right">
-                    <h1>Lorem ipsum dolor consectetur adipiscing elit</h1>
-                    <p className="mt-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi ut aliquip ex ea commodo tempor
-                    </p>{" "}
-                    <div className="d-flex gap-3">
-                      <StoreButton
-                        imgSrc={AppleStoreIcon}
-                        storeName="Apple Store"
-                      />
-                      <StoreButton
-                        imgSrc={PlayStoreIcon}
-                        storeName="Play Store"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-lg-5 col-md-12" data-aos="fade-left">
-                    <img src={MobileLogo} alt="" />
-                  </div>
-                  </div>
-                </div>
-            
-              <div class="carousel-item" data-bs-interval="2000">
-                <div className="row mt-5 mb-5">
-                  <div className="col-lg-7 col-md-12 my-auto mb-5" data-aos="fade-right">
-                    <h1>Lorem ipsum dolor consectetur adipiscing elit</h1>
-                    <p className="mt-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi ut aliquip ex ea commodo tempor
-                    </p>{" "}
-                    <div className="d-flex gap-3">
-                      <StoreButton
-                        imgSrc={AppleStoreIcon}
-                        storeName="Apple Store"
-                      />
-                      <StoreButton
-                        imgSrc={PlayStoreIcon}
-                        storeName="Play Store"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-lg-5 col-md-12" data-aos="fade-left">
-                    <img src={MobileLogo} alt="" />
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <FirstSectionSlicker/>
         </div>
-        {/* <div className="container"> */}
-        {/* <MainSlider/> */}
-        {/* </div> */}
-      
-        
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      {/* </div> */}
+      </div>
 
       {/* section two  */}
 
       <div className="container section2 ">
         <div className="row pt-5 d-flex justify-content-center mb-4">
-          <div className="col-lg-8"  data-aos="flip-left">
-            <h1 className="text-center">Lorem ipsum dolor</h1>
+          <div className="col-lg-8" data-aos="flip-left">
+            <h1 className="text-center">Lorem ipsum dolor?</h1>
             <p className="mt-4 text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis
@@ -213,11 +104,9 @@ export default function Section1() {
                 para={items.para}
                 head={items.head}
                 imgSrc={items.image}
-                
               />
             </div>
           ))}
-
         </div>
       </div>
       <div className="section3">
@@ -262,7 +151,10 @@ export default function Section1() {
                 />
               </div>
             </div>
-            <div className="col-lg-6 col-md-12 d-flex flex-column justify-content-center" data-aos="fade-left">
+            <div
+              className="col-lg-6 col-md-12 d-flex flex-column justify-content-center"
+              data-aos="fade-left"
+            >
               {/* <div className="background-img"> */}
               {/* <div className="PlayButton" > */}
               <img src={studentsImg} alt="" className="studentsImg" />
@@ -291,7 +183,10 @@ export default function Section1() {
               </p>
             </div>
           </div>
-          <div className="row stores d-flex justify-content-center" data-aos="fade-up">
+          <div
+            className="row stores d-flex justify-content-center"
+            data-aos="fade-up"
+          >
             {store.map((items) => {
               return (
                 <div className="col-lg-4 text-center">

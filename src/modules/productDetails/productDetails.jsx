@@ -71,7 +71,7 @@ const ProductDetails = () => {
                 label="Add to Wishlist"
               />
             </div>
-            <div className="buy-now">
+            <div className="buy-now mt-4">
               <CommonButton
                 color="#170F58"
                 fontClr="white"

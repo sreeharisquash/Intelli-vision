@@ -141,7 +141,9 @@ export default function ContactPage() {
                 ></iframe>
               </div>
             </div>
+            <div style={{marginTop:"-1rem"}}>
             <Footer />
+            </div>
           </div>
         </div>
       </div>

@@ -138,8 +138,8 @@ export default function Section4() {
               <div className="mt-2">
                 <div className="row ">
                   <div className="col">
-                    <div className="d-flex aliign-center gap-4">
-                      <img src={EmailLogo} alt="" />
+                    <div className="d-flex align-center gap-4">
+                      <img src={EmailLogo} alt="" style={{ width: "auto" }} />
                       <div>
                         <h3 className="mt-4">Company Location</h3>
                         <p>4140 Parker Rd. Allentown, New Mexico 31134</p>
@@ -148,12 +148,23 @@ export default function Section4() {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-lg-6 col-md-12">
-                    <div className="d-flex aliign-center gap-4">
-                      <img src={LocationLogo} alt="" />
+                  <div className="col">
+                    <div className="d-flex align-center gap-4">
+                      <img
+                        src={LocationLogo}
+                        alt=""
+                        style={{ width: "auto" }}
+                      />
                       <div>
                         <h3 className="mt-4">Email</h3>
-                        <p>alma.lawson@example.com</p>
+                        <p>
+                          <a
+                            href="mailto:lawson@example.com"
+                            className="email-link"
+                          >
+                            alma.lawson@example.com
+                          </a>
+                        </p>
                       </div>
                     </div>
                   </div>

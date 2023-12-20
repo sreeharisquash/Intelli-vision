@@ -8,7 +8,7 @@
 }
 .form-container {
   background-color: #ececec;
-  max-width: 80%;
+  /* max-width: 80%; */
   padding: 40px 40px 20px 40px;
   border-radius: 10px;
 }
@@ -68,8 +68,48 @@
 .section-end p {
   color: #909090;
 }
+.email-link {
+  text-decoration: none;
+  color: #000446;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.your-modal-class {
+  background: white;
+  padding: 20px;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1001; /* Higher z-index than the overlay */
+}
+
+/* Center the modal content */
+.your-modal-class {
+  position: relative;
+  width: 60%; /* Adjust the width as needed */
+  max-width: 400px; /* Set a max-width for responsiveness */
+}
 
 @media (max-device-width: 768px) {
+  .butn {
+    display: flex !important;
+  }
   .listing {
     margin-left: 0;
   }

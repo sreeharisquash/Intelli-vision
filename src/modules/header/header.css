@@ -10,6 +10,7 @@
   line-height: 28px;
   letter-spacing: 0.02em;
   text-align: left;
+  
 }
 .ralewayFont {
   font-size: 16px;
@@ -24,12 +25,22 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  transition: 0.3s;
+}
+
+.nav-contain:hover{
+  transform: scale(1.06);
+}
+.nav-contain img{
+  width:auto;
 }
 .colorForNavFont {
   color: white;
+  transition: 0.3s;
 }
 .colorForNavFont:hover{
-  color:goldenrod
+  color:goldenrod;
+  /* transform: scale(1.1); */
 }
 .navBg {
   padding-top: 2rem;
@@ -48,4 +59,10 @@
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: goldenrod;
+}
+
+@media (min-device-width:1200px){
+  .colorForNavFont:hover{
+    transform: scale(1.2) ;
+  }
 }

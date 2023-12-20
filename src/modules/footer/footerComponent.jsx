@@ -56,8 +56,7 @@ export default function Footer({ head, para }) {
                 <div className="unordered-list">
                   <ul className="mt-5">
                     <li className="number">{items.number} </li>
-                    <li className="mail-add">{items.mail}</li>
-                    <li className="per-loc">{items.location}</li>
+                    <li><a href="mailto:@gmail.com" className="mail-add">{items.mail}</a></li>                    <li className="per-loc">{items.location}</li>
                   </ul>
                 </div>
               ))}
